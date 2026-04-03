@@ -1,0 +1,56 @@
+# Use PHP 7.2 or higher
+<IfModule mod_version.c>
+    <IfVersion >= 7.2>
+        # PHP configuration
+        AddType application/x-httpd-php .php
+    </IfVersion>
+</IfModule>
+
+# Enable mod_rewrite
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+    
+    # Remove .php extension from URLs
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.+)\.html$ $1.php [L,QSA]
+    
+    # Protect sensitive files
+    RewriteRule ^\.(.*)$ - [F]
+</IfModule>
+
+# Security Headers
+<IfModule mod_headers.c>
+    # Allow CORS for API
+    Header set Access-Control-Allow-Origin "*"
+    Header set Access-Control-Allow-Methods "GET, POST, OPTIONS"
+    Header set Access-Control-Allow-Headers "Content-Type"
+    
+    # Prevent clickjacking
+    Header set X-Frame-Options "SAMEORIGIN"
+    
+    # Prevent MIME type sniffing
+    Header set X-Content-Type-Options "nosniff"
+    
+    # Enable XSS protection
+    Header set X-XSS-Protection "1; mode=block"
+</IfModule>
+
+# Disable directory listing
+Options -Indexes
+
+# Handle 404 errors
+ErrorDocument 404 "Page not found"
+
+# Compress output
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/json
+</IfModule>
+
+# Cache settings for static files
+<FilesMatch "\.(jpg|jpeg|png|gif|ico|css|js)$">
+    <IfModule mod_headers.c>
+        Header set Cache-Control "max-age=2592000, public"
+    </IfModule>
+</FilesMatch>
