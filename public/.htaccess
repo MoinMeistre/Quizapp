@@ -1,7 +1,0 @@
-RewriteEngine On
-# Don't redirect if the user is asking for a real file (like style.css)
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-
-# Send everything else to index.php
-RewriteRule ^(.*)$ index.php [L,QSA]
