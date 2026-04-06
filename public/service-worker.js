@@ -1,4 +1,4 @@
-const CACHE_NAME = "quizapp-cache-v2";
+const CACHE_NAME = "quizapp-cache-v3";
 
 const ASSETS = [
   "/index.html",
@@ -22,12 +22,14 @@ self.addEventListener("install", function (event) {
 self.addEventListener("activate", function (event) {
   event.waitUntil(
     caches.keys().then(function (cacheNames) {
-      cacheNames.map(function (cacheName) {
-        if (cacheName !== CACHE_NAME) {
-          return caches.delete(cacheName);
-        }
-      });
-    }),
+      return Promise.all(
+        cacheNames.map(function (cacheName) {
+          if (cacheName !== CACHE_NAME) {
+            return caches.delete(cacheName);
+          }
+        })
+      );
+    })
   );
 });
 

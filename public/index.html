@@ -8,17 +8,26 @@
     <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
     <script type="module" src='script.js'></script>
 </head>
-<body>
-    
-    <nav>
-        <button onclick="navigate('home')">Home</button>
-        <button onclick="navigate('messages')">Messages</button>
-    </nav>
 
-    <div id="app-root">
+<body>
+    <header>
+        <h1>Quiz App</h1>
+    </header>
+    <div class="container">
+        <nav>
+            <button onclick="navigate('home')">Home</button>
+            <button onclick="navigate('messages')">Messages</button>
+        </nav>
+
+        <div id="app-root" calss="QuizApp">
+
+        </div>
+
+        <div id="score-container" class="score">
+
+        </div>
 
     </div>
-   
 
     <!-- Button zum Frage holen -->
     <button id="fetch-question-btn">Frage vom Server holen.</button>

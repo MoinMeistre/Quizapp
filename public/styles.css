@@ -26,14 +26,12 @@ body {
 }
 
 .container {
-    max-width: 800px;
     margin: 0 auto;
-    background: white;
     border-radius: var(--border-radius);
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     min-height: 90vh;
 }
 
