@@ -1,17 +1,23 @@
-<?php
-// 1. Database Connection
-$db = new PDO('sqlite:../data.sqlite');
-$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-$db->exec('CREATE TABLE IF NOT EXISTS messages (id INTEGER PRIMARY KEY, user_name TEXT, content TEXT)');
-// 2. Routing
-require_once '../app/controllers/MessageController.php';
-require_once '../app/Router.php';
+<!DOCTYPE html>
+<html>
 
-$Router = new Router();
+<head>
+    <meta charset='utf-8'>
+    <title>PWA</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
+    <script src='script.js'></script>
+</head>
 
-$controller = new MessageController($db);
-$Router->get('/','$controller->store()');
-$Router->get('/','$controller->showAll()');
-$Router->post('/','$controller->store()');
-$Router->resolve();
-?>
+<body>
+    <nav>
+        <button onclick="navigate('home')">Home</button>
+        <button onclick="navigate('messages')">Messages</button>
+    </nav>
+
+    <div id="app-root">
+
+    </div>
+</body>
+
+</html>
