@@ -6,10 +6,10 @@
     <title>PWA</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
-    <script src='script.js'></script>
 </head>
 
 <body>
+    <!--
     <nav>
         <button onclick="navigate('home')">Home</button>
         <button onclick="navigate('messages')">Messages</button>
@@ -18,6 +18,16 @@
     <div id="app-root">
 
     </div>
+    -->
+
+    <!-- Button zum Frage holen -->
+    <button onclick="frageHolen()">Frage vom Server holen.</button>
+    <div id="quiz-area">
+        <h2 id="question-text">Hier erscheint die Frage...</h2>
+        <div id="awnser-buttons"></div>
+    </div>
+
+    <script src='script.js'></script>
 </body>
 
 </html>
