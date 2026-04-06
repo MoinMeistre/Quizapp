@@ -1,71 +1,77 @@
-import { QuizModel } from './js/model.js';
-import { QuizView } from './js/view.js';
-import { QuizPresenter } from './js/presenter.js';
+import { QuizModel } from "./js/model.js";
+import { QuizView } from "./js/view.js";
+import { QuizPresenter } from "./js/presenter.js";
 
 const app = new QuizPresenter(new QuizModel(), new QuizView());
 app.init();
 
 // Register Service Worker
-if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/sw.js');
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker
+    .register("service-worker.js")
+    .then(function (registration) {
+      console.log("Service Worker registered with scope:", registration.scope);
+    })
+    .catch(function (error) {
+      console.log("Service Worker registration failed:", error);
+    });
 }
 
 // testfrage holen
 async function frageHolen() {
-    const url = "https://vogtserver.de:8888/api/quizzes/1";
-    const auth = btoa("test@gmail.com:secret");
+  const url = "https://vogtserver.de:8888/api/quizzes/1";
+  const auth = btoa("test@gmail.com:secret");
+    console.log("Hole Frage von:", url);
+  try {
+    const response = await fetch(url, {
+      headers: { Authorization: `Basic ${auth}` },
+    });
 
-    try {
-        const response = await fetch(url, {
-            headers: { 'Authorization': `Basic ${auth}` }
-        });
+    const daten = await response.json();
 
-        const daten = await response.json();
+    // HIER passiert die Magie: Wir füllen das HTML direkt
+    document.getElementById("question-text").innerText = daten.text;
 
-        // HIER passiert die Magie: Wir füllen das HTML direkt
-        document.getElementById('question-text').innerText = daten.text;
+    // Wenn du feste Buttons im HTML hast (z.B. mit IDs btn0, btn1...)
+    if (daten.options) {
+      // Beispiel für den ersten Button:
+      // document.getElementById('answer-1').innerText = daten.options[0];
 
-        // Wenn du feste Buttons im HTML hast (z.B. mit IDs btn0, btn1...)
-        if (daten.options) {
-            // Beispiel für den ersten Button:
-            // document.getElementById('answer-1').innerText = daten.options[0];
-
-            // ODER: Wir nutzen deine bestehende Funktion und geben die Daten mit:
-            anzeigenImQuiz(daten);
-        }
-    } catch (error) {
-        console.error("Fehler:", error);
+      // ODER: Wir nutzen deine bestehende Funktion und geben die Daten mit:
+      anzeigenImQuiz(daten);
     }
+  } catch (error) {
+    console.error("Fehler:", error);
+  }
 }
 
+document.addEventListener("DOMContentLoaded", () => {
+  const fetchButton = document.getElementById("fetch-question-btn");
+  if (fetchButton) {
+    console.log("Button gefunden, füge Event Listener hinzu.");
+    fetchButton.addEventListener("click", frageHolen);
+  }
+});
+
 function anzeigenImQuiz(daten) {
-    const container = document.getElementById('awnser-buttons');
-    if (!container) return;
+  const container = document.getElementById("awnser-buttons");
+  if (!container) return;
 
-    container.innerHTML = ""; // Leeren
+  container.innerHTML = ""; // Leeren
 
-    // Buttons für Optionen erstellen
-    daten.options.forEach((antwort, index) => {
-        const btn = document.createElement('button');
-        btn.innerText = antwort;
-        btn.className = 'quiz-btn'; // Optional für CSS
+  // Buttons für Optionen erstellen
+  daten.options.forEach((antwort, index) => {
+    const btn = document.createElement("button");
+    btn.innerText = antwort;
+    btn.className = "quiz-btn"; // Optional für CSS
 
-        btn.onclick = () => {
-            alert("Du hast gewählt: " + antwort);
-        };
+    btn.onclick = () => {
+      alert("Du hast gewählt: " + antwort);
+    };
 
-        container.appendChild(btn);
-    });
+    container.appendChild(btn);
+  });
 }
 
 // Nicht vergessen aufzurufen!
 // frageHolen();
-
-
-   if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('sw.js').then(function(registration) {
-                console.log('Service Worker registered with scope:', registration.scope);
-            }).catch(function(error) {
-                console.log('Service Worker registration failed:', error);
-            });
-        }

@@ -1,12 +1,14 @@
-const CAHSE_NAME = "quizapp-cache-v1";
+const CACHE_NAME = "quizapp-cache-v2";
 
 const ASSETS = [
-  "/",
-  "/index.php",
+  "/index.html",
   "/styles.css",
   "/script.js",
   "/manifest.json",
   "/questions.json",
+  "/js/model.js",
+  "/js/view.js",
+  "/js/presenter.js",
 ];
 
 self.addEventListener("install", function (event) {
