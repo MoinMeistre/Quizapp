@@ -1,4 +1,4 @@
-const CAHSE_NAME = "quizapp-cache";
+const CAHSE_NAME = "quizapp-cache-v1";
 
 const ASSETS = [
   "/",
