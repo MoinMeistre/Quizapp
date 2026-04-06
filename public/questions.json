@@ -1,0 +1,454 @@
+{
+  "quiz_data": [
+    {
+      "id": 1,
+      "kategorie": "Naturwissenschaften",
+      "schwierigkeit": "Einfach",
+      "frage": "Welches Element hat das chemische Symbol 'O'?",
+      "optionen": ["Gold", "Sauerstoff", "Osmium", "Kohlenstoff"],
+      "korrekte_antwort_index": 1,
+      "erklaerung": "O steht für Oxygenium (Sauerstoff)."
+    },
+    {
+      "id": 2,
+      "kategorie": "Naturwissenschaften",
+      "schwierigkeit": "Mittel",
+      "frage": "Wie viele Planeten hat unser Sonnensystem?",
+      "optionen": ["7", "8", "9", "10"],
+      "korrekte_antwort_index": 1,
+      "erklaerung": "Seit Pluto 2006 der Status als Planet aberkannt wurde, sind es acht."
+    },
+    {
+      "id": 3,
+      "kategorie": "Naturwissenschaften",
+      "schwierigkeit": "Mittel",
+      "frage": "Was ist die Lichtgeschwindigkeit im Vakuum (gerundet)?",
+      "optionen": ["150.000 km/s", "300.000 km/s", "1.000.000 km/s", "800.000 km/s"],
+      "korrekte_antwort_index": 1,
+      "erklaerung": "Die Lichtgeschwindigkeit beträgt ca. 299.792 km/s."
+    },
+    {
+      "id": 4,
+      "kategorie": "Naturwissenschaften",
+      "schwierigkeit": "Einfach",
+      "frage": "Welches Organ im menschlichen Körper pumpt Blut?",
+      "optionen": ["Lunge", "Leber", "Herz", "Niere"],
+      "korrekte_antwort_index": 2,
+      "erklaerung": "Das Herz ist der zentrale Muskel des Blutkreislaufs."
+    },
+    {
+      "id": 5,
+      "kategorie": "Naturwissenschaften",
+      "schwierigkeit": "Schwer",
+      "frage": "Was beschreibt die Heisenbergsche Unschärferelation?",
+      "optionen": ["Energie und Zeit", "Ort und Impuls", "Masse und Beschleunigung", "Licht und Schatten"],
+      "korrekte_antwort_index": 1,
+      "erklaerung": "Man kann nicht gleichzeitig Ort und Impuls eines Teilchens exakt bestimmen."
+    },
+    {
+      "id": 6,
+      "kategorie": "Naturwissenschaften",
+      "schwierigkeit": "Mittel",
+      "frage": "In welcher Einheit wird die elektrische Stromstärke gemessen?",
+      "optionen": ["Volt", "Watt", "Ohm", "Ampere"],
+      "korrekte_antwort_index": 3,
+      "erklaerung": "Ampere ist die Basiseinheit für Stromstärke."
+    },
+    {
+      "id": 7,
+      "kategorie": "Naturwissenschaften",
+      "schwierigkeit": "Einfach",
+      "frage": "Welches Gas ist am stärksten in der Erdatmosphäre vertreten?",
+      "optionen": ["Sauerstoff", "Stickstoff", "Kohlendioxid", "Argon"],
+      "korrekte_antwort_index": 1,
+      "erklaerung": "Stickstoff macht etwa 78% der Atmosphäre aus."
+    },
+    {
+      "id": 8,
+      "kategorie": "Naturwissenschaften",
+      "schwierigkeit": "Schwer",
+      "frage": "Wie lautet die chemische Formel für Schwefelsäure?",
+      "optionen": ["H2SO4", "HCl", "HNO3", "NaOH"],
+      "korrekte_antwort_index": 0,
+      "erklaerung": "H2SO4 ist die Formel für Schwefelsäure."
+    },
+    {
+      "id": 9,
+      "kategorie": "Naturwissenschaften",
+      "schwierigkeit": "Einfach",
+      "frage": "Welcher Planet ist der Sonne am nächsten?",
+      "optionen": ["Venus", "Mars", "Merkur", "Jupiter"],
+      "korrekte_antwort_index": 2,
+      "erklaerung": "Merkur ist der innerste Planet unseres Systems."
+    },
+    {
+      "id": 10,
+      "kategorie": "Naturwissenschaften",
+      "schwierigkeit": "Mittel",
+      "frage": "Was ist der Hauptbestandteil von Glas?",
+      "optionen": ["Kalk", "Quarzsand", "Natrium", "Blei"],
+      "korrekte_antwort_index": 1,
+      "erklaerung": "Siliziumdioxid (Quarzsand) ist die Basis für Glas."
+    },
+    {
+      "id": 11,
+      "kategorie": "Naturwissenschaften",
+      "schwierigkeit": "Schwer",
+      "frage": "Welches Teilchen im Atomkern ist neutral geladen?",
+      "optionen": ["Proton", "Elektron", "Neutron", "Positron"],
+      "korrekte_antwort_index": 2,
+      "erklaerung": "Neutronen tragen keine elektrische Ladung."
+    },
+    {
+      "id": 12,
+      "kategorie": "Naturwissenschaften",
+      "schwierigkeit": "Einfach",
+      "frage": "Wie nennt man den Übergang von gasförmig zu flüssig?",
+      "optionen": ["Verdampfen", "Schmelzen", "Kondensieren", "Sublimieren"],
+      "korrekte_antwort_index": 2,
+      "erklaerung": "Beim Abkühlen kondensiert Gas zu Flüssigkeit."
+    },
+    {
+      "id": 13,
+      "kategorie": "Geografie",
+      "schwierigkeit": "Einfach",
+      "frage": "Was ist die Hauptstadt von Frankreich?",
+      "optionen": ["Lyon", "Marseille", "Paris", "Nizza"],
+      "korrekte_antwort_index": 2,
+      "erklaerung": "Paris ist die Hauptstadt und bevölkerungsreichste Stadt Frankreichs."
+    },
+    {
+      "id": 14,
+      "kategorie": "Geografie",
+      "schwierigkeit": "Mittel",
+      "frage": "Welcher Fluss ist der längste der Welt?",
+      "optionen": ["Amazonas", "Nil", "Jangtsekiang", "Mississippi"],
+      "korrekte_antwort_index": 1,
+      "erklaerung": "Der Nil gilt traditionell als der längste Fluss, wobei es Debatten über den Amazonas gibt."
+    },
+    {
+      "id": 15,
+      "kategorie": "Geografie",
+      "schwierigkeit": "Einfach",
+      "frage": "Auf welchem Kontinent liegt Ägypten?",
+      "optionen": ["Asien", "Europa", "Afrika", "Südamerika"],
+      "korrekte_antwort_index": 2,
+      "erklaerung": "Ägypten liegt im Nordosten Afrikas."
+    },
+    {
+      "id": 16,
+      "kategorie": "Geografie",
+      "schwierigkeit": "Schwer",
+      "frage": "Wie heißt die Hauptstadt von Kasachstan?",
+      "optionen": ["Almaty", "Astana", "Taschkent", "Bischkek"],
+      "korrekte_antwort_index": 1,
+      "erklaerung": "Die Stadt hieß zwischenzeitlich Nur-Sultan, wurde aber wieder in Astana umbenannt."
+    },
+    {
+      "id": 17,
+      "kategorie": "Geografie",
+      "schwierigkeit": "Mittel",
+      "frage": "Welches Land hat die meisten Einwohner?",
+      "optionen": ["USA", "Indien", "China", "Russland"],
+      "korrekte_antwort_index": 1,
+      "erklaerung": "Indien hat China im Jahr 2023 als bevölkerungsreichstes Land abgelöst."
+    },
+    {
+      "id": 18,
+      "kategorie": "Geografie",
+      "schwierigkeit": "Einfach",
+      "frage": "Welcher Ozean liegt zwischen Europa und Amerika?",
+      "optionen": ["Pazifik", "Indik", "Atlantik", "Arktischer Ozean"],
+      "korrekte_antwort_index": 2,
+      "erklaerung": "Der Atlantische Ozean trennt die 'Alte Welt' von der 'Neuen Welt'."
+    },
+    {
+      "id": 19,
+      "kategorie": "Geografie",
+      "schwierigkeit": "Schwer",
+      "frage": "Wie viele Bundesstaaten haben die USA?",
+      "optionen": ["48", "50", "51", "52"],
+      "korrekte_antwort_index": 1,
+      "erklaerung": "Die USA bestehen aus 50 Bundesstaaten."
+    },
+    {
+      "id": 20,
+      "kategorie": "Geografie",
+      "schwierigkeit": "Mittel",
+      "frage": "In welchem Gebirge liegt der Mount Everest?",
+      "optionen": ["Anden", "Alpen", "Himalaya", "Rocky Mountains"],
+      "korrekte_antwort_index": 2,
+      "erklaerung": "Der Himalaya beherbergt die höchsten Gipfel der Erde."
+    },
+    {
+      "id": 21,
+      "kategorie": "Geografie",
+      "schwierigkeit": "Einfach",
+      "frage": "Was ist die kleinste Nation der Welt (nach Fläche)?",
+      "optionen": ["Monaco", "San Marino", "Vatikanstadt", "Liechtenstein"],
+      "korrekte_antwort_index": 2,
+      "erklaerung": "Vatikanstadt ist ein unabhängiger Stadtstaat in Rom."
+    },
+    {
+      "id": 22,
+      "kategorie": "Geografie",
+      "schwierigkeit": "Mittel",
+      "frage": "Welches Land wird auch als das 'Land der aufgehenden Sonne' bezeichnet?",
+      "optionen": ["China", "Südkorea", "Japan", "Thailand"],
+      "korrekte_antwort_index": 2,
+      "erklaerung": "Japan (Nippon) bedeutet wörtlich 'Ursprung der Sonne'."
+    },
+    {
+      "id": 23,
+      "kategorie": "Geografie",
+      "schwierigkeit": "Schwer",
+      "frage": "Welches ist das flächenmäßig größte Land der Welt?",
+      "optionen": ["Kanada", "USA", "Russland", "Australien"],
+      "korrekte_antwort_index": 2,
+      "erklaerung": "Russland erstreckt sich über zwei Kontinente und ist das flächengrößte Land."
+    },
+    {
+      "id": 24,
+      "kategorie": "Geografie",
+      "schwierigkeit": "Mittel",
+      "frage": "Welcher See ist der tiefste der Welt?",
+      "optionen": ["Bodensee", "Baikalsee", "Kaspisches Meer", "Viktoriasee"],
+      "korrekte_antwort_index": 1,
+      "erklaerung": "Der Baikalsee in Sibirien ist über 1.600 Meter tief."
+    },
+    {
+      "id": 25,
+      "kategorie": "Geschichte",
+      "schwierigkeit": "Einfach",
+      "frage": "Wann begann der Erste Weltkrieg?",
+      "optionen": ["1912", "1914", "1918", "1939"],
+      "korrekte_antwort_index": 1,
+      "erklaerung": "Der Erste Weltkrieg dauerte von 1914 bis 1918."
+    },
+    {
+      "id": 26,
+      "kategorie": "Geschichte",
+      "schwierigkeit": "Mittel",
+      "frage": "Wer war der erste Präsident der USA?",
+      "optionen": ["Thomas Jefferson", "Abraham Lincoln", "George Washington", "John Adams"],
+      "korrekte_antwort_index": 2,
+      "erklaerung": "Washington amtierte von 1789 bis 1797."
+    },
+    {
+      "id": 27,
+      "kategorie": "Geschichte",
+      "schwierigkeit": "Schwer",
+      "frage": "In welchem Jahr fiel die Berliner Mauer?",
+      "optionen": ["1987", "1988", "1989", "1990"],
+      "korrekte_antwort_index": 2,
+      "erklaerung": "Der Mauerfall am 9. November 1989 markierte das Ende der DDR."
+    },
+    {
+      "id": 28,
+      "kategorie": "Geschichte",
+      "schwierigkeit": "Einfach",
+      "frage": "Wie hießen die ägyptischen Herrscher?",
+      "optionen": ["Kaiser", "Sultane", "Pharaonen", "Zaren"],
+      "korrekte_antwort_index": 2,
+      "erklaerung": "Pharao war der Titel für die altägyptischen Könige."
+    },
+    {
+      "id": 29,
+      "kategorie": "Geschichte",
+      "schwierigkeit": "Mittel",
+      "frage": "Wer entdeckte 1492 Amerika?",
+      "optionen": ["Vasco da Gama", "Marco Polo", "Christoph Kolumbus", "James Cook"],
+      "korrekte_antwort_index": 2,
+      "erklaerung": "Kolumbus landete 1492 auf den Bahamas, im Glauben, Indien erreicht zu haben."
+    },
+    {
+      "id": 30,
+      "kategorie": "Geschichte",
+      "schwierigkeit": "Schwer",
+      "frage": "In welcher Epoche fand die Französische Revolution statt?",
+      "optionen": ["16. Jahrhundert", "17. Jahrhundert", "18. Jahrhundert", "19. Jahrhundert"],
+      "korrekte_antwort_index": 2,
+      "erklaerung": "Sie begann im Jahr 1789."
+    },
+    {
+      "id": 31,
+      "kategorie": "Geschichte",
+      "schwierigkeit": "Mittel",
+      "frage": "Welches Volk erfand die Demokratie?",
+      "optionen": ["Römer", "Griechen", "Ägypter", "Phönizier"],
+      "korrekte_antwort_index": 1,
+      "erklaerung": "Die attische Demokratie im antiken Griechenland gilt als Ursprung."
+    },
+    {
+      "id": 32,
+      "kategorie": "Geschichte",
+      "schwierigkeit": "Einfach",
+      "frage": "Wer war 'King of Pop'?",
+      "optionen": ["Elvis Presley", "Michael Jackson", "Prince", "Freddie Mercury"],
+      "korrekte_antwort_index": 1,
+      "erklaerung": "Michael Jackson prägte diesen Titel weltweit."
+    },
+    {
+      "id": 33,
+      "kategorie": "Geschichte",
+      "schwierigkeit": "Schwer",
+      "frage": "Wie hieß das Schiff, das 1912 nach einer Kollision mit einem Eisberg sank?",
+      "optionen": ["Lusitania", "Bismarck", "Titanic", "Britannic"],
+      "korrekte_antwort_index": 2,
+      "erklaerung": "Die Titanic galt als unsinkbar und verunglückte auf ihrer Jungfernfahrt."
+    },
+    {
+      "id": 34,
+      "kategorie": "Geschichte",
+      "schwierigkeit": "Mittel",
+      "frage": "Welche Stadt wurde 79 n. Chr. durch den Ausbruch des Vesuvs verschüttet?",
+      "optionen": ["Rom", "Neapel", "Pompeji", "Venedig"],
+      "korrekte_antwort_index": 2,
+      "erklaerung": "Pompeji wurde unter einer meterdicken Schicht aus Asche konserviert."
+    },
+    {
+      "id": 35,
+      "kategorie": "Geschichte",
+      "schwierigkeit": "Einfach",
+      "frage": "Wie hieß der deutsche Kanzler während der Wiedervereinigung?",
+      "optionen": ["Willy Brandt", "Helmut Schmidt", "Helmut Kohl", "Gerhard Schröder"],
+      "korrekte_antwort_index": 2,
+      "erklaerung": "Kohl gilt als der 'Kanzler der Einheit'."
+    },
+    {
+      "id": 36,
+      "kategorie": "Geschichte",
+      "schwierigkeit": "Schwer",
+      "frage": "Wer malte die 'Mona Lisa'?",
+      "optionen": ["Michelangelo", "Raffael", "Leonardo da Vinci", "Donatello"],
+      "korrekte_antwort_index": 2,
+      "erklaerung": "Das weltberühmte Gemälde entstand Anfang des 16. Jahrhunderts."
+    },
+    {
+      "id": 37,
+      "kategorie": "Unterhaltung",
+      "schwierigkeit": "Einfach",
+      "frage": "Wie heißt der Zauberlehrling aus der Feder von J.K. Rowling?",
+      "optionen": ["Frodo Beutlin", "Harry Potter", "Percy Jackson", "Eragon"],
+      "korrekte_antwort_index": 1,
+      "erklaerung": "Harry Potter ist die Hauptfigur der siebenteiligen Buchreihe."
+    },
+    {
+      "id": 38,
+      "kategorie": "Unterhaltung",
+      "schwierigkeit": "Mittel",
+      "frage": "In welcher Stadt wohnen die Simpsons?",
+      "optionen": ["Shelbyville", "Quahog", "South Park", "Springfield"],
+      "korrekte_antwort_index": 3,
+      "erklaerung": "Die Familie lebt im fiktiven Springfield."
+    },
+    {
+      "id": 39,
+      "kategorie": "Unterhaltung",
+      "schwierigkeit": "Schwer",
+      "frage": "Wie viele Oscars gewann der Film 'Titanic' (1997)?",
+      "optionen": ["9", "10", "11", "12"],
+      "korrekte_antwort_index": 2,
+      "erklaerung": "Titanic hält zusammen mit Ben Hur und Der Herr der Ringe 3 den Rekord mit 11 Oscars."
+    },
+    {
+      "id": 40,
+      "kategorie": "Unterhaltung",
+      "schwierigkeit": "Einfach",
+      "frage": "Wer ist der Schöpfer von Micky Maus?",
+      "optionen": ["Warner Bros", "Walt Disney", "Stan Lee", "Hanna-Barbera"],
+      "korrekte_antwort_index": 1,
+      "erklaerung": "Micky Maus erschien erstmals 1928."
+    },
+    {
+      "id": 41,
+      "kategorie": "Unterhaltung",
+      "schwierigkeit": "Mittel",
+      "frage": "Wie heißt das Videospiel, in dem man mit Blöcken Welten baut?",
+      "optionen": ["Roblox", "Minecraft", "Fortnite", "Terraria"],
+      "korrekte_antwort_index": 1,
+      "erklaerung": "Minecraft ist eines der meistverkauften Spiele aller Zeiten."
+    },
+    {
+      "id": 42,
+      "kategorie": "Unterhaltung",
+      "schwierigkeit": "Schwer",
+      "frage": "Welcher Schauspieler spielte 'Iron Man' im Marvel Cinematic Universe?",
+      "optionen": ["Chris Evans", "Robert Downey Jr.", "Chris Hemsworth", "Mark Ruffalo"],
+      "korrekte_antwort_index": 1,
+      "erklaerung": "RDJ verkörperte Tony Stark von 2008 bis 2019."
+    },
+    {
+      "id": 43,
+      "kategorie": "Unterhaltung",
+      "schwierigkeit": "Einfach",
+      "frage": "Aus welchem Land stammt die Band ABBA?",
+      "optionen": ["Norwegen", "Dänemark", "Schweden", "Finnland"],
+      "korrekte_antwort_index": 2,
+      "erklaerung": "Die schwedische Popgruppe wurde 1972 in Stockholm gegründet."
+    },
+    {
+      "id": 44,
+      "kategorie": "Unterhaltung",
+      "schwierigkeit": "Mittel",
+      "frage": "Wie heißt der Protagonist in 'The Legend of Zelda'?",
+      "optionen": ["Zelda", "Ganon", "Link", "Epona"],
+      "korrekte_antwort_index": 2,
+      "erklaerung": "Link ist der Held; Zelda ist die Prinzessin, die oft gerettet werden muss."
+    },
+    {
+      "id": 45,
+      "kategorie": "Unterhaltung",
+      "schwierigkeit": "Schwer",
+      "frage": "Wie heißt der erste James-Bond-Film?",
+      "optionen": ["Goldfinger", "Dr. No", "Liebesgrüße aus Moskau", "Casino Royale"],
+      "korrekte_antwort_index": 1,
+      "erklaerung": "Dr. No (1962) war der erste Film mit Sean Connery."
+    },
+    {
+      "id": 46,
+      "kategorie": "Unterhaltung",
+      "schwierigkeit": "Einfach",
+      "frage": "Welche Farbe hat Shrek?",
+      "optionen": ["Blau", "Gelb", "Grün", "Rot"],
+      "korrekte_antwort_index": 2,
+      "erklaerung": "Shrek ist ein grüner Oger."
+    },
+    {
+      "id": 47,
+      "kategorie": "Unterhaltung",
+      "schwierigkeit": "Mittel",
+      "frage": "Wer sang den Song 'Rolling in the Deep'?",
+      "optionen": ["Rihanna", "Beyoncé", "Adele", "Taylor Swift"],
+      "korrekte_antwort_index": 2,
+      "erklaerung": "Der Song stammt vom Erfolgsalbum '21' von Adele."
+    },
+    {
+      "id": 48,
+      "kategorie": "Unterhaltung",
+      "schwierigkeit": "Schwer",
+      "frage": "In welchem Jahr erschien der erste 'Star Wars'-Film im Kino?",
+      "optionen": ["1975", "1977", "1980", "1983"],
+      "korrekte_antwort_index": 1,
+      "erklaerung": "Krieg der Sterne (Episode IV) startete 1977."
+    },
+    {
+      "id": 49,
+      "kategorie": "Unterhaltung",
+      "schwierigkeit": "Einfach",
+      "frage": "Wie heißt die Plattform für Kurzvideos, die global sehr populär ist?",
+      "optionen": ["Facebook", "LinkedIn", "TikTok", "Xing"],
+      "korrekte_antwort_index": 2,
+      "erklaerung": "TikTok ist bekannt für seine Algorithmus-basierten Kurzvideos."
+    },
+    {
+      "id": 50,
+      "kategorie": "Naturwissenschaften",
+      "schwierigkeit": "Mittel",
+      "frage": "Was ist die chemische Formel für Kochsalz?",
+      "optionen": ["H2O", "CO2", "NaCl", "CH4"],
+      "korrekte_antwort_index": 2,
+      "erklaerung": "Natriumchlorid (NaCl) ist das gängige Speisesalz."
+    }
+  ]
+}

@@ -1,26 +1,9 @@
-const appRoot = document.getElementById('app-root');
+import { QuizModel } from './js/model.js';
+import { QuizView } from './js/view.js';
+import { QuizPresenter } from './js/presenter.js';
 
-// Simple Client-Side Routing
-async function navigate(page) {
-    if (page === 'home') {
-        appRoot.innerHTML = `<h1>Welcome Home</h1><p>This is a smooth SPA experience.</p>`;
-    } 
-    
-    if (page === 'messages') {
-        appRoot.innerHTML = `<p>Loading messages...</p>`;
-        const response = await fetch('/app/api.php?action=get_messages');
-        const messages = await response.json();
-        
-        let html = '<h1>Messages</h1>';
-        messages.forEach(m => {
-            html += `<div class="card"><b>${m.user_name}:</b> ${m.content}</div>`;
-        });
-        appRoot.innerHTML = html;
-    }
-}
-
-// Initial Load
-navigate('home');
+const app = new QuizPresenter(new QuizModel(), new QuizView());
+app.init();
 
 // Register Service Worker
    if ('serviceWorker' in navigator) {
