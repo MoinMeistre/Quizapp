@@ -4,12 +4,22 @@ export class QuizView {
   }
 
   renderCategories(categories, onSelect) {
-    this.app.innerHTML = '<h2>Kategorie wählen</h2>';
+    let cardContainer = document.getElementById('card-container');
+    if (!cardContainer) {
+      cardContainer = document.createElement('div');
+      cardContainer.id = 'card-container';
+      this.app.appendChild(cardContainer);
+    }
     categories.forEach(cat => {
-      const btn = document.createElement('button');
-      btn.innerText = cat;
-      btn.onclick = () => onSelect(cat);
-      this.app.appendChild(btn);
+      const container = document.createElement('div');
+      container.className = 'card';
+      
+      const p = document.createElement('p');
+      p.innerText = cat;
+      container.onclick = () => onSelect(cat);
+      
+      container.appendChild(p);
+      cardContainer.appendChild(container);
     });
   }
 
