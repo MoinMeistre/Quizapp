@@ -27,18 +27,33 @@ export class QuizView {
     this.app.innerHTML = '';
     questions.forEach((q, index) => {
       const qDiv = document.createElement('div');
-      qDiv.innerHTML = `
-        <h3>Frage ${index + 1}: ${q.frage}</h3>
-        <ul>
-          ${q.optionen.map(opt => `<li>${opt}</li>`).join('')}
-        </ul>
-      `;
+      qDiv.className = 'question-container';
+
+      const questionTitle = document.createElement('h3');
+      questionTitle.textContent = `Frage ${index + 1}: ${q.frage}`;
+      qDiv.appendChild(questionTitle);
+
+      const buttonContainer = document.createElement('div');
+      buttonContainer.className = 'answer-buttons';
+
+      q.optionen.forEach((opt, optIndex) => {
+        const button = document.createElement('button');
+        button.textContent = opt;
+        button.className = 'answer-btn';
+        button.onclick = () => {
+          button.onclick = () => this.handleAnswer(q, optIndex);
+          // console.log(`Antwort ${optIndex} gewählt für Frage ${index + 1}`);
+        };
+        buttonContainer.appendChild(button);
+      });
+
+      qDiv.appendChild(buttonContainer);
       this.app.appendChild(qDiv);
     });
-    
+
     const backBtn = document.createElement('button');
     backBtn.innerText = "Zurück";
-    backBtn.onclick = () => location.reload(); // Einfacher Reset
+    backBtn.onclick = () => location.reload();
     this.app.appendChild(backBtn);
   }
 }
