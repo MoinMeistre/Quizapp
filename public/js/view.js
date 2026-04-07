@@ -4,12 +4,8 @@ export class QuizView {
   }
 
   renderCategories(categories, onSelect) {
-    let cardContainer = document.getElementById('card-container');
-    if (!cardContainer) {
-      cardContainer = document.createElement('div');
-      cardContainer.id = 'card-container';
-      this.app.appendChild(cardContainer);
-    }
+    this.app.innerHTML =  '<nav><div id="card-container" class="card-container"><div class="card"><p id="card-5">Server</p><img src="images/server.jpg" alt="Lando 5" class="sport"></div> </div></nav>';
+    const cardContainer = document.getElementById('card-container');
     categories.forEach(cat => {
       const container = document.createElement('div');
       container.className = 'card';
@@ -27,7 +23,7 @@ export class QuizView {
     });
   }
 
-  renderQuiz(questions) {
+  renderQuiz(questions,categories, onSelect) {
     this.app.innerHTML = '';
     questions.forEach((q, index) => {
       const qDiv = document.createElement('div');
@@ -42,7 +38,10 @@ export class QuizView {
     
     const backBtn = document.createElement('button');
     backBtn.innerText = "Zurück";
-    backBtn.onclick = () => location.reload(); // Einfacher Reset
+    backBtn.onclick = () =>{
+      location.reload() 
+      this.renderCategories(categories, onSelect)
+    } ; // Einfacher Reset
     this.app.appendChild(backBtn);
   }
 }
