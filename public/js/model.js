@@ -5,7 +5,7 @@ export class QuizModel {
 
   async loadData() {
     // Hier wird deine JSON-Datei geladen
-    const response = await fetch('../questions.json');
+    const response = await fetch('questions.json');
     const data = await response.json();
     this.questions = data.quiz_data;
   }

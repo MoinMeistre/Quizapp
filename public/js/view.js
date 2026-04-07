@@ -1,6 +1,6 @@
 export class QuizView {
   constructor() {
-    this.app = document.getElementById('app-root');
+    this.app = document.getElementById('app');
   }
 
   renderCategories(categories, onSelect) {
