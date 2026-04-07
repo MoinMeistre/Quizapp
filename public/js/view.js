@@ -13,12 +13,16 @@ export class QuizView {
     categories.forEach(cat => {
       const container = document.createElement('div');
       container.className = 'card';
+      const img = document.createElement('img');
+      img.src = `../images/${cat.toLowerCase()}.jpg`; // Annahme: Bildname entspricht Kategorie
+      img.alt = cat;
       
       const p = document.createElement('p');
       p.innerText = cat;
       container.onclick = () => onSelect(cat);
       
       container.appendChild(p);
+      container.appendChild(img);
       cardContainer.appendChild(container);
     });
   }

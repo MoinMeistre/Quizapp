@@ -31,7 +31,7 @@ body {
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     min-height: 90vh;
 }
 
@@ -54,15 +54,21 @@ header p {
 }
 
 .score {
-    margin-top: 15px;
     font-size: 1.2em;
     font-weight: bold;
 }
 
 /* Main Content */
 main {
-    flex: 1;
+    flex: 3;
     padding: 40px 30px;
+}
+
+aside {
+    flex: 1;
+    padding: 40px 10px;
+    background: rgba(255, 255, 255, 0.9);
+    border-left: 2px solid var(--primary-color);
 }
 
 .screen {

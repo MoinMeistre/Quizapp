@@ -324,122 +324,122 @@
       "korrekte_antwort_index": 2,
       "erklaerung": "Das weltberühmte Gemälde entstand Anfang des 16. Jahrhunderts."
     },
-    {
+   {
       "id": 37,
-      "kategorie": "Unterhaltung",
+      "kategorie": "Mathematik",
       "schwierigkeit": "Einfach",
-      "frage": "Wie heißt der Zauberlehrling aus der Feder von J.K. Rowling?",
-      "optionen": ["Frodo Beutlin", "Harry Potter", "Percy Jackson", "Eragon"],
+      "frage": "Wie lautet die Formel für den Flächeninhalt A eines Quadrats mit der Seitenlänge a?",
+      "optionen": ["A = 2 * a", "A = a^2", "A = 4 * a", "A = Wurzel aus a"],
       "korrekte_antwort_index": 1,
-      "erklaerung": "Harry Potter ist die Hauptfigur der siebenteiligen Buchreihe."
+      "erklaerung": "Die Fläche eines Quadrats berechnet sich durch Seite mal Seite (a * a)."
     },
     {
       "id": 38,
-      "kategorie": "Unterhaltung",
+      "kategorie": "Mathematik",
       "schwierigkeit": "Mittel",
-      "frage": "In welcher Stadt wohnen die Simpsons?",
-      "optionen": ["Shelbyville", "Quahog", "South Park", "Springfield"],
-      "korrekte_antwort_index": 3,
-      "erklaerung": "Die Familie lebt im fiktiven Springfield."
+      "frage": "Welcher berühmte Satz beschreibt das Verhältnis der Seiten im rechtwinkligen Dreieck?",
+      "optionen": ["Satz des Thales", "Satz des Pythagoras", "Binomische Formel", "Sinussatz"],
+      "korrekte_antwort_index": 1,
+      "erklaerung": "Der Satz lautet a^2 + b^2 = c^2."
     },
     {
       "id": 39,
-      "kategorie": "Unterhaltung",
+      "kategorie": "Mathematik",
       "schwierigkeit": "Schwer",
-      "frage": "Wie viele Oscars gewann der Film 'Titanic' (1997)?",
-      "optionen": ["9", "10", "11", "12"],
+      "frage": "Wie lautet die Lösung der quadratischen Gleichung x^2 - 4 = 0?",
+      "optionen": ["x = 4", "x = 2", "x = plus oder minus 2", "x = 0"],
       "korrekte_antwort_index": 2,
-      "erklaerung": "Titanic hält zusammen mit Ben Hur und Der Herr der Ringe 3 den Rekord mit 11 Oscars."
+      "erklaerung": "Da sowohl 2*2 als auch (-2)*(-2) gleich 4 ergeben, gibt es zwei Lösungen."
     },
     {
       "id": 40,
-      "kategorie": "Unterhaltung",
+      "kategorie": "Mathematik",
       "schwierigkeit": "Einfach",
-      "frage": "Wer ist der Schöpfer von Micky Maus?",
-      "optionen": ["Warner Bros", "Walt Disney", "Stan Lee", "Hanna-Barbera"],
+      "frage": "Was ist der ungefähre Wert der Kreiszahl Pi?",
+      "optionen": ["3,12", "3,14", "3,16", "3,18"],
       "korrekte_antwort_index": 1,
-      "erklaerung": "Micky Maus erschien erstmals 1928."
+      "erklaerung": "Pi ist das Verhältnis von Umfang zu Durchmesser eines Kreises."
     },
     {
       "id": 41,
-      "kategorie": "Unterhaltung",
+      "kategorie": "Mathematik",
       "schwierigkeit": "Mittel",
-      "frage": "Wie heißt das Videospiel, in dem man mit Blöcken Welten baut?",
-      "optionen": ["Roblox", "Minecraft", "Fortnite", "Terraria"],
+      "frage": "Wie lautet die erste Ableitung der Funktion f(x) = x^n?",
+      "optionen": ["f'(x) = n * x", "f'(x) = n * x^(n-1)", "f'(x) = x^(n+1)", "f'(x) = n^x"],
       "korrekte_antwort_index": 1,
-      "erklaerung": "Minecraft ist eines der meistverkauften Spiele aller Zeiten."
+      "erklaerung": "Dies ist die allgemeine Potenzregel: Exponent nach vorne und oben um eins verringern."
     },
     {
       "id": 42,
-      "kategorie": "Unterhaltung",
+      "kategorie": "Mathematik",
       "schwierigkeit": "Schwer",
-      "frage": "Welcher Schauspieler spielte 'Iron Man' im Marvel Cinematic Universe?",
-      "optionen": ["Chris Evans", "Robert Downey Jr.", "Chris Hemsworth", "Mark Ruffalo"],
+      "frage": "Was ergibt die Summe der Innenwinkel in einem ebenen Dreieck?",
+      "optionen": ["90 Grad", "180 Grad", "270 Grad", "360 Grad"],
       "korrekte_antwort_index": 1,
-      "erklaerung": "RDJ verkörperte Tony Stark von 2008 bis 2019."
+      "erklaerung": "Die Winkelsumme in jedem flachen Dreieck beträgt immer genau 180 Grad."
     },
     {
       "id": 43,
-      "kategorie": "Unterhaltung",
+      "kategorie": "Mathematik",
       "schwierigkeit": "Einfach",
-      "frage": "Aus welchem Land stammt die Band ABBA?",
-      "optionen": ["Norwegen", "Dänemark", "Schweden", "Finnland"],
+      "frage": "Was ist das Ergebnis von 5! (5 Fakultät)?",
+      "optionen": ["25", "60", "120", "150"],
       "korrekte_antwort_index": 2,
-      "erklaerung": "Die schwedische Popgruppe wurde 1972 in Stockholm gegründet."
+      "erklaerung": "Rechnung: 5 * 4 * 3 * 2 * 1 = 120."
     },
     {
       "id": 44,
-      "kategorie": "Unterhaltung",
+      "kategorie": "Mathematik",
       "schwierigkeit": "Mittel",
-      "frage": "Wie heißt der Protagonist in 'The Legend of Zelda'?",
-      "optionen": ["Zelda", "Ganon", "Link", "Epona"],
-      "korrekte_antwort_index": 2,
-      "erklaerung": "Link ist der Held; Zelda ist die Prinzessin, die oft gerettet werden muss."
+      "frage": "Wie nennt man eine natürliche Zahl, die nur durch 1 und sich selbst teilbar ist?",
+      "optionen": ["Gerade Zahl", "Primzahl", "Rationale Zahl", "Komplexe Zahl"],
+      "korrekte_antwort_index": 1,
+      "erklaerung": "Primzahlen haben genau zwei Teiler. Die kleinste Primzahl ist 2."
     },
     {
       "id": 45,
-      "kategorie": "Unterhaltung",
+      "kategorie": "Mathematik",
       "schwierigkeit": "Schwer",
-      "frage": "Wie heißt der erste James-Bond-Film?",
-      "optionen": ["Goldfinger", "Dr. No", "Liebesgrüße aus Moskau", "Casino Royale"],
+      "frage": "Welche mathematische Konstante ist die Basis des natürlichen Logarithmus?",
+      "optionen": ["Pi", "Die Eulersche Zahl e", "Die Goldene Zahl", "Wurzel 2"],
       "korrekte_antwort_index": 1,
-      "erklaerung": "Dr. No (1962) war der erste Film mit Sean Connery."
+      "erklaerung": "Die Zahl e (ca. 2,718) ist die Basis des ln(x)."
     },
     {
       "id": 46,
-      "kategorie": "Unterhaltung",
+      "kategorie": "Mathematik",
       "schwierigkeit": "Einfach",
-      "frage": "Welche Farbe hat Shrek?",
-      "optionen": ["Blau", "Gelb", "Grün", "Rot"],
+      "frage": "Was ist die Wurzel aus 144?",
+      "optionen": ["10", "11", "12", "14"],
       "korrekte_antwort_index": 2,
-      "erklaerung": "Shrek ist ein grüner Oger."
+      "erklaerung": "12 mal 12 ergibt 144."
     },
     {
       "id": 47,
-      "kategorie": "Unterhaltung",
+      "kategorie": "Mathematik",
       "schwierigkeit": "Mittel",
-      "frage": "Wer sang den Song 'Rolling in the Deep'?",
-      "optionen": ["Rihanna", "Beyoncé", "Adele", "Taylor Swift"],
-      "korrekte_antwort_index": 2,
-      "erklaerung": "Der Song stammt vom Erfolgsalbum '21' von Adele."
+      "frage": "Wie lautet die Lösung der Gleichung 2x + 10 = 20?",
+      "optionen": ["x = 2", "x = 5", "x = 10", "x = 15"],
+      "korrekte_antwort_index": 1,
+      "erklaerung": "2x = 10, also ist x = 5."
     },
     {
       "id": 48,
-      "kategorie": "Unterhaltung",
+      "kategorie": "Mathematik",
       "schwierigkeit": "Schwer",
-      "frage": "In welchem Jahr erschien der erste 'Star Wars'-Film im Kino?",
-      "optionen": ["1975", "1977", "1980", "1983"],
-      "korrekte_antwort_index": 1,
-      "erklaerung": "Krieg der Sterne (Episode IV) startete 1977."
+      "frage": "Was ist der Median der Zahlenreihe 1, 3, 3, 6, 7, 8, 9?",
+      "optionen": ["3", "5", "6", "7"],
+      "korrekte_antwort_index": 2,
+      "erklaerung": "Der Median ist der Wert in der Mitte einer sortierten Liste; hier die 6."
     },
     {
       "id": 49,
-      "kategorie": "Unterhaltung",
+      "kategorie": "Mathematik",
       "schwierigkeit": "Einfach",
-      "frage": "Wie heißt die Plattform für Kurzvideos, die global sehr populär ist?",
-      "optionen": ["Facebook", "LinkedIn", "TikTok", "Xing"],
-      "korrekte_antwort_index": 2,
-      "erklaerung": "TikTok ist bekannt für seine Algorithmus-basierten Kurzvideos."
+      "frage": "Wie viele Millimeter sind ein Dezimeter?",
+      "optionen": ["10 mm", "100 mm", "1000 mm", "0,1 mm"],
+      "korrekte_antwort_index": 1,
+      "erklaerung": "1 dm = 10 cm = 100 mm."
     },
     {
       "id": 50,
