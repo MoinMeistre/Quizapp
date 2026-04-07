@@ -19,8 +19,7 @@ export class QuizPresenter {
     const questions = this.model.getQuestionsByCategory(category, 5);
     this.view.renderQuiz(questions, this.model.getAllCategories(), (selectedCat) => {
       this.startQuiz(selectedCat);
-    });
-    this.view.renderQuiz(questions, (question, selectedIndex, questionIndex) => {
+    }, (question, selectedIndex, questionIndex) => {
       this.validateAnswer(question, selectedIndex, questionIndex);
     });
   }
