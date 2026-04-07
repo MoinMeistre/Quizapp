@@ -20,5 +20,21 @@ export class QuizPresenter {
     this.view.renderQuiz(questions, this.model.getAllCategories(), (selectedCat) => {
       this.startQuiz(selectedCat);
     });
+    this.view.renderQuiz(questions, (question, selectedIndex, questionIndex) => {
+      this.validateAnswer(question, selectedIndex, questionIndex);
+    });
+  }
+
+  // Validierung Frage
+  validateAnswer(question, selectedIndex, questionIndex) {
+    const isCorrect = selectedIndex === question.korrekte_antwort_index;
+    const correctAnswer = question.optionen[question.korrekte_antwort_index];
+
+    // View informieren, um Feedback anzuzeigen
+    this.view.showFeedback(questionIndex, isCorrect, question.erklaerung, correctAnswer);
+
+    return isCorrect;
   }
 }
+
+
