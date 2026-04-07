@@ -10,10 +10,10 @@ export class QuizModel {
     this.questions = data.quiz_data;
   }
 
-  getQuestionsByCategory(category, amount = 5) {
+  getQuestionsByCategory(category, amount) {
     // Filtern nach Kategorie
     const filtered = this.questions.filter(q => q.kategorie === category);
-    
+    console.log(`Gefundene Fragen für Kategorie "${category}":`, filtered.length);
     // Zufällige Sortierung und Auswahl der Anzahl
     return filtered
       .sort(() => 0.5 - Math.random())
