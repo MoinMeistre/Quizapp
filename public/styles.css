@@ -507,3 +507,37 @@ footer {
 #logout-btn:hover {
     background: rgba(255,255,255,0.2);
 }
+
+/* Score List Styling */
+.score-list {
+    list-style: none;
+    margin-top: 20px;
+    padding: 0;
+}
+
+.score-list li {
+    padding: 12px 10px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: var(--transition);
+}
+
+.score-list li:hover {
+    background: rgba(52, 152, 219, 0.05);
+}
+
+.score-list li:last-child {
+    border-bottom: none;
+}
+
+.score-list li span {
+    font-weight: 500;
+    color: var(--secondary-color);
+}
+
+.score-list li strong {
+    color: var(--primary-color);
+    font-size: 1.1em;
+}

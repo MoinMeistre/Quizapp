@@ -1,6 +1,7 @@
 export class QuizView {
   constructor() {
     this.app = document.getElementById("app-root");
+    this.scoreContainer = document.getElementById("score-container");
   }
 
   renderCategories(categories, onSelect) {
@@ -71,7 +72,7 @@ export class QuizView {
       progressBar.style.position = "relative";
       this.app.appendChild(progressBar);
     }
-    
+
     progressBar.innerHTML = "";
 
     let correctProgress = document.createElement("div");
@@ -131,8 +132,23 @@ export class QuizView {
       <h3 style="margin-top: 15px; margin-bottom: 20px; color: var(--primary-color);">Score: ${percentage}%</h3>
       <button class="btn btn-primary" onclick="location.reload()">Neues Quiz</button>`;
   }
-}
 
+  renderScores(scores) {
+    if (!this.scoreContainer) return;
+    
+    this.scoreContainer.innerHTML = '<h1>Score</h1>';
+    const list = document.createElement('ul');
+    list.className = 'score-list';
+    
+    scores.forEach(s => {
+      const item = document.createElement('li');
+      item.innerHTML = `<span>${s.username}</span>: <strong>${s.score} Punkte</strong>`;
+      list.appendChild(item);
+    });
+    
+    this.scoreContainer.appendChild(list);
+  }
+}
 
 
 /**
@@ -147,16 +163,16 @@ export class AuthView {
     this.userInfo = document.getElementById('user-info');
     this.usernameDisplay = document.getElementById('username-display');
     this.authMessage = document.getElementById('auth-message');
-    
+
     // Formulare
     this.loginForm = document.getElementById('login-form');
     this.registerForm = document.getElementById('register-form');
     this.registerSection = document.getElementById('register-section');
-    
+
     // Links zum Wechseln
     this.showRegisterLink = document.getElementById('show-register');
     this.showLoginLink = document.getElementById('show-login');
-    
+
     // Buttons
     this.logoutBtn = document.getElementById('logout-btn');
   }

@@ -16,6 +16,9 @@ export class QuizPresenter {
     this.view.renderCategories(categories, (selectedCat) => {
       this.startQuiz(selectedCat);
     });
+
+    // Score-Liste laden
+    this.loadScores();
   }
 
   async startQuiz(category) {
@@ -44,9 +47,20 @@ export class QuizPresenter {
     }
   }
 
-  showScore() {
+  async showScore() {
     this.view.showScore(this.score, this.questions.length);
     this.view.showProgress(this.score, this.currentIndex - this.score, this.questions.length);
+
+    // Score in der Datenbank speichern
+    await this.model.postScore(this.score, this.questions.length);
+
+    // Score-Liste aktualisieren
+    this.loadScores();
+  }
+
+  async loadScores() {
+    const scores = await this.model.getScores();
+    this.view.renderScores(scores);
   }
 
   // Validierung Frage
@@ -94,10 +108,10 @@ export class AuthPresenter {
   }
 
   // Initialisierung: Events binden + initialen Status anzeigen
-  init() {
+  async init() {
     // Event-Handler an View binden
-    this.view.bindLoginSubmit((username, password) => this.handleLogin(username, password));
-    this.view.bindRegisterSubmit((username, password) => this.handleRegister(username, password));
+    this.view.bindLoginSubmit(async (username, password) => await this.handleLogin(username, password));
+    this.view.bindRegisterSubmit(async (username, password) => await this.handleRegister(username, password));
     this.view.bindShowRegister(() => this.view.showRegister());
     this.view.bindShowLogin(() => this.view.showLoginForm());
     this.view.bindLogout(() => this.handleLogout());
@@ -130,13 +144,13 @@ export class AuthPresenter {
   async handleRegister(username, password) {
     try {
       const result = await this.model.register(username, password);
-
       if (result.success) {
         this.view.showQuiz(result.username);
       } else {
         this.view.showError(result.message);
       }
     } catch (error) {
+      console.log(error);
       this.view.showError('Verbindungsfehler. Bitte später erneut versuchen.');
     }
   }
