@@ -34,15 +34,10 @@ async function frageHolen() {
 
     const daten = await response.json();
 
-    // HIER passiert die Magie: Wir füllen das HTML direkt
     document.getElementById("question-text").innerText = daten.text;
 
-    // Wenn du feste Buttons im HTML hast (z.B. mit IDs btn0, btn1...)
+  
     if (daten.options) {
-      // Beispiel für den ersten Button:
-      // document.getElementById('answer-1').innerText = daten.options[0];
-
-      // ODER: Wir nutzen deine bestehende Funktion und geben die Daten mit:
       anzeigenImQuiz(daten);
     }
   } catch (error) {

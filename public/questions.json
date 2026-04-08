@@ -449,6 +449,460 @@
       "optionen": ["H2O", "CO2", "NaCl", "CH4"],
       "korrekte_antwort_index": 2,
       "erklaerung": "Natriumchlorid (NaCl) ist das gängige Speisesalz."
+    },
+    {
+  "quiz_data": [
+    {
+      "id": 51,
+      "kategorie": "Mathematik",
+      "schwierigkeit": "Einfach",
+      "frage": "Was ist das Ergebnis von 15 Prozent von 200?",
+      "optionen": ["20", "25", "30", "35"],
+      "korrekte_antwort_index": 2,
+      "erklaerung": "10% sind 20, 5% sind 10. Zusammen ergibt das 30."
+    },
+    {
+      "id": 52,
+      "kategorie": "Mathematik",
+      "schwierigkeit": "Mittel",
+      "frage": "Wie nennt man ein Polygon mit acht Seiten?",
+      "optionen": ["Hexagon", "Heptagon", "Oktagon", "Dekagon"],
+      "korrekte_antwort_index": 2,
+      "erklaerung": "Ein Oktagon ist ein Achteck."
+    },
+    {
+      "id": 53,
+      "kategorie": "Mathematik",
+      "schwierigkeit": "Schwer",
+      "frage": "Wie lautet die Summe der ersten 100 natürlichen Zahlen (Gaußsche Summenformel)?",
+      "optionen": ["5000", "5050", "5100", "5500"],
+      "korrekte_antwort_index": 1,
+      "erklaerung": "Die Formel lautet (n * (n + 1)) / 2. Für 100 ergibt das 5050."
+    },
+    {
+      "id": 54,
+      "kategorie": "Mathematik",
+      "schwierigkeit": "Mittel",
+      "frage": "Was ist die dritte Wurzel aus 27?",
+      "optionen": ["3", "9", "6", "4"],
+      "korrekte_antwort_index": 0,
+      "erklaerung": "3 * 3 * 3 = 27."
+    },
+    {
+      "id": 55,
+      "kategorie": "Mathematik",
+      "schwierigkeit": "Einfach",
+      "frage": "Welches Ergebnis liefert die Rechnung: 3 + 3 * 3?",
+      "optionen": ["18", "9", "12", "15"],
+      "korrekte_antwort_index": 2,
+      "erklaerung": "Punktrechnung vor Strichrechnung: 3 * 3 = 9, plus 3 = 12."
+    },
+    {
+      "id": 56,
+      "kategorie": "Mathematik",
+      "schwierigkeit": "Mittel",
+      "frage": "Wie groß ist der Umfang eines Kreises mit dem Durchmesser d?",
+      "optionen": ["Pi * d", "Pi * r^2", "2 * d", "Pi^2 * d"],
+      "korrekte_antwort_index": 0,
+      "erklaerung": "Der Umfang ist Pi mal Durchmesser (oder 2 * Pi * Radius)."
+    },
+    {
+      "id": 57,
+      "kategorie": "Mathematik",
+      "schwierigkeit": "Schwer",
+      "frage": "Welches System basiert auf der Zahl 2?",
+      "optionen": ["Dezimalsystem", "Hexadezimalsystem", "Binärsystem", "Oktalsystem"],
+      "korrekte_antwort_index": 2,
+      "erklaerung": "Das Binärsystem (Zweiersystem) nutzt nur 0 und 1."
+    },
+    {
+      "id": 58,
+      "kategorie": "Mathematik",
+      "schwierigkeit": "Mittel",
+      "frage": "Was ist die Steigung m in der Geradengleichung y = 4x - 2?",
+      "optionen": ["-2", "x", "4", "2"],
+      "korrekte_antwort_index": 2,
+      "erklaerung": "In y = mx + b entspricht der Koeffizient vor dem x der Steigung."
+    },
+    {
+      "id": 59,
+      "kategorie": "Mathematik",
+      "schwierigkeit": "Einfach",
+      "frage": "Wie viele Seiten hat ein Würfel?",
+      "optionen": ["4", "6", "8", "12"],
+      "korrekte_antwort_index": 1,
+      "erklaerung": "Ein Würfel (Hexaeder) hat 6 quadratische Begrenzungsflächen."
+    },
+    {
+      "id": 60,
+      "kategorie": "Geschichte",
+      "schwierigkeit": "Mittel",
+      "frage": "Wer war die 'Eiserne Lady'?",
+      "optionen": ["Queen Elizabeth II", "Margaret Thatcher", "Angela Merkel", "Indira Gandhi"],
+      "korrekte_antwort_index": 1,
+      "erklaerung": "Thatcher war die erste Premierministerin des Vereinigten Königreichs."
+    },
+    {
+      "id": 61,
+      "kategorie": "Geschichte",
+      "schwierigkeit": "Einfach",
+      "frage": "In welchem Land begann die Industrielle Revolution?",
+      "optionen": ["Deutschland", "USA", "Frankreich", "Großbritannien"],
+      "korrekte_antwort_index": 3,
+      "erklaerung": "Sie nahm im 18. Jahrhundert in England ihren Anfang."
+    },
+    {
+      "id": 62,
+      "kategorie": "Geschichte",
+      "schwierigkeit": "Schwer",
+      "frage": "Welches Ereignis löste 1914 den Ersten Weltkrieg aus?",
+      "optionen": ["Der Untergang der Titanic", "Das Attentat von Sarajevo", "Der Sturm auf die Bastille", "Der Börsencrash"],
+      "korrekte_antwort_index": 1,
+      "erklaerung": "Die Ermordung von Erzherzog Franz Ferdinand führte zur Julikrise."
+    },
+    {
+      "id": 63,
+      "kategorie": "Geschichte",
+      "schwierigkeit": "Mittel",
+      "frage": "Welche Zivilisation baute die Pyramiden von Gizeh?",
+      "optionen": ["Die Maya", "Die Römer", "Die Ägypter", "Die Griechen"],
+      "korrekte_antwort_index": 2,
+      "erklaerung": "Sie dienten als Grabstätten für die Pharaonen im Alten Ägypten."
+    },
+    {
+      "id": 64,
+      "kategorie": "Geschichte",
+      "schwierigkeit": "Einfach",
+      "frage": "Wer war der Anführer der Bürgerrechtsbewegung in den USA und hielt die Rede 'I Have a Dream'?",
+      "optionen": ["Malcolm X", "Martin Luther King Jr.", "Rosa Parks", "John F. Kennedy"],
+      "korrekte_antwort_index": 1,
+      "erklaerung": "King hielt die berühmte Rede 1963 während des Marsches auf Washington."
+    },
+    {
+      "id": 65,
+      "kategorie": "Geschichte",
+      "schwierigkeit": "Schwer",
+      "frage": "In welchem Jahr endete der Dreißigjährige Krieg?",
+      "optionen": ["1618", "1648", "1789", "1815"],
+      "korrekte_antwort_index": 1,
+      "erklaerung": "Der Westfälische Friede beendete den Krieg im Jahr 1648."
+    },
+    {
+      "id": 66,
+      "kategorie": "Geschichte",
+      "schwierigkeit": "Mittel",
+      "frage": "Wer war der erste Mensch im Weltraum?",
+      "optionen": ["Neil Armstrong", "Buzz Aldrin", "Juri Gagarin", "John Glenn"],
+      "korrekte_antwort_index": 2,
+      "erklaerung": "Der Sowjet-Kosmonaut Gagarin flog 1961 ins All."
+    },
+    {
+      "id": 67,
+      "kategorie": "Geschichte",
+      "schwierigkeit": "Einfach",
+      "frage": "Wie hießen die Nordmänner, die im Mittelalter Europa befuhren?",
+      "optionen": ["Ritter", "Wikinger", "Hunnen", "Goten"],
+      "korrekte_antwort_index": 1,
+      "erklaerung": "Die Wikinger stammten aus Skandinavien."
+    },
+    {
+      "id": 68,
+      "kategorie": "Geschichte",
+      "schwierigkeit": "Mittel",
+      "frage": "Welches Land schenkte den USA die Freiheitsstatue?",
+      "optionen": ["Großbritannien", "Italien", "Frankreich", "Spanien"],
+      "korrekte_antwort_index": 2,
+      "erklaerung": "Es war ein Geschenk zum 100. Jahrestag der Unabhängigkeitserklärung."
+    },
+    {
+      "id": 69,
+      "kategorie": "Geschichte",
+      "schwierigkeit": "Schwer",
+      "frage": "Welches Reich wurde von Dschingis Khan gegründet?",
+      "optionen": ["Das Römische Reich", "Das Osmanische Reich", "Das Mongolische Reich", "Das Persische Reich"],
+      "korrekte_antwort_index": 2,
+      "erklaerung": "Es wurde zum flächenmäßig größten zusammenhängenden Reich der Geschichte."
+    },
+    {
+      "id": 70,
+      "kategorie": "Geschichte",
+      "schwierigkeit": "Mittel",
+      "frage": "Wer war 'Sonnenkönig' von Frankreich?",
+      "optionen": ["Ludwig XIV.", "Ludwig XVI.", "Napoleon", "Karl der Große"],
+      "korrekte_antwort_index": 0,
+      "erklaerung": "Ludwig XIV. prägte den Absolutismus und baute Versailles."
+    },
+    {
+      "id": 71,
+      "kategorie": "Geografie",
+      "schwierigkeit": "Einfach",
+      "frage": "Welches Land ist für seine Kängurus bekannt?",
+      "optionen": ["Österreich", "Australien", "Neuseeland", "Südafrika"],
+      "korrekte_antwort_index": 1,
+      "erklaerung": "Australien beherbergt den Großteil der Känguru-Population."
+    },
+    {
+      "id": 72,
+      "kategorie": "Geografie",
+      "schwierigkeit": "Mittel",
+      "frage": "Wie heißt die Hauptstadt von Kanada?",
+      "optionen": ["Toronto", "Vancouver", "Montreal", "Ottawa"],
+      "korrekte_antwort_index": 3,
+      "erklaerung": "Ottawa wurde von Königin Victoria zur Hauptstadt gewählt."
+    },
+    {
+      "id": 73,
+      "kategorie": "Geografie",
+      "schwierigkeit": "Schwer",
+      "frage": "Wie heißt die größte Insel der Welt?",
+      "optionen": ["Australien", "Island", "Grönland", "Madagaskar"],
+      "korrekte_antwort_index": 2,
+      "erklaerung": "Grönland ist die größte Insel; Australien gilt als Kontinent."
+    },
+    {
+      "id": 74,
+      "kategorie": "Geografie",
+      "schwierigkeit": "Mittel",
+      "frage": "Welche Wüste ist die größte der Welt?",
+      "optionen": ["Gobi", "Sahara", "Antarktis", "Atacama"],
+      "korrekte_antwort_index": 2,
+      "erklaerung": "Die gesamte Antarktis gilt als Kältewüste und ist flächenmäßig die größte."
+    },
+    {
+      "id": 75,
+      "kategorie": "Geografie",
+      "schwierigkeit": "Einfach",
+      "frage": "Durch welche Stadt fließt die Themse?",
+      "optionen": ["Paris", "Berlin", "London", "Wien"],
+      "korrekte_antwort_index": 2,
+      "erklaerung": "Die Themse ist der bekannteste Fluss Londons."
+    },
+    {
+      "id": 76,
+      "kategorie": "Geografie",
+      "schwierigkeit": "Mittel",
+      "frage": "Welcher Berg ist der höchste Afrikas?",
+      "optionen": ["Mont Blanc", "Kilimandscharo", "Mount Kenya", "Atlas"],
+      "korrekte_antwort_index": 1,
+      "erklaerung": "Der Kilimandscharo liegt in Tansania."
+    },
+    {
+      "id": 77,
+      "kategorie": "Geografie",
+      "schwierigkeit": "Schwer",
+      "frage": "Zu welchem Land gehören die Galapagos-Inseln?",
+      "optionen": ["Chile", "Peru", "Ecuador", "Kolumbien"],
+      "korrekte_antwort_index": 2,
+      "erklaerung": "Die Inseln liegen im Pazifik und gehören zu Ecuador."
+    },
+    {
+      "id": 78,
+      "kategorie": "Geografie",
+      "schwierigkeit": "Einfach",
+      "frage": "Welches Land hat die Form eines Stiefels?",
+      "optionen": ["Griechenland", "Spanien", "Italien", "Portugal"],
+      "korrekte_antwort_index": 2,
+      "erklaerung": "Die italienische Halbinsel ist für ihre Stiefelform berühmt."
+    },
+    {
+      "id": 79,
+      "kategorie": "Geografie",
+      "schwierigkeit": "Mittel",
+      "frage": "Was ist der kleinste Kontinent der Erde?",
+      "optionen": ["Europa", "Antarktis", "Australien", "Südamerika"],
+      "korrekte_antwort_index": 2,
+      "erklaerung": "Australien/Ozeanien ist der kleinste der Kontinente."
+    },
+    {
+      "id": 80,
+      "kategorie": "Geografie",
+      "schwierigkeit": "Schwer",
+      "frage": "Welcher Staat hat die meisten Zeitzonen?",
+      "optionen": ["Russland", "USA", "China", "Frankreich"],
+      "korrekte_antwort_index": 3,
+      "erklaerung": "Aufgrund seiner Überseegebiete kommt Frankreich auf 12 Zeitzonen."
+    },
+    {
+      "id": 81,
+      "kategorie": "Naturwissenschaften",
+      "schwierigkeit": "Einfach",
+      "frage": "Welcher Stoff ist für die grüne Farbe von Pflanzen verantwortlich?",
+      "optionen": ["Hämoglobin", "Chlorophyll", "Melanin", "Carotin"],
+      "korrekte_antwort_index": 1,
+      "erklaerung": "Chlorophyll ermöglicht die Photosynthese."
+    },
+    {
+      "id": 82,
+      "kategorie": "Naturwissenschaften",
+      "schwierigkeit": "Mittel",
+      "frage": "Wie viele Zähne hat ein erwachsener Mensch normalerweise?",
+      "optionen": ["28", "30", "32", "34"],
+      "korrekte_antwort_index": 2,
+      "erklaerung": "Ein vollständiges Gebiss inklusive Weisheitszähnen hat 32 Zähne."
+    },
+    {
+      "id": 83,
+      "kategorie": "Naturwissenschaften",
+      "schwierigkeit": "Schwer",
+      "frage": "Was ist das härteste natürliche Material der Erde?",
+      "optionen": ["Stahl", "Quarz", "Diamant", "Korund"],
+      "korrekte_antwort_index": 2,
+      "erklaerung": "Diamant besteht aus reinem Kohlenstoff in einer Kristallstruktur."
+    },
+    {
+      "id": 84,
+      "kategorie": "Naturwissenschaften",
+      "schwierigkeit": "Mittel",
+      "frage": "Welcher Planet wird der 'Rote Planet' genannt?",
+      "optionen": ["Venus", "Mars", "Jupiter", "Saturn"],
+      "korrekte_antwort_index": 1,
+      "erklaerung": "Eisenoxid (Rost) auf der Oberfläche gibt dem Mars seine Farbe."
+    },
+    {
+      "id": 85,
+      "kategorie": "Naturwissenschaften",
+      "schwierigkeit": "Einfach",
+      "frage": "Was gefriert bei 0 Grad Celsius?",
+      "optionen": ["Alkohol", "Quecksilber", "Wasser", "Öl"],
+      "korrekte_antwort_index": 2,
+      "erklaerung": "0 Grad Celsius ist der Gefrierpunkt von reinem Wasser."
+    },
+    {
+      "id": 86,
+      "kategorie": "Naturwissenschaften",
+      "schwierigkeit": "Schwer",
+      "frage": "Wie heißt die kleinste funktionelle Einheit des Lebens?",
+      "optionen": ["Atom", "Molekül", "Zelle", "Organ"],
+      "korrekte_antwort_index": 2,
+      "erklaerung": "Die Zelle ist die kleinste selbstständig lebensfähige Einheit."
+    },
+    {
+      "id": 87,
+      "kategorie": "Naturwissenschaften",
+      "schwierigkeit": "Mittel",
+      "frage": "Wer entwickelte die Relativitätstheorie?",
+      "optionen": ["Isaac Newton", "Albert Einstein", "Stephen Hawking", "Marie Curie"],
+      "korrekte_antwort_index": 1,
+      "erklaerung": "Einstein veröffentlichte die Theorie Anfang des 20. Jahrhunderts."
+    },
+    {
+      "id": 88,
+      "kategorie": "Naturwissenschaften",
+      "schwierigkeit": "Einfach",
+      "frage": "Welches Gas atmen Menschen aus?",
+      "optionen": ["Sauerstoff", "Stickstoff", "Kohlendioxid", "Helium"],
+      "korrekte_antwort_index": 2,
+      "erklaerung": "Kohlendioxid (CO2) ist ein Produkt des Stoffwechsels."
+    },
+    {
+      "id": 89,
+      "kategorie": "Naturwissenschaften",
+      "schwierigkeit": "Schwer",
+      "frage": "In welchem Organ wird Insulin produziert?",
+      "optionen": ["Leber", "Bauchspeicheldrüse", "Niere", "Milz"],
+      "korrekte_antwort_index": 1,
+      "erklaerung": "Die Bauchspeicheldrüse (Pankreas) reguliert damit den Blutzuckerspiegel."
+    },
+    {
+      "id": 90,
+      "kategorie": "Naturwissenschaften",
+      "schwierigkeit": "Mittel",
+      "frage": "Welche Kraft hält uns auf der Erde?",
+      "optionen": ["Magnetismus", "Reibung", "Gravitation", "Fliehkraft"],
+      "korrekte_antwort_index": 2,
+      "erklaerung": "Die Gravitation (Schwerkraft) sorgt für die gegenseitige Anziehung von Massen."
+    },
+    {
+      "id": 91,
+      "kategorie": "Mathematik",
+      "schwierigkeit": "Einfach",
+      "frage": "Was ist die Hälfte von 1/2?",
+      "optionen": ["1/4", "1", "1/8", "0,5"],
+      "korrekte_antwort_index": 0,
+      "erklaerung": "Ein Viertel ist die Hälfte eines Halben."
+    },
+    {
+      "id": 92,
+      "kategorie": "Geschichte",
+      "schwierigkeit": "Einfach",
+      "frage": "Wer war die erste Frau, die einen Nobelpreis erhielt?",
+      "optionen": ["Marie Curie", "Mother Teresa", "Rosa Luxemburg", "Bertha von Suttner"],
+      "korrekte_antwort_index": 0,
+      "erklaerung": "Marie Curie erhielt ihn 1903 für Physik."
+    },
+    {
+      "id": 93,
+      "kategorie": "Geografie",
+      "schwierigkeit": "Mittel",
+      "frage": "Welches Meer grenzt an Deutschland?",
+      "optionen": ["Mittelmeer", "Rotes Meer", "Ostsee", "Schwarzes Meer"],
+      "korrekte_antwort_index": 2,
+      "erklaerung": "Deutschland grenzt an die Nordsee und die Ostsee."
+    },
+    {
+      "id": 94,
+      "kategorie": "Naturwissenschaften",
+      "schwierigkeit": "Mittel",
+      "frage": "Wie viele Herzstammzellen hat ein Blauwal?",
+      "optionen": ["1", "2", "3", "Keine dieser"],
+      "korrekte_antwort_index": 3,
+      "erklaerung": "Dies ist eine Fangfrage; die Anzahl ist biologisch nicht als feste Zahl definiert."
+    },
+    {
+      "id": 95,
+      "kategorie": "Mathematik",
+      "schwierigkeit": "Schwer",
+      "frage": "Wie viele Primzahlen gibt es zwischen 1 und 10?",
+      "optionen": ["3", "4", "5", "6"],
+      "korrekte_antwort_index": 1,
+      "erklaerung": "Die Primzahlen sind 2, 3, 5 und 7."
+    },
+    {
+      "id": 96,
+      "kategorie": "Geschichte",
+      "schwierigkeit": "Mittel",
+      "frage": "Wann wurde die Bundesrepublik Deutschland gegründet?",
+      "optionen": ["1945", "1949", "1955", "1990"],
+      "korrekte_antwort_index": 1,
+      "erklaerung": "Die BRD wurde am 23. Mai 1949 mit Verkündung des Grundgesetzes gegründet."
+    },
+    {
+      "id": 97,
+      "kategorie": "Geografie",
+      "schwierigkeit": "Einfach",
+      "frage": "Was ist die Hauptstadt von Japan?",
+      "optionen": ["Kyoto", "Osaka", "Tokio", "Hiroshima"],
+      "korrekte_antwort_index": 2,
+      "erklaerung": "Tokio ist das politische und wirtschaftliche Zentrum Japans."
+    },
+    {
+      "id": 98,
+      "kategorie": "Naturwissenschaften",
+      "schwierigkeit": "Einfach",
+      "frage": "Wie viele Beine hat eine Spinne?",
+      "optionen": ["6", "8", "10", "12"],
+      "korrekte_antwort_index": 1,
+      "erklaerung": "Spinnentiere haben im Gegensatz zu Insekten 8 Beine."
+    },
+    {
+      "id": 99,
+      "kategorie": "Geschichte",
+      "schwierigkeit": "Schwer",
+      "frage": "Wer war der letzte Zar von Russland?",
+      "optionen": ["Peter der Große", "Alexander II.", "Nikolaus II.", "Iwan der Schreckliche"],
+      "korrekte_antwort_index": 2,
+      "erklaerung": "Nikolaus II. dankte 1917 während der Russischen Revolution ab."
+    },
+    {
+      "id": 100,
+      "kategorie": "Mathematik",
+      "schwierigkeit": "Einfach",
+      "frage": "Was ergibt 7 mal 8?",
+      "optionen": ["54", "56", "62", "64"],
+      "korrekte_antwort_index": 1,
+      "erklaerung": "7 * 8 = 56."
     }
+  ]
+}
   ]
 }
