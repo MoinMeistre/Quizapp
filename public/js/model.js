@@ -77,10 +77,51 @@ export class QuizModel {
 
   }
 
+  async postScore(score, totalQuestions) {
+    const userJson = localStorage.getItem('quizapp_user');
+    if (!userJson) return;
+    try {
+      const user = JSON.parse(userJson);
+      const response = await fetch('../api/scores.php', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          user_id: user.id,
+          score: score,
+          total_questions: totalQuestions
+        })
+      });
+      const data = await response.json();
+      if (!data.success) {
+        console.error('API Error posting score:', data.message);
+      }
+    } catch (error) {
+      console.error('Fehler beim Senden des Scores:', error);
+    }
+  }
+
+  async getScores() {
+    try {
+      const url = '../api/scores.php';
+      const response = await fetch(url);
+      const data = await response.json();
+      if (data.success) {
+        return data.data;
+      } else {
+        console.error('API Error getting scores:', data.message);
+        return [];
+      }
+    } catch (error) {
+      console.error('Fehler beim Abrufen der Scores:', error);
+      return [];
+    }
+  }
+
   getAllCategories() {
     return [...new Set(this.questions.map((q) => q.kategorie))];
   }
 }
+
 
 
 /**
@@ -150,9 +191,7 @@ export class AuthModel {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ username, password })
     });
-
     const data = await response.json();
-
     if (data.success) {
       this.user = {
         id: data.user_id,

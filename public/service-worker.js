@@ -1,4 +1,4 @@
-const CACHE_NAME = "quizapp-cache-v7";
+const CACHE_NAME = "quizapp-cache-v11";
 
 const ASSETS = [
   "./index.html",
@@ -34,6 +34,12 @@ self.addEventListener("activate", function (event) {
 });
 
 self.addEventListener("fetch", function (event) {
+  // Only cache GET requests. 
+  // API requests should NEVER be cached to ensure fresh data.
+  if (event.request.method !== "GET" || event.request.url.includes("/api/")) {
+    return;
+  }
+
   event.respondWith(
     caches.match(event.request).then(function (response) {
       if (response) return response;

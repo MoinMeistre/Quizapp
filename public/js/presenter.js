@@ -9,6 +9,8 @@ export class QuizPresenter {
   }
 
   async init() {
+    this.loadScores(); // Nicht abwarten, im Hintergrund laden
+
     await this.model.loadData();
     const categories = this.model.getAllCategories();
 
@@ -44,9 +46,24 @@ export class QuizPresenter {
     }
   }
 
-  showScore() {
+  async showScore() {
     this.view.showScore(this.score, this.questions.length);
     this.view.showProgress(this.score, this.currentIndex - this.score, this.questions.length);
+
+    // Score in der Datenbank speichern
+    await this.model.postScore(this.score, this.questions.length);
+
+    // Score-Liste aktualisieren
+    await this.loadScores();
+  }
+
+  async loadScores() {
+    try {
+      const scores = await this.model.getScores();
+      this.view.renderScores(scores);
+    } catch (error) {
+      console.error('QuizPresenter: error loading scores:', error);
+    }
   }
 
   // Validierung Frage
@@ -111,6 +128,10 @@ export class AuthPresenter {
     }
   }
 
+  setOnLogin(callback) {
+    this.onLogin = callback;
+  }
+
   // Login-Handler
   async handleLogin(username, password) {
     try {
@@ -118,6 +139,7 @@ export class AuthPresenter {
 
       if (result.success) {
         this.view.showQuiz(result.username);
+        if (this.onLogin) this.onLogin();
       } else {
         this.view.showError(result.message);
       }
@@ -130,13 +152,14 @@ export class AuthPresenter {
   async handleRegister(username, password) {
     try {
       const result = await this.model.register(username, password);
-
       if (result.success) {
         this.view.showQuiz(result.username);
+        if (this.onLogin) this.onLogin();
       } else {
         this.view.showError(result.message);
       }
     } catch (error) {
+      console.log(error);
       this.view.showError('Verbindungsfehler. Bitte später erneut versuchen.');
     }
   }

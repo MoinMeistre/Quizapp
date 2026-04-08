@@ -2,13 +2,21 @@ import { QuizModel, AuthModel } from "./js/model.js";
 import { QuizView, AuthView } from "./js/view.js";
 import { QuizPresenter, AuthPresenter } from "./js/presenter.js";
 
-// Auth zuerst initialisieren
-const authApp = new AuthPresenter(new AuthModel(), new AuthView());
-authApp.init();
+// Init Apps on DOMContentLoaded
+document.addEventListener("DOMContentLoaded", () => {
+  // Auth zuerst initialisieren
+  const authApp = new AuthPresenter(new AuthModel(), new AuthView());
+  authApp.init();
 
-// Quiz-App initialisieren (View wird erst sichtbar nach Login)
-const quizApp = new QuizPresenter(new QuizModel(), new QuizView());
-quizApp.init();
+  // Quiz-App initialisieren (View wird erst sichtbar nach Login)
+  const quizApp = new QuizPresenter(new QuizModel(), new QuizView());
+  quizApp.init();
+
+  // Wenn Login erfolgreich, Score-Liste in der Quizview aktualisieren
+  authApp.setOnLogin(() => {
+    quizApp.loadScores();
+  });
+});
 
 // Register Service Worker
 if ("serviceWorker" in navigator) {

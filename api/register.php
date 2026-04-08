@@ -68,7 +68,7 @@ try {
 
     // Passwort hashen
     $passwordHash = password_hash($password, PASSWORD_DEFAULT);
-
+    
     // User einfügen
     $stmt = $db->prepare('INSERT INTO users (username, password_hash) VALUES (?, ?)');
     $stmt->execute([$username, $passwordHash]);
