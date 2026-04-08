@@ -5,7 +5,12 @@
       "kategorie": "Naturwissenschaften",
       "schwierigkeit": "Einfach",
       "frage": "Welches Element hat das chemische Symbol 'O'?",
-      "optionen": ["Gold", "Sauerstoff", "Osmium", "Kohlenstoff"],
+      "optionen": [
+        "Gold",
+        "Sauerstoff",
+        "Osmium",
+        "Kohlenstoff"
+      ],
       "korrekte_antwort_index": 1,
       "erklaerung": "O steht für Oxygenium (Sauerstoff)."
     },
@@ -14,7 +19,12 @@
       "kategorie": "Naturwissenschaften",
       "schwierigkeit": "Mittel",
       "frage": "Wie viele Planeten hat unser Sonnensystem?",
-      "optionen": ["7", "8", "9", "10"],
+      "optionen": [
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
       "korrekte_antwort_index": 1,
       "erklaerung": "Seit Pluto 2006 der Status als Planet aberkannt wurde, sind es acht."
     },
@@ -23,7 +33,12 @@
       "kategorie": "Naturwissenschaften",
       "schwierigkeit": "Mittel",
       "frage": "Was ist die Lichtgeschwindigkeit im Vakuum (gerundet)?",
-      "optionen": ["150.000 km/s", "300.000 km/s", "1.000.000 km/s", "800.000 km/s"],
+      "optionen": [
+        "150.000 km/s",
+        "300.000 km/s",
+        "1.000.000 km/s",
+        "800.000 km/s"
+      ],
       "korrekte_antwort_index": 1,
       "erklaerung": "Die Lichtgeschwindigkeit beträgt ca. 299.792 km/s."
     },
@@ -32,7 +47,12 @@
       "kategorie": "Naturwissenschaften",
       "schwierigkeit": "Einfach",
       "frage": "Welches Organ im menschlichen Körper pumpt Blut?",
-      "optionen": ["Lunge", "Leber", "Herz", "Niere"],
+      "optionen": [
+        "Lunge",
+        "Leber",
+        "Herz",
+        "Niere"
+      ],
       "korrekte_antwort_index": 2,
       "erklaerung": "Das Herz ist der zentrale Muskel des Blutkreislaufs."
     },
@@ -41,7 +61,12 @@
       "kategorie": "Naturwissenschaften",
       "schwierigkeit": "Schwer",
       "frage": "Was beschreibt die Heisenbergsche Unschärferelation?",
-      "optionen": ["Energie und Zeit", "Ort und Impuls", "Masse und Beschleunigung", "Licht und Schatten"],
+      "optionen": [
+        "Energie und Zeit",
+        "Ort und Impuls",
+        "Masse und Beschleunigung",
+        "Licht und Schatten"
+      ],
       "korrekte_antwort_index": 1,
       "erklaerung": "Man kann nicht gleichzeitig Ort und Impuls eines Teilchens exakt bestimmen."
     },
@@ -50,7 +75,12 @@
       "kategorie": "Naturwissenschaften",
       "schwierigkeit": "Mittel",
       "frage": "In welcher Einheit wird die elektrische Stromstärke gemessen?",
-      "optionen": ["Volt", "Watt", "Ohm", "Ampere"],
+      "optionen": [
+        "Volt",
+        "Watt",
+        "Ohm",
+        "Ampere"
+      ],
       "korrekte_antwort_index": 3,
       "erklaerung": "Ampere ist die Basiseinheit für Stromstärke."
     },
@@ -59,7 +89,12 @@
       "kategorie": "Naturwissenschaften",
       "schwierigkeit": "Einfach",
       "frage": "Welches Gas ist am stärksten in der Erdatmosphäre vertreten?",
-      "optionen": ["Sauerstoff", "Stickstoff", "Kohlendioxid", "Argon"],
+      "optionen": [
+        "Sauerstoff",
+        "Stickstoff",
+        "Kohlendioxid",
+        "Argon"
+      ],
       "korrekte_antwort_index": 1,
       "erklaerung": "Stickstoff macht etwa 78% der Atmosphäre aus."
     },
@@ -68,7 +103,12 @@
       "kategorie": "Naturwissenschaften",
       "schwierigkeit": "Schwer",
       "frage": "Wie lautet die chemische Formel für Schwefelsäure?",
-      "optionen": ["H2SO4", "HCl", "HNO3", "NaOH"],
+      "optionen": [
+        "H2SO4",
+        "HCl",
+        "HNO3",
+        "NaOH"
+      ],
       "korrekte_antwort_index": 0,
       "erklaerung": "H2SO4 ist die Formel für Schwefelsäure."
     },
@@ -77,7 +117,12 @@
       "kategorie": "Naturwissenschaften",
       "schwierigkeit": "Einfach",
       "frage": "Welcher Planet ist der Sonne am nächsten?",
-      "optionen": ["Venus", "Mars", "Merkur", "Jupiter"],
+      "optionen": [
+        "Venus",
+        "Mars",
+        "Merkur",
+        "Jupiter"
+      ],
       "korrekte_antwort_index": 2,
       "erklaerung": "Merkur ist der innerste Planet unseres Systems."
     },
@@ -86,7 +131,12 @@
       "kategorie": "Naturwissenschaften",
       "schwierigkeit": "Mittel",
       "frage": "Was ist der Hauptbestandteil von Glas?",
-      "optionen": ["Kalk", "Quarzsand", "Natrium", "Blei"],
+      "optionen": [
+        "Kalk",
+        "Quarzsand",
+        "Natrium",
+        "Blei"
+      ],
       "korrekte_antwort_index": 1,
       "erklaerung": "Siliziumdioxid (Quarzsand) ist die Basis für Glas."
     },
@@ -95,7 +145,12 @@
       "kategorie": "Naturwissenschaften",
       "schwierigkeit": "Schwer",
       "frage": "Welches Teilchen im Atomkern ist neutral geladen?",
-      "optionen": ["Proton", "Elektron", "Neutron", "Positron"],
+      "optionen": [
+        "Proton",
+        "Elektron",
+        "Neutron",
+        "Positron"
+      ],
       "korrekte_antwort_index": 2,
       "erklaerung": "Neutronen tragen keine elektrische Ladung."
     },
@@ -104,7 +159,12 @@
       "kategorie": "Naturwissenschaften",
       "schwierigkeit": "Einfach",
       "frage": "Wie nennt man den Übergang von gasförmig zu flüssig?",
-      "optionen": ["Verdampfen", "Schmelzen", "Kondensieren", "Sublimieren"],
+      "optionen": [
+        "Verdampfen",
+        "Schmelzen",
+        "Kondensieren",
+        "Sublimieren"
+      ],
       "korrekte_antwort_index": 2,
       "erklaerung": "Beim Abkühlen kondensiert Gas zu Flüssigkeit."
     },
@@ -113,7 +173,12 @@
       "kategorie": "Geografie",
       "schwierigkeit": "Einfach",
       "frage": "Was ist die Hauptstadt von Frankreich?",
-      "optionen": ["Lyon", "Marseille", "Paris", "Nizza"],
+      "optionen": [
+        "Lyon",
+        "Marseille",
+        "Paris",
+        "Nizza"
+      ],
       "korrekte_antwort_index": 2,
       "erklaerung": "Paris ist die Hauptstadt und bevölkerungsreichste Stadt Frankreichs."
     },
@@ -122,7 +187,12 @@
       "kategorie": "Geografie",
       "schwierigkeit": "Mittel",
       "frage": "Welcher Fluss ist der längste der Welt?",
-      "optionen": ["Amazonas", "Nil", "Jangtsekiang", "Mississippi"],
+      "optionen": [
+        "Amazonas",
+        "Nil",
+        "Jangtsekiang",
+        "Mississippi"
+      ],
       "korrekte_antwort_index": 1,
       "erklaerung": "Der Nil gilt traditionell als der längste Fluss, wobei es Debatten über den Amazonas gibt."
     },
@@ -131,7 +201,12 @@
       "kategorie": "Geografie",
       "schwierigkeit": "Einfach",
       "frage": "Auf welchem Kontinent liegt Ägypten?",
-      "optionen": ["Asien", "Europa", "Afrika", "Südamerika"],
+      "optionen": [
+        "Asien",
+        "Europa",
+        "Afrika",
+        "Südamerika"
+      ],
       "korrekte_antwort_index": 2,
       "erklaerung": "Ägypten liegt im Nordosten Afrikas."
     },
@@ -140,7 +215,12 @@
       "kategorie": "Geografie",
       "schwierigkeit": "Schwer",
       "frage": "Wie heißt die Hauptstadt von Kasachstan?",
-      "optionen": ["Almaty", "Astana", "Taschkent", "Bischkek"],
+      "optionen": [
+        "Almaty",
+        "Astana",
+        "Taschkent",
+        "Bischkek"
+      ],
       "korrekte_antwort_index": 1,
       "erklaerung": "Die Stadt hieß zwischenzeitlich Nur-Sultan, wurde aber wieder in Astana umbenannt."
     },
@@ -149,7 +229,12 @@
       "kategorie": "Geografie",
       "schwierigkeit": "Mittel",
       "frage": "Welches Land hat die meisten Einwohner?",
-      "optionen": ["USA", "Indien", "China", "Russland"],
+      "optionen": [
+        "USA",
+        "Indien",
+        "China",
+        "Russland"
+      ],
       "korrekte_antwort_index": 1,
       "erklaerung": "Indien hat China im Jahr 2023 als bevölkerungsreichstes Land abgelöst."
     },
@@ -158,7 +243,12 @@
       "kategorie": "Geografie",
       "schwierigkeit": "Einfach",
       "frage": "Welcher Ozean liegt zwischen Europa und Amerika?",
-      "optionen": ["Pazifik", "Indik", "Atlantik", "Arktischer Ozean"],
+      "optionen": [
+        "Pazifik",
+        "Indik",
+        "Atlantik",
+        "Arktischer Ozean"
+      ],
       "korrekte_antwort_index": 2,
       "erklaerung": "Der Atlantische Ozean trennt die 'Alte Welt' von der 'Neuen Welt'."
     },
@@ -167,7 +257,12 @@
       "kategorie": "Geografie",
       "schwierigkeit": "Schwer",
       "frage": "Wie viele Bundesstaaten haben die USA?",
-      "optionen": ["48", "50", "51", "52"],
+      "optionen": [
+        "48",
+        "50",
+        "51",
+        "52"
+      ],
       "korrekte_antwort_index": 1,
       "erklaerung": "Die USA bestehen aus 50 Bundesstaaten."
     },
@@ -176,7 +271,12 @@
       "kategorie": "Geografie",
       "schwierigkeit": "Mittel",
       "frage": "In welchem Gebirge liegt der Mount Everest?",
-      "optionen": ["Anden", "Alpen", "Himalaya", "Rocky Mountains"],
+      "optionen": [
+        "Anden",
+        "Alpen",
+        "Himalaya",
+        "Rocky Mountains"
+      ],
       "korrekte_antwort_index": 2,
       "erklaerung": "Der Himalaya beherbergt die höchsten Gipfel der Erde."
     },
@@ -185,7 +285,12 @@
       "kategorie": "Geografie",
       "schwierigkeit": "Einfach",
       "frage": "Was ist die kleinste Nation der Welt (nach Fläche)?",
-      "optionen": ["Monaco", "San Marino", "Vatikanstadt", "Liechtenstein"],
+      "optionen": [
+        "Monaco",
+        "San Marino",
+        "Vatikanstadt",
+        "Liechtenstein"
+      ],
       "korrekte_antwort_index": 2,
       "erklaerung": "Vatikanstadt ist ein unabhängiger Stadtstaat in Rom."
     },
@@ -194,7 +299,12 @@
       "kategorie": "Geografie",
       "schwierigkeit": "Mittel",
       "frage": "Welches Land wird auch als das 'Land der aufgehenden Sonne' bezeichnet?",
-      "optionen": ["China", "Südkorea", "Japan", "Thailand"],
+      "optionen": [
+        "China",
+        "Südkorea",
+        "Japan",
+        "Thailand"
+      ],
       "korrekte_antwort_index": 2,
       "erklaerung": "Japan (Nippon) bedeutet wörtlich 'Ursprung der Sonne'."
     },
@@ -203,7 +313,12 @@
       "kategorie": "Geografie",
       "schwierigkeit": "Schwer",
       "frage": "Welches ist das flächenmäßig größte Land der Welt?",
-      "optionen": ["Kanada", "USA", "Russland", "Australien"],
+      "optionen": [
+        "Kanada",
+        "USA",
+        "Russland",
+        "Australien"
+      ],
       "korrekte_antwort_index": 2,
       "erklaerung": "Russland erstreckt sich über zwei Kontinente und ist das flächengrößte Land."
     },
@@ -212,7 +327,12 @@
       "kategorie": "Geografie",
       "schwierigkeit": "Mittel",
       "frage": "Welcher See ist der tiefste der Welt?",
-      "optionen": ["Bodensee", "Baikalsee", "Kaspisches Meer", "Viktoriasee"],
+      "optionen": [
+        "Bodensee",
+        "Baikalsee",
+        "Kaspisches Meer",
+        "Viktoriasee"
+      ],
       "korrekte_antwort_index": 1,
       "erklaerung": "Der Baikalsee in Sibirien ist über 1.600 Meter tief."
     },
@@ -221,7 +341,12 @@
       "kategorie": "Geschichte",
       "schwierigkeit": "Einfach",
       "frage": "Wann begann der Erste Weltkrieg?",
-      "optionen": ["1912", "1914", "1918", "1939"],
+      "optionen": [
+        "1912",
+        "1914",
+        "1918",
+        "1939"
+      ],
       "korrekte_antwort_index": 1,
       "erklaerung": "Der Erste Weltkrieg dauerte von 1914 bis 1918."
     },
@@ -230,7 +355,12 @@
       "kategorie": "Geschichte",
       "schwierigkeit": "Mittel",
       "frage": "Wer war der erste Präsident der USA?",
-      "optionen": ["Thomas Jefferson", "Abraham Lincoln", "George Washington", "John Adams"],
+      "optionen": [
+        "Thomas Jefferson",
+        "Abraham Lincoln",
+        "George Washington",
+        "John Adams"
+      ],
       "korrekte_antwort_index": 2,
       "erklaerung": "Washington amtierte von 1789 bis 1797."
     },
@@ -239,7 +369,12 @@
       "kategorie": "Geschichte",
       "schwierigkeit": "Schwer",
       "frage": "In welchem Jahr fiel die Berliner Mauer?",
-      "optionen": ["1987", "1988", "1989", "1990"],
+      "optionen": [
+        "1987",
+        "1988",
+        "1989",
+        "1990"
+      ],
       "korrekte_antwort_index": 2,
       "erklaerung": "Der Mauerfall am 9. November 1989 markierte das Ende der DDR."
     },
@@ -248,7 +383,12 @@
       "kategorie": "Geschichte",
       "schwierigkeit": "Einfach",
       "frage": "Wie hießen die ägyptischen Herrscher?",
-      "optionen": ["Kaiser", "Sultane", "Pharaonen", "Zaren"],
+      "optionen": [
+        "Kaiser",
+        "Sultane",
+        "Pharaonen",
+        "Zaren"
+      ],
       "korrekte_antwort_index": 2,
       "erklaerung": "Pharao war der Titel für die altägyptischen Könige."
     },
@@ -257,7 +397,12 @@
       "kategorie": "Geschichte",
       "schwierigkeit": "Mittel",
       "frage": "Wer entdeckte 1492 Amerika?",
-      "optionen": ["Vasco da Gama", "Marco Polo", "Christoph Kolumbus", "James Cook"],
+      "optionen": [
+        "Vasco da Gama",
+        "Marco Polo",
+        "Christoph Kolumbus",
+        "James Cook"
+      ],
       "korrekte_antwort_index": 2,
       "erklaerung": "Kolumbus landete 1492 auf den Bahamas, im Glauben, Indien erreicht zu haben."
     },
@@ -266,7 +411,12 @@
       "kategorie": "Geschichte",
       "schwierigkeit": "Schwer",
       "frage": "In welcher Epoche fand die Französische Revolution statt?",
-      "optionen": ["16. Jahrhundert", "17. Jahrhundert", "18. Jahrhundert", "19. Jahrhundert"],
+      "optionen": [
+        "16. Jahrhundert",
+        "17. Jahrhundert",
+        "18. Jahrhundert",
+        "19. Jahrhundert"
+      ],
       "korrekte_antwort_index": 2,
       "erklaerung": "Sie begann im Jahr 1789."
     },
@@ -275,7 +425,12 @@
       "kategorie": "Geschichte",
       "schwierigkeit": "Mittel",
       "frage": "Welches Volk erfand die Demokratie?",
-      "optionen": ["Römer", "Griechen", "Ägypter", "Phönizier"],
+      "optionen": [
+        "Römer",
+        "Griechen",
+        "Ägypter",
+        "Phönizier"
+      ],
       "korrekte_antwort_index": 1,
       "erklaerung": "Die attische Demokratie im antiken Griechenland gilt als Ursprung."
     },
@@ -284,7 +439,12 @@
       "kategorie": "Geschichte",
       "schwierigkeit": "Einfach",
       "frage": "Wer war 'King of Pop'?",
-      "optionen": ["Elvis Presley", "Michael Jackson", "Prince", "Freddie Mercury"],
+      "optionen": [
+        "Elvis Presley",
+        "Michael Jackson",
+        "Prince",
+        "Freddie Mercury"
+      ],
       "korrekte_antwort_index": 1,
       "erklaerung": "Michael Jackson prägte diesen Titel weltweit."
     },
@@ -293,7 +453,12 @@
       "kategorie": "Geschichte",
       "schwierigkeit": "Schwer",
       "frage": "Wie hieß das Schiff, das 1912 nach einer Kollision mit einem Eisberg sank?",
-      "optionen": ["Lusitania", "Bismarck", "Titanic", "Britannic"],
+      "optionen": [
+        "Lusitania",
+        "Bismarck",
+        "Titanic",
+        "Britannic"
+      ],
       "korrekte_antwort_index": 2,
       "erklaerung": "Die Titanic galt als unsinkbar und verunglückte auf ihrer Jungfernfahrt."
     },
@@ -302,7 +467,12 @@
       "kategorie": "Geschichte",
       "schwierigkeit": "Mittel",
       "frage": "Welche Stadt wurde 79 n. Chr. durch den Ausbruch des Vesuvs verschüttet?",
-      "optionen": ["Rom", "Neapel", "Pompeji", "Venedig"],
+      "optionen": [
+        "Rom",
+        "Neapel",
+        "Pompeji",
+        "Venedig"
+      ],
       "korrekte_antwort_index": 2,
       "erklaerung": "Pompeji wurde unter einer meterdicken Schicht aus Asche konserviert."
     },
@@ -311,7 +481,12 @@
       "kategorie": "Geschichte",
       "schwierigkeit": "Einfach",
       "frage": "Wie hieß der deutsche Kanzler während der Wiedervereinigung?",
-      "optionen": ["Willy Brandt", "Helmut Schmidt", "Helmut Kohl", "Gerhard Schröder"],
+      "optionen": [
+        "Willy Brandt",
+        "Helmut Schmidt",
+        "Helmut Kohl",
+        "Gerhard Schröder"
+      ],
       "korrekte_antwort_index": 2,
       "erklaerung": "Kohl gilt als der 'Kanzler der Einheit'."
     },
@@ -320,225 +495,348 @@
       "kategorie": "Geschichte",
       "schwierigkeit": "Schwer",
       "frage": "Wer malte die 'Mona Lisa'?",
-      "optionen": ["Michelangelo", "Raffael", "Leonardo da Vinci", "Donatello"],
+      "optionen": [
+        "Michelangelo",
+        "Raffael",
+        "Leonardo da Vinci",
+        "Donatello"
+      ],
       "korrekte_antwort_index": 2,
       "erklaerung": "Das weltberühmte Gemälde entstand Anfang des 16. Jahrhunderts."
     },
-   {
+    {
       "id": 37,
       "kategorie": "Mathematik",
       "schwierigkeit": "Einfach",
-      "frage": "Wie lautet die Formel für den Flächeninhalt A eines Quadrats mit der Seitenlänge a?",
-      "optionen": ["A = 2 * a", "A = a^2", "A = 4 * a", "A = Wurzel aus a"],
+      "frage": "Wie lautet die Formel für den Flächeninhalt $A$ eines Quadrats mit der Seitenlänge $a$?",
+      "optionen": [
+        "$A = 2 \\cdot a$",
+        "$A = a^2$",
+        "$A = 4 \\cdot a$",
+        "$\\sqrt{a}$"
+      ],
       "korrekte_antwort_index": 1,
-      "erklaerung": "Die Fläche eines Quadrats berechnet sich durch Seite mal Seite (a * a)."
+      "erklaerung": "Die Fläche eines Quadrats berechnet sich durch Seite mal Seite ($a \\cdot a$)."
     },
     {
       "id": 38,
       "kategorie": "Mathematik",
       "schwierigkeit": "Mittel",
       "frage": "Welcher berühmte Satz beschreibt das Verhältnis der Seiten im rechtwinkligen Dreieck?",
-      "optionen": ["Satz des Thales", "Satz des Pythagoras", "Binomische Formel", "Sinussatz"],
+      "optionen": [
+        "Satz des Thales",
+        "Satz des Pythagoras",
+        "Binomische Formel",
+        "Sinussatz"
+      ],
       "korrekte_antwort_index": 1,
-      "erklaerung": "Der Satz lautet a^2 + b^2 = c^2."
+      "erklaerung": "Der Satz lautet $a^2 + b^2 = c^2$."
     },
     {
       "id": 39,
       "kategorie": "Mathematik",
       "schwierigkeit": "Schwer",
-      "frage": "Wie lautet die Lösung der quadratischen Gleichung x^2 - 4 = 0?",
-      "optionen": ["x = 4", "x = 2", "x = plus oder minus 2", "x = 0"],
+      "frage": "Wie lautet die Lösung der quadratischen Gleichung $x^2 - 4 = 0$?",
+      "optionen": [
+        "$x = 4$",
+        "$x = 2$",
+        "$x = \\pm 2$",
+        "$x = 0$"
+      ],
       "korrekte_antwort_index": 2,
-      "erklaerung": "Da sowohl 2*2 als auch (-2)*(-2) gleich 4 ergeben, gibt es zwei Lösungen."
+      "erklaerung": "Da sowohl $2 \\cdot 2$ als auch $(-2) \\cdot (-2)$ gleich 4 ergeben, gibt es zwei Lösungen."
     },
     {
       "id": 40,
       "kategorie": "Mathematik",
       "schwierigkeit": "Einfach",
-      "frage": "Was ist der ungefähre Wert der Kreiszahl Pi?",
-      "optionen": ["3,12", "3,14", "3,16", "3,18"],
+      "frage": "Was ist der ungefähre Wert der Kreiszahl $\\pi$?",
+      "optionen": [
+        "$3{,}12$",
+        "$3{,}14$",
+        "$3{,}16$",
+        "$3{,}18$"
+      ],
       "korrekte_antwort_index": 1,
-      "erklaerung": "Pi ist das Verhältnis von Umfang zu Durchmesser eines Kreises."
+      "erklaerung": "$\\pi$ ist das Verhältnis von Umfang zu Durchmesser eines Kreises: $\\pi \\approx 3{,}14159\\ldots$"
     },
     {
       "id": 41,
       "kategorie": "Mathematik",
       "schwierigkeit": "Mittel",
-      "frage": "Wie lautet die erste Ableitung der Funktion f(x) = x^n?",
-      "optionen": ["f'(x) = n * x", "f'(x) = n * x^(n-1)", "f'(x) = x^(n+1)", "f'(x) = n^x"],
+      "frage": "Wie lautet die erste Ableitung der Funktion $f(x) = x^n$?",
+      "optionen": [
+        "$f'(x) = n \\cdot x$",
+        "$f'(x) = n \\cdot x^{n-1}$",
+        "$f'(x) = x^{n+1}$",
+        "$f'(x) = n^x$"
+      ],
       "korrekte_antwort_index": 1,
-      "erklaerung": "Dies ist die allgemeine Potenzregel: Exponent nach vorne und oben um eins verringern."
+      "erklaerung": "Dies ist die allgemeine Potenzregel: $f'(x) = n \\cdot x^{n-1}$ — Exponent nach vorne multiplizieren und oben um eins verringern."
     },
     {
       "id": 42,
       "kategorie": "Mathematik",
       "schwierigkeit": "Schwer",
-      "frage": "Was ergibt die Summe der Innenwinkel in einem ebenen Dreieck?",
-      "optionen": ["90 Grad", "180 Grad", "270 Grad", "360 Grad"],
+      "frage": "Was ergibt die Summe der Innenwinkel $\\alpha + \\beta + \\gamma$ in einem ebenen Dreieck?",
+      "optionen": [
+        "$90°$",
+        "$180°$",
+        "$270°$",
+        "$360°$"
+      ],
       "korrekte_antwort_index": 1,
-      "erklaerung": "Die Winkelsumme in jedem flachen Dreieck beträgt immer genau 180 Grad."
+      "erklaerung": "Für jedes ebene Dreieck gilt: $\\alpha + \\beta + \\gamma = 180°$."
     },
     {
       "id": 43,
       "kategorie": "Mathematik",
       "schwierigkeit": "Einfach",
-      "frage": "Was ist das Ergebnis von 5! (5 Fakultät)?",
-      "optionen": ["25", "60", "120", "150"],
+      "frage": "Was ist das Ergebnis von $5!$ (5 Fakultät)?",
+      "optionen": [
+        "$25$",
+        "$60$",
+        "$120$",
+        "$150$"
+      ],
       "korrekte_antwort_index": 2,
-      "erklaerung": "Rechnung: 5 * 4 * 3 * 2 * 1 = 120."
+      "erklaerung": "$5! = 5 \\cdot 4 \\cdot 3 \\cdot 2 \\cdot 1 = 120$."
     },
     {
       "id": 44,
       "kategorie": "Mathematik",
       "schwierigkeit": "Mittel",
-      "frage": "Wie nennt man eine natürliche Zahl, die nur durch 1 und sich selbst teilbar ist?",
-      "optionen": ["Gerade Zahl", "Primzahl", "Rationale Zahl", "Komplexe Zahl"],
+      "frage": "Wie nennt man eine natürliche Zahl $p > 1$, die nur durch $1$ und $p$ selbst teilbar ist?",
+      "optionen": [
+        "Gerade Zahl",
+        "Primzahl",
+        "Rationale Zahl",
+        "Komplexe Zahl"
+      ],
       "korrekte_antwort_index": 1,
-      "erklaerung": "Primzahlen haben genau zwei Teiler. Die kleinste Primzahl ist 2."
+      "erklaerung": "Primzahlen haben genau zwei Teiler. Die kleinste Primzahl ist $2$."
     },
     {
       "id": 45,
       "kategorie": "Mathematik",
       "schwierigkeit": "Schwer",
-      "frage": "Welche mathematische Konstante ist die Basis des natürlichen Logarithmus?",
-      "optionen": ["Pi", "Die Eulersche Zahl e", "Die Goldene Zahl", "Wurzel 2"],
+      "frage": "Welche mathematische Konstante $e$ ist die Basis des natürlichen Logarithmus $\\ln(x)$?",
+      "optionen": [
+        "$\\pi$",
+        "Die Eulersche Zahl $e$",
+        "Die Goldene Zahl $\\varphi$",
+        "$\\sqrt{2}$"
+      ],
       "korrekte_antwort_index": 1,
-      "erklaerung": "Die Zahl e (ca. 2,718) ist die Basis des ln(x)."
+      "erklaerung": "Die Eulersche Zahl $e \\approx 2{,}718$ ist definiert als $\\lim_{n \\to \\infty}\\left(1 + \\frac{1}{n}\\right)^n$ und ist die Basis des $\\ln(x)$."
     },
     {
       "id": 46,
       "kategorie": "Mathematik",
       "schwierigkeit": "Einfach",
-      "frage": "Was ist die Wurzel aus 144?",
-      "optionen": ["10", "11", "12", "14"],
+      "frage": "Was ist $\\sqrt{144}$?",
+      "optionen": [
+        "$10$",
+        "$11$",
+        "$12$",
+        "$14$"
+      ],
       "korrekte_antwort_index": 2,
-      "erklaerung": "12 mal 12 ergibt 144."
+      "erklaerung": "$\\sqrt{144} = 12$, denn $12^2 = 144$."
     },
     {
       "id": 47,
       "kategorie": "Mathematik",
       "schwierigkeit": "Mittel",
-      "frage": "Wie lautet die Lösung der Gleichung 2x + 10 = 20?",
-      "optionen": ["x = 2", "x = 5", "x = 10", "x = 15"],
+      "frage": "Wie lautet die Lösung der Gleichung $2x + 10 = 20$?",
+      "optionen": [
+        "$x = 2$",
+        "$x = 5$",
+        "$x = 10$",
+        "$x = 15$"
+      ],
       "korrekte_antwort_index": 1,
-      "erklaerung": "2x = 10, also ist x = 5."
+      "erklaerung": "$2x + 10 = 20 \\Rightarrow 2x = 10 \\Rightarrow x = 5$."
     },
     {
       "id": 48,
       "kategorie": "Mathematik",
       "schwierigkeit": "Schwer",
-      "frage": "Was ist der Median der Zahlenreihe 1, 3, 3, 6, 7, 8, 9?",
-      "optionen": ["3", "5", "6", "7"],
+      "frage": "Was ist der Median der Zahlenreihe $\\{1, 3, 3, 6, 7, 8, 9\\}$?",
+      "optionen": [
+        "$3$",
+        "$5$",
+        "$6$",
+        "$7$"
+      ],
       "korrekte_antwort_index": 2,
-      "erklaerung": "Der Median ist der Wert in der Mitte einer sortierten Liste; hier die 6."
+      "erklaerung": "Der Median ist der mittlere Wert einer sortierten Liste. Bei $7$ Werten ist dies der $4.$-Wert: $6$."
     },
     {
       "id": 49,
       "kategorie": "Mathematik",
       "schwierigkeit": "Einfach",
-      "frage": "Wie viele Millimeter sind ein Dezimeter?",
-      "optionen": ["10 mm", "100 mm", "1000 mm", "0,1 mm"],
+      "frage": "Wie viele Millimeter sind ein Dezimeter? ($1\\,\\text{dm} = {?}\\,\\text{mm}$)",
+      "optionen": [
+        "$10\\,\\text{mm}$",
+        "$100\\,\\text{mm}$",
+        "$1000\\,\\text{mm}$",
+        "$0{,}1\\,\\text{mm}$"
+      ],
       "korrekte_antwort_index": 1,
-      "erklaerung": "1 dm = 10 cm = 100 mm."
+      "erklaerung": "$1\\,\\text{dm} = 10\\,\\text{cm} = 100\\,\\text{mm}$."
     },
     {
       "id": 50,
       "kategorie": "Naturwissenschaften",
       "schwierigkeit": "Mittel",
       "frage": "Was ist die chemische Formel für Kochsalz?",
-      "optionen": ["H2O", "CO2", "NaCl", "CH4"],
+      "optionen": [
+        "H2O",
+        "CO2",
+        "NaCl",
+        "CH4"
+      ],
       "korrekte_antwort_index": 2,
       "erklaerung": "Natriumchlorid (NaCl) ist das gängige Speisesalz."
     },
     {
-  "quiz_data": [
-    {
       "id": 51,
       "kategorie": "Mathematik",
       "schwierigkeit": "Einfach",
-      "frage": "Was ist das Ergebnis von 15 Prozent von 200?",
-      "optionen": ["20", "25", "30", "35"],
+      "frage": "Was ist $15\\%$ von $200$?",
+      "optionen": [
+        "$20$",
+        "$25$",
+        "$30$",
+        "$35$"
+      ],
       "korrekte_antwort_index": 2,
-      "erklaerung": "10% sind 20, 5% sind 10. Zusammen ergibt das 30."
+      "erklaerung": "$15\\% \\cdot 200 = \\frac{15}{100} \\cdot 200 = 30$."
     },
     {
       "id": 52,
       "kategorie": "Mathematik",
       "schwierigkeit": "Mittel",
-      "frage": "Wie nennt man ein Polygon mit acht Seiten?",
-      "optionen": ["Hexagon", "Heptagon", "Oktagon", "Dekagon"],
+      "frage": "Wie nennt man ein reguläres Polygon mit $8$ Seiten?",
+      "optionen": [
+        "Hexagon",
+        "Heptagon",
+        "Oktagon",
+        "Dekagon"
+      ],
       "korrekte_antwort_index": 2,
-      "erklaerung": "Ein Oktagon ist ein Achteck."
+      "erklaerung": "Ein Oktagon (Achteck) hat $8$ Seiten. Die Innenwinkelsumme beträgt $(8-2) \\cdot 180° = 1080°$."
     },
     {
       "id": 53,
       "kategorie": "Mathematik",
       "schwierigkeit": "Schwer",
-      "frage": "Wie lautet die Summe der ersten 100 natürlichen Zahlen (Gaußsche Summenformel)?",
-      "optionen": ["5000", "5050", "5100", "5500"],
+      "frage": "Wie lautet die Summe $\\sum_{k=1}^{100} k$ der ersten $100$ natürlichen Zahlen (Gaußsche Summenformel)?",
+      "optionen": [
+        "$5000$",
+        "$5050$",
+        "$5100$",
+        "$5500$"
+      ],
       "korrekte_antwort_index": 1,
-      "erklaerung": "Die Formel lautet (n * (n + 1)) / 2. Für 100 ergibt das 5050."
+      "erklaerung": "Die Gaußsche Summenformel lautet $\\sum_{k=1}^{n} k = \\frac{n(n+1)}{2}$. Für $n=100$: $\\frac{100 \\cdot 101}{2} = 5050$."
     },
     {
       "id": 54,
       "kategorie": "Mathematik",
       "schwierigkeit": "Mittel",
-      "frage": "Was ist die dritte Wurzel aus 27?",
-      "optionen": ["3", "9", "6", "4"],
+      "frage": "Was ist $\\sqrt[3]{27}$ (die dritte Wurzel aus $27$)?",
+      "optionen": [
+        "$3$",
+        "$9$",
+        "$6$",
+        "$4$"
+      ],
       "korrekte_antwort_index": 0,
-      "erklaerung": "3 * 3 * 3 = 27."
+      "erklaerung": "$\\sqrt[3]{27} = 3$, denn $3^3 = 3 \\cdot 3 \\cdot 3 = 27$."
     },
     {
       "id": 55,
       "kategorie": "Mathematik",
       "schwierigkeit": "Einfach",
-      "frage": "Welches Ergebnis liefert die Rechnung: 3 + 3 * 3?",
-      "optionen": ["18", "9", "12", "15"],
+      "frage": "Welches Ergebnis liefert die Rechnung $3 + 3 \\cdot 3$?",
+      "optionen": [
+        "$18$",
+        "$9$",
+        "$12$",
+        "$15$"
+      ],
       "korrekte_antwort_index": 2,
-      "erklaerung": "Punktrechnung vor Strichrechnung: 3 * 3 = 9, plus 3 = 12."
+      "erklaerung": "Punkt- vor Strichrechnung: $3 + 3 \\cdot 3 = 3 + 9 = 12$."
     },
     {
       "id": 56,
       "kategorie": "Mathematik",
       "schwierigkeit": "Mittel",
-      "frage": "Wie groß ist der Umfang eines Kreises mit dem Durchmesser d?",
-      "optionen": ["Pi * d", "Pi * r^2", "2 * d", "Pi^2 * d"],
+      "frage": "Wie groß ist der Umfang $U$ eines Kreises mit dem Durchmesser $d$?",
+      "optionen": [
+        "$U = \\pi \\cdot d$",
+        "$U = \\pi \\cdot r^2$",
+        "$U = 2 \\cdot d$",
+        "$U = \\pi^2 \\cdot d$"
+      ],
       "korrekte_antwort_index": 0,
-      "erklaerung": "Der Umfang ist Pi mal Durchmesser (oder 2 * Pi * Radius)."
+      "erklaerung": "Der Umfang berechnet sich als $U = \\pi \\cdot d = 2\\pi r$."
     },
     {
       "id": 57,
       "kategorie": "Mathematik",
       "schwierigkeit": "Schwer",
-      "frage": "Welches System basiert auf der Zahl 2?",
-      "optionen": ["Dezimalsystem", "Hexadezimalsystem", "Binärsystem", "Oktalsystem"],
+      "frage": "Welches Zahlensystem basiert auf der Basis $2$ und verwendet nur die Ziffern $\\{0, 1\\}$?",
+      "optionen": [
+        "Dezimalsystem (Basis $10$)",
+        "Hexadezimalsystem (Basis $16$)",
+        "Binärsystem (Basis $2$)",
+        "Oktalsystem (Basis $8$)"
+      ],
       "korrekte_antwort_index": 2,
-      "erklaerung": "Das Binärsystem (Zweiersystem) nutzt nur 0 und 1."
+      "erklaerung": "Im Binärsystem gilt z.B. $1011_2 = 1 \\cdot 2^3 + 0 \\cdot 2^2 + 1 \\cdot 2^1 + 1 \\cdot 2^0 = 11_{10}$."
     },
     {
       "id": 58,
       "kategorie": "Mathematik",
       "schwierigkeit": "Mittel",
-      "frage": "Was ist die Steigung m in der Geradengleichung y = 4x - 2?",
-      "optionen": ["-2", "x", "4", "2"],
+      "frage": "Was ist die Steigung $m$ der Geraden $y = 4x - 2$?",
+      "optionen": [
+        "$m = -2$",
+        "$m = x$",
+        "$m = 4$",
+        "$m = 2$"
+      ],
       "korrekte_antwort_index": 2,
-      "erklaerung": "In y = mx + b entspricht der Koeffizient vor dem x der Steigung."
+      "erklaerung": "In der Geradengleichung $y = mx + b$ ist $m$ der Koeffizient vor $x$. Hier gilt $m = 4$, $b = -2$."
     },
     {
       "id": 59,
       "kategorie": "Mathematik",
       "schwierigkeit": "Einfach",
-      "frage": "Wie viele Seiten hat ein Würfel?",
-      "optionen": ["4", "6", "8", "12"],
+      "frage": "Wie viele Flächen hat ein Würfel?",
+      "optionen": [
+        "$4$",
+        "$6$",
+        "$8$",
+        "$12$"
+      ],
       "korrekte_antwort_index": 1,
-      "erklaerung": "Ein Würfel (Hexaeder) hat 6 quadratische Begrenzungsflächen."
+      "erklaerung": "Ein Würfel (Hexaeder) hat $6$ quadratische Begrenzungsflächen."
     },
     {
       "id": 60,
       "kategorie": "Geschichte",
       "schwierigkeit": "Mittel",
       "frage": "Wer war die 'Eiserne Lady'?",
-      "optionen": ["Queen Elizabeth II", "Margaret Thatcher", "Angela Merkel", "Indira Gandhi"],
+      "optionen": [
+        "Queen Elizabeth II",
+        "Margaret Thatcher",
+        "Angela Merkel",
+        "Indira Gandhi"
+      ],
       "korrekte_antwort_index": 1,
       "erklaerung": "Thatcher war die erste Premierministerin des Vereinigten Königreichs."
     },
@@ -547,7 +845,12 @@
       "kategorie": "Geschichte",
       "schwierigkeit": "Einfach",
       "frage": "In welchem Land begann die Industrielle Revolution?",
-      "optionen": ["Deutschland", "USA", "Frankreich", "Großbritannien"],
+      "optionen": [
+        "Deutschland",
+        "USA",
+        "Frankreich",
+        "Großbritannien"
+      ],
       "korrekte_antwort_index": 3,
       "erklaerung": "Sie nahm im 18. Jahrhundert in England ihren Anfang."
     },
@@ -556,7 +859,12 @@
       "kategorie": "Geschichte",
       "schwierigkeit": "Schwer",
       "frage": "Welches Ereignis löste 1914 den Ersten Weltkrieg aus?",
-      "optionen": ["Der Untergang der Titanic", "Das Attentat von Sarajevo", "Der Sturm auf die Bastille", "Der Börsencrash"],
+      "optionen": [
+        "Der Untergang der Titanic",
+        "Das Attentat von Sarajevo",
+        "Der Sturm auf die Bastille",
+        "Der Börsencrash"
+      ],
       "korrekte_antwort_index": 1,
       "erklaerung": "Die Ermordung von Erzherzog Franz Ferdinand führte zur Julikrise."
     },
@@ -565,7 +873,12 @@
       "kategorie": "Geschichte",
       "schwierigkeit": "Mittel",
       "frage": "Welche Zivilisation baute die Pyramiden von Gizeh?",
-      "optionen": ["Die Maya", "Die Römer", "Die Ägypter", "Die Griechen"],
+      "optionen": [
+        "Die Maya",
+        "Die Römer",
+        "Die Ägypter",
+        "Die Griechen"
+      ],
       "korrekte_antwort_index": 2,
       "erklaerung": "Sie dienten als Grabstätten für die Pharaonen im Alten Ägypten."
     },
@@ -574,7 +887,12 @@
       "kategorie": "Geschichte",
       "schwierigkeit": "Einfach",
       "frage": "Wer war der Anführer der Bürgerrechtsbewegung in den USA und hielt die Rede 'I Have a Dream'?",
-      "optionen": ["Malcolm X", "Martin Luther King Jr.", "Rosa Parks", "John F. Kennedy"],
+      "optionen": [
+        "Malcolm X",
+        "Martin Luther King Jr.",
+        "Rosa Parks",
+        "John F. Kennedy"
+      ],
       "korrekte_antwort_index": 1,
       "erklaerung": "King hielt die berühmte Rede 1963 während des Marsches auf Washington."
     },
@@ -583,7 +901,12 @@
       "kategorie": "Geschichte",
       "schwierigkeit": "Schwer",
       "frage": "In welchem Jahr endete der Dreißigjährige Krieg?",
-      "optionen": ["1618", "1648", "1789", "1815"],
+      "optionen": [
+        "1618",
+        "1648",
+        "1789",
+        "1815"
+      ],
       "korrekte_antwort_index": 1,
       "erklaerung": "Der Westfälische Friede beendete den Krieg im Jahr 1648."
     },
@@ -592,7 +915,12 @@
       "kategorie": "Geschichte",
       "schwierigkeit": "Mittel",
       "frage": "Wer war der erste Mensch im Weltraum?",
-      "optionen": ["Neil Armstrong", "Buzz Aldrin", "Juri Gagarin", "John Glenn"],
+      "optionen": [
+        "Neil Armstrong",
+        "Buzz Aldrin",
+        "Juri Gagarin",
+        "John Glenn"
+      ],
       "korrekte_antwort_index": 2,
       "erklaerung": "Der Sowjet-Kosmonaut Gagarin flog 1961 ins All."
     },
@@ -601,7 +929,12 @@
       "kategorie": "Geschichte",
       "schwierigkeit": "Einfach",
       "frage": "Wie hießen die Nordmänner, die im Mittelalter Europa befuhren?",
-      "optionen": ["Ritter", "Wikinger", "Hunnen", "Goten"],
+      "optionen": [
+        "Ritter",
+        "Wikinger",
+        "Hunnen",
+        "Goten"
+      ],
       "korrekte_antwort_index": 1,
       "erklaerung": "Die Wikinger stammten aus Skandinavien."
     },
@@ -610,7 +943,12 @@
       "kategorie": "Geschichte",
       "schwierigkeit": "Mittel",
       "frage": "Welches Land schenkte den USA die Freiheitsstatue?",
-      "optionen": ["Großbritannien", "Italien", "Frankreich", "Spanien"],
+      "optionen": [
+        "Großbritannien",
+        "Italien",
+        "Frankreich",
+        "Spanien"
+      ],
       "korrekte_antwort_index": 2,
       "erklaerung": "Es war ein Geschenk zum 100. Jahrestag der Unabhängigkeitserklärung."
     },
@@ -619,7 +957,12 @@
       "kategorie": "Geschichte",
       "schwierigkeit": "Schwer",
       "frage": "Welches Reich wurde von Dschingis Khan gegründet?",
-      "optionen": ["Das Römische Reich", "Das Osmanische Reich", "Das Mongolische Reich", "Das Persische Reich"],
+      "optionen": [
+        "Das Römische Reich",
+        "Das Osmanische Reich",
+        "Das Mongolische Reich",
+        "Das Persische Reich"
+      ],
       "korrekte_antwort_index": 2,
       "erklaerung": "Es wurde zum flächenmäßig größten zusammenhängenden Reich der Geschichte."
     },
@@ -628,7 +971,12 @@
       "kategorie": "Geschichte",
       "schwierigkeit": "Mittel",
       "frage": "Wer war 'Sonnenkönig' von Frankreich?",
-      "optionen": ["Ludwig XIV.", "Ludwig XVI.", "Napoleon", "Karl der Große"],
+      "optionen": [
+        "Ludwig XIV.",
+        "Ludwig XVI.",
+        "Napoleon",
+        "Karl der Große"
+      ],
       "korrekte_antwort_index": 0,
       "erklaerung": "Ludwig XIV. prägte den Absolutismus und baute Versailles."
     },
@@ -637,7 +985,12 @@
       "kategorie": "Geografie",
       "schwierigkeit": "Einfach",
       "frage": "Welches Land ist für seine Kängurus bekannt?",
-      "optionen": ["Österreich", "Australien", "Neuseeland", "Südafrika"],
+      "optionen": [
+        "Österreich",
+        "Australien",
+        "Neuseeland",
+        "Südafrika"
+      ],
       "korrekte_antwort_index": 1,
       "erklaerung": "Australien beherbergt den Großteil der Känguru-Population."
     },
@@ -646,7 +999,12 @@
       "kategorie": "Geografie",
       "schwierigkeit": "Mittel",
       "frage": "Wie heißt die Hauptstadt von Kanada?",
-      "optionen": ["Toronto", "Vancouver", "Montreal", "Ottawa"],
+      "optionen": [
+        "Toronto",
+        "Vancouver",
+        "Montreal",
+        "Ottawa"
+      ],
       "korrekte_antwort_index": 3,
       "erklaerung": "Ottawa wurde von Königin Victoria zur Hauptstadt gewählt."
     },
@@ -655,7 +1013,12 @@
       "kategorie": "Geografie",
       "schwierigkeit": "Schwer",
       "frage": "Wie heißt die größte Insel der Welt?",
-      "optionen": ["Australien", "Island", "Grönland", "Madagaskar"],
+      "optionen": [
+        "Australien",
+        "Island",
+        "Grönland",
+        "Madagaskar"
+      ],
       "korrekte_antwort_index": 2,
       "erklaerung": "Grönland ist die größte Insel; Australien gilt als Kontinent."
     },
@@ -664,7 +1027,12 @@
       "kategorie": "Geografie",
       "schwierigkeit": "Mittel",
       "frage": "Welche Wüste ist die größte der Welt?",
-      "optionen": ["Gobi", "Sahara", "Antarktis", "Atacama"],
+      "optionen": [
+        "Gobi",
+        "Sahara",
+        "Antarktis",
+        "Atacama"
+      ],
       "korrekte_antwort_index": 2,
       "erklaerung": "Die gesamte Antarktis gilt als Kältewüste und ist flächenmäßig die größte."
     },
@@ -673,7 +1041,12 @@
       "kategorie": "Geografie",
       "schwierigkeit": "Einfach",
       "frage": "Durch welche Stadt fließt die Themse?",
-      "optionen": ["Paris", "Berlin", "London", "Wien"],
+      "optionen": [
+        "Paris",
+        "Berlin",
+        "London",
+        "Wien"
+      ],
       "korrekte_antwort_index": 2,
       "erklaerung": "Die Themse ist der bekannteste Fluss Londons."
     },
@@ -682,7 +1055,12 @@
       "kategorie": "Geografie",
       "schwierigkeit": "Mittel",
       "frage": "Welcher Berg ist der höchste Afrikas?",
-      "optionen": ["Mont Blanc", "Kilimandscharo", "Mount Kenya", "Atlas"],
+      "optionen": [
+        "Mont Blanc",
+        "Kilimandscharo",
+        "Mount Kenya",
+        "Atlas"
+      ],
       "korrekte_antwort_index": 1,
       "erklaerung": "Der Kilimandscharo liegt in Tansania."
     },
@@ -691,7 +1069,12 @@
       "kategorie": "Geografie",
       "schwierigkeit": "Schwer",
       "frage": "Zu welchem Land gehören die Galapagos-Inseln?",
-      "optionen": ["Chile", "Peru", "Ecuador", "Kolumbien"],
+      "optionen": [
+        "Chile",
+        "Peru",
+        "Ecuador",
+        "Kolumbien"
+      ],
       "korrekte_antwort_index": 2,
       "erklaerung": "Die Inseln liegen im Pazifik und gehören zu Ecuador."
     },
@@ -700,7 +1083,12 @@
       "kategorie": "Geografie",
       "schwierigkeit": "Einfach",
       "frage": "Welches Land hat die Form eines Stiefels?",
-      "optionen": ["Griechenland", "Spanien", "Italien", "Portugal"],
+      "optionen": [
+        "Griechenland",
+        "Spanien",
+        "Italien",
+        "Portugal"
+      ],
       "korrekte_antwort_index": 2,
       "erklaerung": "Die italienische Halbinsel ist für ihre Stiefelform berühmt."
     },
@@ -709,7 +1097,12 @@
       "kategorie": "Geografie",
       "schwierigkeit": "Mittel",
       "frage": "Was ist der kleinste Kontinent der Erde?",
-      "optionen": ["Europa", "Antarktis", "Australien", "Südamerika"],
+      "optionen": [
+        "Europa",
+        "Antarktis",
+        "Australien",
+        "Südamerika"
+      ],
       "korrekte_antwort_index": 2,
       "erklaerung": "Australien/Ozeanien ist der kleinste der Kontinente."
     },
@@ -718,7 +1111,12 @@
       "kategorie": "Geografie",
       "schwierigkeit": "Schwer",
       "frage": "Welcher Staat hat die meisten Zeitzonen?",
-      "optionen": ["Russland", "USA", "China", "Frankreich"],
+      "optionen": [
+        "Russland",
+        "USA",
+        "China",
+        "Frankreich"
+      ],
       "korrekte_antwort_index": 3,
       "erklaerung": "Aufgrund seiner Überseegebiete kommt Frankreich auf 12 Zeitzonen."
     },
@@ -727,7 +1125,12 @@
       "kategorie": "Naturwissenschaften",
       "schwierigkeit": "Einfach",
       "frage": "Welcher Stoff ist für die grüne Farbe von Pflanzen verantwortlich?",
-      "optionen": ["Hämoglobin", "Chlorophyll", "Melanin", "Carotin"],
+      "optionen": [
+        "Hämoglobin",
+        "Chlorophyll",
+        "Melanin",
+        "Carotin"
+      ],
       "korrekte_antwort_index": 1,
       "erklaerung": "Chlorophyll ermöglicht die Photosynthese."
     },
@@ -736,7 +1139,12 @@
       "kategorie": "Naturwissenschaften",
       "schwierigkeit": "Mittel",
       "frage": "Wie viele Zähne hat ein erwachsener Mensch normalerweise?",
-      "optionen": ["28", "30", "32", "34"],
+      "optionen": [
+        "28",
+        "30",
+        "32",
+        "34"
+      ],
       "korrekte_antwort_index": 2,
       "erklaerung": "Ein vollständiges Gebiss inklusive Weisheitszähnen hat 32 Zähne."
     },
@@ -745,7 +1153,12 @@
       "kategorie": "Naturwissenschaften",
       "schwierigkeit": "Schwer",
       "frage": "Was ist das härteste natürliche Material der Erde?",
-      "optionen": ["Stahl", "Quarz", "Diamant", "Korund"],
+      "optionen": [
+        "Stahl",
+        "Quarz",
+        "Diamant",
+        "Korund"
+      ],
       "korrekte_antwort_index": 2,
       "erklaerung": "Diamant besteht aus reinem Kohlenstoff in einer Kristallstruktur."
     },
@@ -754,7 +1167,12 @@
       "kategorie": "Naturwissenschaften",
       "schwierigkeit": "Mittel",
       "frage": "Welcher Planet wird der 'Rote Planet' genannt?",
-      "optionen": ["Venus", "Mars", "Jupiter", "Saturn"],
+      "optionen": [
+        "Venus",
+        "Mars",
+        "Jupiter",
+        "Saturn"
+      ],
       "korrekte_antwort_index": 1,
       "erklaerung": "Eisenoxid (Rost) auf der Oberfläche gibt dem Mars seine Farbe."
     },
@@ -763,7 +1181,12 @@
       "kategorie": "Naturwissenschaften",
       "schwierigkeit": "Einfach",
       "frage": "Was gefriert bei 0 Grad Celsius?",
-      "optionen": ["Alkohol", "Quecksilber", "Wasser", "Öl"],
+      "optionen": [
+        "Alkohol",
+        "Quecksilber",
+        "Wasser",
+        "Öl"
+      ],
       "korrekte_antwort_index": 2,
       "erklaerung": "0 Grad Celsius ist der Gefrierpunkt von reinem Wasser."
     },
@@ -772,7 +1195,12 @@
       "kategorie": "Naturwissenschaften",
       "schwierigkeit": "Schwer",
       "frage": "Wie heißt die kleinste funktionelle Einheit des Lebens?",
-      "optionen": ["Atom", "Molekül", "Zelle", "Organ"],
+      "optionen": [
+        "Atom",
+        "Molekül",
+        "Zelle",
+        "Organ"
+      ],
       "korrekte_antwort_index": 2,
       "erklaerung": "Die Zelle ist die kleinste selbstständig lebensfähige Einheit."
     },
@@ -781,7 +1209,12 @@
       "kategorie": "Naturwissenschaften",
       "schwierigkeit": "Mittel",
       "frage": "Wer entwickelte die Relativitätstheorie?",
-      "optionen": ["Isaac Newton", "Albert Einstein", "Stephen Hawking", "Marie Curie"],
+      "optionen": [
+        "Isaac Newton",
+        "Albert Einstein",
+        "Stephen Hawking",
+        "Marie Curie"
+      ],
       "korrekte_antwort_index": 1,
       "erklaerung": "Einstein veröffentlichte die Theorie Anfang des 20. Jahrhunderts."
     },
@@ -790,7 +1223,12 @@
       "kategorie": "Naturwissenschaften",
       "schwierigkeit": "Einfach",
       "frage": "Welches Gas atmen Menschen aus?",
-      "optionen": ["Sauerstoff", "Stickstoff", "Kohlendioxid", "Helium"],
+      "optionen": [
+        "Sauerstoff",
+        "Stickstoff",
+        "Kohlendioxid",
+        "Helium"
+      ],
       "korrekte_antwort_index": 2,
       "erklaerung": "Kohlendioxid (CO2) ist ein Produkt des Stoffwechsels."
     },
@@ -799,7 +1237,12 @@
       "kategorie": "Naturwissenschaften",
       "schwierigkeit": "Schwer",
       "frage": "In welchem Organ wird Insulin produziert?",
-      "optionen": ["Leber", "Bauchspeicheldrüse", "Niere", "Milz"],
+      "optionen": [
+        "Leber",
+        "Bauchspeicheldrüse",
+        "Niere",
+        "Milz"
+      ],
       "korrekte_antwort_index": 1,
       "erklaerung": "Die Bauchspeicheldrüse (Pankreas) reguliert damit den Blutzuckerspiegel."
     },
@@ -808,7 +1251,12 @@
       "kategorie": "Naturwissenschaften",
       "schwierigkeit": "Mittel",
       "frage": "Welche Kraft hält uns auf der Erde?",
-      "optionen": ["Magnetismus", "Reibung", "Gravitation", "Fliehkraft"],
+      "optionen": [
+        "Magnetismus",
+        "Reibung",
+        "Gravitation",
+        "Fliehkraft"
+      ],
       "korrekte_antwort_index": 2,
       "erklaerung": "Die Gravitation (Schwerkraft) sorgt für die gegenseitige Anziehung von Massen."
     },
@@ -817,7 +1265,12 @@
       "kategorie": "Mathematik",
       "schwierigkeit": "Einfach",
       "frage": "Was ist die Hälfte von 1/2?",
-      "optionen": ["1/4", "1", "1/8", "0,5"],
+      "optionen": [
+        "1/4",
+        "1",
+        "1/8",
+        "0,5"
+      ],
       "korrekte_antwort_index": 0,
       "erklaerung": "Ein Viertel ist die Hälfte eines Halben."
     },
@@ -826,7 +1279,12 @@
       "kategorie": "Geschichte",
       "schwierigkeit": "Einfach",
       "frage": "Wer war die erste Frau, die einen Nobelpreis erhielt?",
-      "optionen": ["Marie Curie", "Mother Teresa", "Rosa Luxemburg", "Bertha von Suttner"],
+      "optionen": [
+        "Marie Curie",
+        "Mother Teresa",
+        "Rosa Luxemburg",
+        "Bertha von Suttner"
+      ],
       "korrekte_antwort_index": 0,
       "erklaerung": "Marie Curie erhielt ihn 1903 für Physik."
     },
@@ -835,7 +1293,12 @@
       "kategorie": "Geografie",
       "schwierigkeit": "Mittel",
       "frage": "Welches Meer grenzt an Deutschland?",
-      "optionen": ["Mittelmeer", "Rotes Meer", "Ostsee", "Schwarzes Meer"],
+      "optionen": [
+        "Mittelmeer",
+        "Rotes Meer",
+        "Ostsee",
+        "Schwarzes Meer"
+      ],
       "korrekte_antwort_index": 2,
       "erklaerung": "Deutschland grenzt an die Nordsee und die Ostsee."
     },
@@ -844,7 +1307,12 @@
       "kategorie": "Naturwissenschaften",
       "schwierigkeit": "Mittel",
       "frage": "Wie viele Herzstammzellen hat ein Blauwal?",
-      "optionen": ["1", "2", "3", "Keine dieser"],
+      "optionen": [
+        "1",
+        "2",
+        "3",
+        "Keine dieser"
+      ],
       "korrekte_antwort_index": 3,
       "erklaerung": "Dies ist eine Fangfrage; die Anzahl ist biologisch nicht als feste Zahl definiert."
     },
@@ -853,7 +1321,12 @@
       "kategorie": "Mathematik",
       "schwierigkeit": "Schwer",
       "frage": "Wie viele Primzahlen gibt es zwischen 1 und 10?",
-      "optionen": ["3", "4", "5", "6"],
+      "optionen": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
       "korrekte_antwort_index": 1,
       "erklaerung": "Die Primzahlen sind 2, 3, 5 und 7."
     },
@@ -862,7 +1335,12 @@
       "kategorie": "Geschichte",
       "schwierigkeit": "Mittel",
       "frage": "Wann wurde die Bundesrepublik Deutschland gegründet?",
-      "optionen": ["1945", "1949", "1955", "1990"],
+      "optionen": [
+        "1945",
+        "1949",
+        "1955",
+        "1990"
+      ],
       "korrekte_antwort_index": 1,
       "erklaerung": "Die BRD wurde am 23. Mai 1949 mit Verkündung des Grundgesetzes gegründet."
     },
@@ -871,7 +1349,12 @@
       "kategorie": "Geografie",
       "schwierigkeit": "Einfach",
       "frage": "Was ist die Hauptstadt von Japan?",
-      "optionen": ["Kyoto", "Osaka", "Tokio", "Hiroshima"],
+      "optionen": [
+        "Kyoto",
+        "Osaka",
+        "Tokio",
+        "Hiroshima"
+      ],
       "korrekte_antwort_index": 2,
       "erklaerung": "Tokio ist das politische und wirtschaftliche Zentrum Japans."
     },
@@ -880,7 +1363,12 @@
       "kategorie": "Naturwissenschaften",
       "schwierigkeit": "Einfach",
       "frage": "Wie viele Beine hat eine Spinne?",
-      "optionen": ["6", "8", "10", "12"],
+      "optionen": [
+        "6",
+        "8",
+        "10",
+        "12"
+      ],
       "korrekte_antwort_index": 1,
       "erklaerung": "Spinnentiere haben im Gegensatz zu Insekten 8 Beine."
     },
@@ -889,7 +1377,12 @@
       "kategorie": "Geschichte",
       "schwierigkeit": "Schwer",
       "frage": "Wer war der letzte Zar von Russland?",
-      "optionen": ["Peter der Große", "Alexander II.", "Nikolaus II.", "Iwan der Schreckliche"],
+      "optionen": [
+        "Peter der Große",
+        "Alexander II.",
+        "Nikolaus II.",
+        "Iwan der Schreckliche"
+      ],
       "korrekte_antwort_index": 2,
       "erklaerung": "Nikolaus II. dankte 1917 während der Russischen Revolution ab."
     },
@@ -898,11 +1391,14 @@
       "kategorie": "Mathematik",
       "schwierigkeit": "Einfach",
       "frage": "Was ergibt 7 mal 8?",
-      "optionen": ["54", "56", "62", "64"],
+      "optionen": [
+        "54",
+        "56",
+        "62",
+        "64"
+      ],
       "korrekte_antwort_index": 1,
       "erklaerung": "7 * 8 = 56."
     }
-  ]
-}
   ]
 }

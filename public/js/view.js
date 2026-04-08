@@ -37,7 +37,7 @@ export class QuizView {
     qDiv.className = "question-container";
 
     const questionTitle = document.createElement("h3");
-    questionTitle.textContent = `Frage ${index + 1}: ${question.frage}`;
+    questionTitle.innerHTML = `Frage ${index + 1}: ${question.frage}`;
     qDiv.appendChild(questionTitle);
 
     const buttonContainer = document.createElement("div");
@@ -45,7 +45,7 @@ export class QuizView {
 
     question.optionen.forEach((opt, optIndex) => {
       const button = document.createElement("button");
-      button.textContent = opt;
+      button.innerHTML = opt;
       button.className = "answer-btn";
       button.onclick = () => {
         onAnswerSelected(question, optIndex);
@@ -62,6 +62,13 @@ export class QuizView {
       location.reload();
     }; // Einfacher Reset
     this.app.appendChild(backBtn);
+    this.typeset();
+  }
+
+  typeset() {
+    if (window.MathJax && window.MathJax.typesetPromise) {
+      window.MathJax.typesetPromise().catch((err) => console.log('MathJax typesetting failed: ' + err.message));
+    }
   }
 
   showProgress(correct, wrong, total) {
@@ -122,6 +129,7 @@ export class QuizView {
     nextBtn.onclick = nextQuestionCallback;
     feedbackDiv.appendChild(nextBtn);
     targetContainer.appendChild(feedbackDiv);
+    this.typeset();
   }
 
   showScore(score, total) {
