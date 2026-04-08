@@ -1,49 +1,64 @@
 # Quizapp - Project Overview
 
 ## Purpose of the App
-Quizapp is a web-based quiz application developed for a web programming module in Kazakhstan by Felix Kalz and Philipp Daun. The application allows users to participate in a quiz, tracks their scores, and stores them in a local database. The questions are loaded dynamically from a JSON file, and the application includes a Service Worker, suggesting Progressive Web App (PWA) capabilities for offline access or caching.
+Quizapp is a web-based quiz application developed for a web programming module in Kazakhstan by Felix Kalz and Philipp Daun. The application allows users to participate in a quiz, tracks their scores, and stores them in a local SQLite database. It features user authentication, mathematical expression rendering, and real-time progress visualization.
 
 ## Tech Stack
 -   **Frontend**: 
-    -   HTML5 for structure (`public/index.html`).
-    -   CSS3 for styling (`public/styles.css`).
-    -   Vanilla JavaScript for application logic and interactions (`public/script.js` and `public/js/`).
-    -   Service Worker API (`public/service-worker.js`) for PWA functionalities.
+    -   **HTML5**: Core structure (`public/index.html`).
+    -   **CSS3**: Styling and layout (`public/styles.css`).
+    -   **JavaScript (ES6+)**: Modular logic following the **MVP (Model-View-Presenter)** pattern.
+    -   **MathJax**: Library used for rendering complex mathematical expressions in quiz questions.
+    -   **Service Worker**: Enables Progressive Web App (PWA) capabilities, including offline caching.
 -   **Backend**: 
-    -   PHP (version independent) for handling API requests and interacting with the database (`app/api.php` and `app/models/score.php`).
+    -   **PHP**: Handles API requests, user authentication, and score management (`api/`).
 -   **Database**: 
-    -   SQLite (`data.sqlite`) for lightweight, serverless data storage.
+    -   **SQLite**: Lightweight file-based database (`data.sqlite`) for storing user data and scores.
 -   **Data Interchange**: 
-    -   JSON for question data (`public/questions.json`).
+    -   **JSON**: Used for quiz questions (`public/questions.json`) and API communication.
+
+## Key Features
+-   **User Authentication**: Register and login functionality to track individual performance.
+-   **Dynamic Quiz**: Questions loaded from JSON, supporting text and mathematical formulas (via MathJax).
+-   **Visual Feedback**: A split progress bar showing the ratio of correct (green) vs. incorrect (red) answers in real-time.
+-   **Leaderboard**: Fetches and displays top scores from the database.
+-   **PWA Support**: Offline capability and resource caching via a Service Worker.
 
 ## Project Structure
-The project follows a standard file structure separating frontend assets from backend logic:
+The project is organized into a clean separation of concerns:
 
 ```plaintext
 Quizapp/
 │
-├── README.md               # Project metadata and authors.
-├── data.sqlite             # SQLite database storing user scores.
-├── app/                    # Backend application logic.
-│   ├── api.php             # Main entry point for API interactions and database connection setup.
-│   └── models/
-│       └── score.php       # PHP logic handling score operations (saving/retrieving).
+├── api/                    # Backend API (PHP)
+│   ├── Database.php        # SQLite connection and setup
+│   ├── login.php           # User authentication logic
+│   ├── register.php        # User registration logic
+│   └── scores.php          # Score retrieval and updates
 │
-└── public/                 # Frontend assets served to the client.
-    ├── index.html          # Main HTML document for the application.
-    ├── questions.json      # JSON file containing quiz questions and answers.
-    ├── script.js           # Main JavaScript file for frontend logic.
-    ├── styles.css          # Stylesheet for the application.
-    ├── service-worker.js   # Service worker for offline caching and PWA features.
-    ├── js/                 # Additional JavaScript modules or libraries.
-    └── images/             # Image directory.
+├── public/                 # Frontend assets
+│   ├── index.html          # Main entry point
+│   ├── styles.css          # Application styling
+│   ├── script.js           # Launcher/Initialization script
+│   ├── service-worker.js   # PWA caching logic
+│   ├── questions.json      # Quiz content
+│   └── js/                 # MVP Architecture
+│       ├── model.js        # Data handling and API calls
+│       ├── view.js         # DOM manipulation and event binding
+│       └── presenter.js    # Logic coordination between Model and View
+│
+├── data.sqlite             # Database file
+└── README.md               # Project metadata
 ```
 
 ## Setup & Execution
-*(Based on the available stack)*
-To run this application, you need a web server capable of running PHP with the SQLite extension enabled (e.g., using PHP's built-in web server or Apache/Nginx). 
-For a quick local start, you can run:
-```bash
-php -S localhost:8000
-```
-Navigate to `http://localhost:8000/public/` to view the frontend interface. The backend scripts will be accessible under `/app/`.
+To run the application locally:
+
+1.  **Start PHP Server**: Run the following command in the root directory:
+    ```bash
+    php -S localhost:8000
+    ```
+2.  **Access the App**: Open your browser and navigate to:
+    `http://localhost:8000/public/`
+
+The backend APIs are automatically wired to handle requests from the frontend modules.
