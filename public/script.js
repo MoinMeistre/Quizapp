@@ -11,6 +11,11 @@ document.addEventListener("DOMContentLoaded", () => {
   // Quiz-App initialisieren (View wird erst sichtbar nach Login)
   const quizApp = new QuizPresenter(new QuizModel(), new QuizView());
   quizApp.init();
+
+  // Wenn Login erfolgreich, Score-Liste in der Quizview aktualisieren
+  authApp.setOnLogin(() => {
+    quizApp.loadScores();
+  });
 });
 
 // Register Service Worker

@@ -16,7 +16,7 @@ export class QuizView {
       const container = document.createElement("div");
       container.className = "card";
       const img = document.createElement("img");
-      img.src = `../images/${cat.toLowerCase()}.jpg`;
+      img.src = `images/${cat.toLowerCase()}.jpg`;
       img.alt = cat;
 
       const p = document.createElement("p");
@@ -135,17 +135,23 @@ export class QuizView {
 
   renderScores(scores) {
     if (!this.scoreContainer) return;
-    
+
     this.scoreContainer.innerHTML = '<h1>Score</h1>';
     const list = document.createElement('ul');
     list.className = 'score-list';
-    
-    scores.forEach(s => {
+
+    if (scores && scores.length > 0) {
+      scores.forEach(s => {
+        const item = document.createElement('li');
+        item.innerHTML = `<span>${s.username}</span>: <strong>${s.score} Punkte</strong>`;
+        list.appendChild(item);
+      });
+    } else {
       const item = document.createElement('li');
-      item.innerHTML = `<span>${s.username}</span>: <strong>${s.score} Punkte</strong>`;
+      item.textContent = 'Keine Scores vorhanden';
       list.appendChild(item);
-    });
-    
+    }
+
     this.scoreContainer.appendChild(list);
   }
 }

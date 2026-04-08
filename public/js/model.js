@@ -102,7 +102,8 @@ export class QuizModel {
 
   async getScores() {
     try {
-      const response = await fetch('../api/scores.php');
+      const url = '../api/scores.php';
+      const response = await fetch(url);
       const data = await response.json();
       if (data.success) {
         return data.data;

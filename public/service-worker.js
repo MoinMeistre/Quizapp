@@ -1,4 +1,4 @@
-const CACHE_NAME = "quizapp-cache-v9";
+const CACHE_NAME = "quizapp-cache-v11";
 
 const ASSETS = [
   "./index.html",
@@ -34,8 +34,9 @@ self.addEventListener("activate", function (event) {
 });
 
 self.addEventListener("fetch", function (event) {
-  // Only cache GET requests. POST/PUT/DELETE etc. are not supported by Cache API and shouldn't be cached.
-  if (event.request.method !== "GET") {
+  // Only cache GET requests. 
+  // API requests should NEVER be cached to ensure fresh data.
+  if (event.request.method !== "GET" || event.request.url.includes("/api/")) {
     return;
   }
 
