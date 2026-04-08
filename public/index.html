@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
-
+<html lang="de" class="dark">
 <head>
     <meta charset='utf-8'>
     <title>Quiz App</title>
@@ -19,55 +18,126 @@
     </script>
     <script type="text/javascript" id="MathJax-script" async
         src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-        </script>
+    </script>
 </head>
-
 <body>
-    <header>
-        <h1 onclick="location.reload()" style="cursor: pointer;">Quiz App</h1>
-        <!-- Zeigt eingeloggten User an (anfangs versteckt) -->
-        <div id="user-info" style="display: none;">
-            Eingeloggt als: <span id="username-display"></span>
-            <button id="logout-btn">Logout</button>
-        </div>
-    </header>
+    <!-- Liquid Glass Background -->
+    <div class="bg-glow-1"></div>
+    <div class="bg-glow-2"></div>
 
-    <!-- LOGIN-BEREICH (wird nach Login ausgeblendet) -->
-    <div id="login-section">
-        <h2>Anmelden</h2>
-        <form id="login-form">
-            <input type="text" id="login-username" placeholder="Username" required>
-            <input type="password" id="login-password" placeholder="Passwort" required>
-            <button type="submit">Login</button>
-        </form>
-        <p>Noch kein Konto? <a href="#" id="show-register">Registrieren</a></p>
-
-        <!-- Registrierungsformular (anfangs versteckt) -->
-        <div id="register-section" style="display: none;">
-            <h2>Registrieren</h2>
-            <form id="register-form">
-                <input type="text" id="register-username" placeholder="Username" required>
-                <input type="password" id="register-password" placeholder="Passwort" required>
-                <button type="submit">Registrieren</button>
+    <!-- ==============================================
+         AUTHENTICATION LAYER 
+         ============================================== -->
+    <div id="login-section" class="auth-wrapper">
+        <div class="auth-card">
+            <h2>Anmelden</h2>
+            <form id="login-form">
+                <div class="auth-field">
+                    <input type="text" id="login-username" placeholder="Username" required>
+                </div>
+                <div class="auth-field">
+                    <input type="password" id="login-password" placeholder="Passwort" required>
+                </div>
+                <div class="auth-action">
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Login</button>
+                </div>
             </form>
-            <p>Schon ein Konto? <a href="#" id="show-login">Zum Login</a></p>
-        </div>
+            <div class="auth-footer">
+                <p>Noch kein Konto? <a href="#" id="show-register">Registrieren</a></p>
+            </div>
 
-        <!-- Fehlermeldungen -->
-        <p id="auth-message" style="color: var(--danger-color);"></p>
+            <!-- Registrierung -->
+            <div id="register-section" style="display: none;">
+                <form id="register-form">
+                    <div class="auth-field">
+                        <input type="text" id="register-username" placeholder="Username" required>
+                    </div>
+                    <div class="auth-field">
+                        <input type="password" id="register-password" placeholder="Passwort" required>
+                    </div>
+                    <div class="auth-action">
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Registrieren</button>
+                    </div>
+                </form>
+                <div class="auth-footer">
+                    <p>Schon ein Konto? <a href="#" id="show-login">Zum Login</a></p>
+                </div>
+            </div>
+
+            <p id="auth-message" style="color: var(--error-dim); margin-top: 1rem; text-align: center;"></p>
+        </div>
     </div>
 
-    <!-- QUIZ-BEREICH (wird nach Login eingeblendet) -->
-    <div id="quiz-section" style="display: none;">
-        <div class="container">
-            <main id="app-root" class="QuizApp">
-            </main>
+    <!-- ==============================================
+         DASHBOARD LAYER (QUIZ APP)
+         ============================================== -->
+    <div id="quiz-section" style="display: none;" class="dashboard-layout">
+        
+        <!-- Top Nav -->
+        <header class="top-nav">
+            <h1 onclick="location.reload()">QuizApp</h1>
+            
+            <div id="user-info" style="display: none;">
+                <span id="username-display" style="display: none;"></span>
+            </div>
 
-            <aside id="score-container" class="score">
-                <h1>Score</h1>
-            </aside>
-        </div>
+            <div class="nav-actions">
+                <button class="material-symbols-outlined" style="background: transparent; border: none; color: var(--primary-dim); cursor: pointer;">notifications</button>
+                <div class="nav-avatar">
+                   <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBG6aCZcfwJ7KZmxuTp4Y5Leobn5WV8aBRA7fQUogrPR1gm22d9NHmLqvuV_vxNS7P03JbzYBk1_jMWYcA_Nof992lmLKJgvR_RHLNZ05DPA-kI6rhmn4PBy5628vFANtec4JT83vNzFK5a3BxbPJ3_ZO02LfYrJlymoDAPYlgdcBODeWCjXp1Zph0tNgkduGINPm7dipJMcZjM_HMsg1tsJc-H_NQxggA6d-QNP72CBMa3wvd6f2LFtTpgukZruxoQsyBK3IseFE" alt="User">
+                </div>
+            </div>
+        </header>
+
+        <!-- Sidebar -->
+        <aside class="dashboard-sidebar">
+            <!-- User Profile block -->
+            <div class="user-profile">
+                <div class="user-avatar-wrap">
+                    <div class="user-avatar-ring">
+                        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBG6aCZcfwJ7KZmxuTp4Y5Leobn5WV8aBRA7fQUogrPR1gm22d9NHmLqvuV_vxNS7P03JbzYBk1_jMWYcA_Nof992lmLKJgvR_RHLNZ05DPA-kI6rhmn4PBy5628vFANtec4JT83vNzFK5a3BxbPJ3_ZO02LfYrJlymoDAPYlgdcBODeWCjXp1Zph0tNgkduGINPm7dipJMcZjM_HMsg1tsJc-H_NQxggA6d-QNP72CBMa3wvd6f2LFtTpgukZruxoQsyBK3IseFE" alt="Avatar">
+                    </div>
+                    <div class="user-level-badge">42</div>
+                </div>
+                <div>
+                    <h2 class="user-title" id="sidebar-username">Quiz Master</h2>
+                    <p class="user-subtitle">Level 42 Obsidian Scholar</p>
+                </div>
+            </div>
+
+            <!-- Stats -->
+            <div class="stats-grid">
+                <div class="stat-box">
+                    <span class="stat-label">Current Rank</span>
+                    <div class="stat-value">#124</div>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-label">Total Points</span>
+                    <div class="stat-value">12,450</div>
+                </div>
+            </div>
+
+            <!-- Leaderboard / Scores container -->
+            <div id="score-container" class="mini-leaderboard">
+                <h3>Top Contenders</h3>
+                <ul class="leaderboard-list"></ul>
+            </div>
+
+            <!-- Footer -->
+            <div class="sidebar-footer">
+                <button id="logout-btn" class="logout-btn">
+                    <span class="material-symbols-outlined">logout</span>
+                    <span>Logout</span>
+                </button>
+            </div>
+        </aside>
+
+        <!-- Main Workspace -->
+        <main class="dashboard-main">
+            <!-- App root injection point from view.js -->
+            <div id="app-root"></div>
+        </main>
+        
     </div>
 </body>
-
 </html>

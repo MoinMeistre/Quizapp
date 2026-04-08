@@ -5,27 +5,105 @@ export class QuizView {
   }
 
   renderCategories(categories, onSelect) {
-    this.app.innerHTML =
-      '<nav><div id="card-container" class="card-container"><div class="card" id="server-card"><p id="card-5">Server</p><img src="images/server.jpg" alt="Lando 5" class="sport"></div> </div></nav>';
+    const categoryInfo = {
+        'Server': {
+            icon: 'terminal',
+            img: 'images/server.jpg',
+            desc: 'Infrastructure, deployment, and backend systems.',
+            tag: 'Cutting Edge',
+            isLarge: true
+        },
+        'Tech': {
+            icon: 'memory',
+            img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuC5c1MwKil7UsdYfmh9nr02QIHuV5EZX0ypZh2oKq7n3IjSm0wQYpnoZEIay7w6bP4_K5BDhjoPuB3Ha3rgFBIgWET8TQB-p3J_SQAaND4TeGLsE5q5zovyq2P1YBaaNQuSMZQgp-CKYLDt61HWCKZiHPVnfWwmMkTKaAKZkcuxmCseV9Z-DrLHY7DDD4bCui95xqHCLDUepa6T0irdSm9d7_18sszs7N1QSMpGI8j6_Ng9x1SYuzR4L7nIbJW3pBS2IrEfIh3xVZE',
+            desc: 'AI, Silicon Valley, and the future of computation.',
+            tag: 'Cutting Edge',
+            isLarge: true
+        },
+        'Science': {
+            icon: 'science',
+            img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuD3S5V6lA3CfBj6Ls4J6d8jX8N5gkLbvhyTwBICOFHJ0QQCPBHKFlS_cepqSGj9UZ8WG1W2V-VaZF-RM46GnuicVQzxlbsaU-alPHZK3rWGtyQhmmnKMPjAm37oZBgaQp-DVkSjFY_kb1mlt3H0OzcXOHSVMwgrhwVqAPvfyhOnMm75jdf29HvXwpGnHojDAKRix0_M8y3AtN9M1JEy_f0uaucbK79_MvGTOM76em0f30ARfw5b65YufqHHLXVL0LpkHY4yCLjDmyk',
+            desc: 'Quantum physics to biology.',
+            tag: '85% Global Avg'
+        },
+        'History': {
+            icon: 'history_edu',
+            img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuATa1uTXOGLUxVAZY4wYwLrO5OMtSB79P-BuabD9GAv0R81ZMLMabb-2Ff6c9EYzLQZ4Si7I9Ctfw9h7Jlms_GFFBtlYWxXrbzm4rh3UnVxyTim-ulL-pi_v1uTOi9aRDB_S1yQIuSibcskBxPt_hiILCt-anwrr5G5i2Y8SLnAh-tK7i7HufzsDFPdAh5D4XQu0ETLi9cnXrVzTBjTMdj7HzXtXo0vMsVnkPcTSuDIGMCJBkrisuyaoAp67AuLBJALV_EcHWDTbGw',
+            desc: 'Chronicles of the human era.',
+            tag: '15 Quizzes'
+        },
+        'Art': {
+            icon: 'palette',
+            img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuApo_JTtqWtJ6dEs6iTNzHuwJ6i9r-C2TKOpXn2igTL8kt6FmigwTFc_BPdTuTrDevF37ZauYo8fITg8gwj4aDuT6QfeRDqGSLc8kJQp_nFgvHAioocCoPxDU_NZphotVWnDA-EWO2U0Noh9yyHmQs-NqugUf-e8tHlKCzXW9trVQzaqRrOKBdMCfYielZb9HRBfhFlerBLpuVTY9UQ77RXJqS7yqmF2UgKpuldwBn9LvLtUYk3qhxk2ThkKQEcOQH5S2l8LpPn9iY',
+            desc: 'Design, theory, and visionaries.',
+            tag: '284 Users Active'
+        },
+        'Nature': {
+            icon: 'forest',
+            img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuD_Q8OnLSPRvuoIOJi7mgTQfFotfnujdR00GYNTd4v8Z_f_1lHj4CN2xf--ihuPcfNhRWYNF6FTrs1UzimMZmqhhA3qqozM6HWkYk_zxo4C13RPIYFRoCRKLeHqJ5HmFNQvgDx6UE6fYCFTJbG6iEwKG02Fils5EyaGIqG8Z5D8fqpsuhnPkZxAUG3Ner6UA-JX-LcUtYuGRTAY1UQHBIHnykYlkH6EC-CFpvUaAr7Aw8wigpL4gTG-yWlLJcoKz-c7iBqyrSulec8',
+            desc: 'Wildlife and environmental systems.',
+            tag: 'Unlocked Level 4'
+        }
+    };
+
+    let headerHtml = `
+      <section class="dashboard-header">
+          <h1>Choose Your <span>Challenge</span></h1>
+          <p>Explore a spectrum of knowledge through our liquid glass interface. Select a category to begin your journey through the Obsidian Lens.</p>
+      </section>
+      <div id="card-container" class="bento-grid"></div>
+    `;
+    this.app.innerHTML = headerHtml;
+
     const cardContainer = document.getElementById("card-container");
-    const serverCard = document.getElementById("server-card");
-    if (serverCard) {
-      serverCard.onclick = () => onSelect('Server');
+
+    // Feste Server Karte
+    if (!categories.includes('Server')) {
+       categories.unshift('Server'); 
     }
-    categories.forEach((cat) => {
-      const container = document.createElement("div");
-      container.className = "card";
-      const img = document.createElement("img");
-      img.src = `images/${cat.toLowerCase()}.jpg`;
-      img.alt = cat;
 
-      const p = document.createElement("p");
-      p.innerText = cat;
-      container.onclick = () => onSelect(cat);
+    categories.forEach((cat, idx) => {
+        const info = categoryInfo[cat] || {
+            icon: 'quiz',
+            img: `images/${cat.toLowerCase()}.jpg`,
+            desc: 'Test your knowledge.',
+            tag: 'Available',
+            isLarge: idx === 0 
+        };
 
-      container.appendChild(p);
-      container.appendChild(img);
-      cardContainer.appendChild(container);
+        const isLargeClass = info.isLarge ? 'col-span-8 is-large' : 'col-span-4';
+        
+        const cardHtml = `
+            <div class="bento-bg ${info.isLarge ? 'is-large' : ''}">
+                <img src="${info.img}" alt="${cat}" onerror="this.src=''; this.style.backgroundColor='#1f1f1f'">
+            </div>
+            <div class="bento-content ${info.isLarge ? 'is-large' : ''}">
+                <div>
+                   ${info.isLarge ? `<div class="flex items-center gap-3 mb-2" style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.5rem;">
+                       <span class="material-symbols-outlined bento-icon">${info.icon}</span>
+                       <span style="font-size:0.625rem; letter-spacing:0.2em; text-transform:uppercase; color:var(--primary); font-weight:700;">${info.tag}</span>
+                   </div>` : `<span class="material-symbols-outlined bento-icon">${info.icon}</span>`}
+                   <h2 class="bento-title">${cat}</h2>
+                   <p class="bento-desc">${info.desc}</p>
+                </div>
+                <div class="bento-footer">
+                   ${info.isLarge ? `
+                      <div class="bento-meta">Multiple Quizzes Available</div>
+                      <button class="bento-action-btn">Enter</button>
+                   ` : `
+                      <span class="bento-meta">${info.tag}</span>
+                      <span class="material-symbols-outlined bento-arrow">arrow_forward</span>
+                   `}
+                </div>
+            </div>
+        `;
+
+        const container = document.createElement("div");
+        container.className = `glass-card-item ${isLargeClass}`;
+        container.style.gridColumnEnd = info.isLarge ? 'span 8' : 'span 4'; 
+        container.innerHTML = cardHtml;
+        container.onclick = () => onSelect(cat);
+        cardContainer.appendChild(container);
     });
   }
 
@@ -59,7 +137,9 @@ export class QuizView {
     this.app.appendChild(qDiv);
 
     const backBtn = document.createElement("button");
-    backBtn.innerText = "Zurück";
+    backBtn.innerText = "Abbrechen";
+    backBtn.className = "btn btn-secondary";
+    backBtn.style.marginTop = "2rem";
     backBtn.onclick = () => {
       location.reload();
     }; // Einfacher Reset
@@ -137,28 +217,42 @@ export class QuizView {
   showScore(score, total) {
     const wrong = total - score;
     const percentage = total > 0 ? Math.round((score / total) * 100) : 0;
-    this.app.innerHTML = `<h2>Quiz beendet!</h2>
-      <p>Du hast ${score} von ${total} Fragen richtig beantwortet (Falsch: ${wrong}).</p>
-      <h3 style="margin-top: 15px; margin-bottom: 20px; color: var(--primary-color);">Score: ${percentage}%</h3>
-      <button class="btn btn-primary" onclick="location.reload()">Neues Quiz</button>`;
+    
+    this.app.innerHTML = `
+      <div class="feedback" style="border-left: none; background: var(--surface-container); text-align:center;">
+        <h2 style="font-size:2rem; margin-bottom:1rem;">Quiz beendet!</h2>
+        <p style="color:var(--on-surface-variant);">Du hast ${score} von ${total} Fragen richtig beantwortet (Falsch: ${wrong}).</p>
+        <h3 style="margin: 2rem 0; font-size: 3rem; color: var(--primary); font-family: var(--font-display);">${percentage}%</h3>
+        <button class="btn btn-primary" onclick="location.reload()">Neues Quiz wählen</button>
+      </div>`;
   }
 
   renderScores(scores) {
     if (!this.scoreContainer) return;
 
-    this.scoreContainer.innerHTML = '<h1>Score</h1>';
+    this.scoreContainer.innerHTML = '<h3>Top Contenders</h3>';
     const list = document.createElement('ul');
-    list.className = 'score-list';
+    list.className = 'leaderboard-list';
 
     if (scores && scores.length > 0) {
-      scores.forEach(s => {
+      scores.forEach((s, idx) => {
         const item = document.createElement('li');
-        item.innerHTML = `<span>${s.username}</span>: <strong>${s.score} Punkte</strong>`;
+        item.className = 'leaderboard-item';
+        
+        // Let's assume username is the logged in user here (simple check for "You" stylings could be added if we knew the current user string)
+        item.innerHTML = `
+          <div class="lb-user-info">
+            <span class="lb-rank">${idx + 1}</span>
+            <span style="font-size:0.875rem; font-weight:500;">${s.username}</span>
+          </div>
+          <span class="lb-score">${s.score} pts</span>
+        `;
         list.appendChild(item);
       });
     } else {
       const item = document.createElement('li');
-      item.textContent = 'Keine Scores vorhanden';
+      item.className = 'leaderboard-item';
+      item.innerHTML = `<span style="font-size:0.875rem; color:var(--on-surface-variant);">Keine Scores vorhanden</span>`;
       list.appendChild(item);
     }
 
@@ -196,9 +290,14 @@ export class AuthView {
   // Zeigt den Quiz-Bereich (User ist eingeloggt)
   showQuiz(username) {
     this.loginSection.style.display = 'none';
-    this.quizSection.style.display = 'block';
+    this.quizSection.style.display = 'flex'; // Changed to flex for dashboard layout
     this.userInfo.style.display = 'block';
+    
+    // Update both displays
     this.usernameDisplay.textContent = username;
+    const sidebarUser = document.getElementById('sidebar-username');
+    if (sidebarUser) sidebarUser.textContent = username;
+    
     this.clearMessage();
   }
 
