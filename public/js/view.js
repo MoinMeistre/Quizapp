@@ -5,8 +5,12 @@ export class QuizView {
 
   renderCategories(categories, onSelect) {
     this.app.innerHTML =
-      '<nav><div id="card-container" class="card-container"><div class="card"><p id="card-5">Server</p><img src="images/server.jpg" alt="Lando 5" class="sport"></div> </div></nav>';
+      '<nav><div id="card-container" class="card-container"><div class="card" id="server-card"><p id="card-5">Server</p><img src="images/server.jpg" alt="Lando 5" class="sport"></div> </div></nav>';
     const cardContainer = document.getElementById("card-container");
+    const serverCard = document.getElementById("server-card");
+    if (serverCard) {
+      serverCard.onclick = () => onSelect('Server');
+    }
     categories.forEach((cat) => {
       const container = document.createElement("div");
       container.className = "card";

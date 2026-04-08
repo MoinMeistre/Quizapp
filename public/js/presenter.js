@@ -18,15 +18,16 @@ export class QuizPresenter {
     });
   }
 
-  startQuiz(category) {
+  async startQuiz(category) {
     this.category = category;
-    this.questions = this.model.getQuestionsByCategory(category, 10);
+    this.questions = await this.model.getQuestionsByCategory(category, 10);
     this.currentIndex = 0;
     this.score = 0;
     this.showCurrentQuestion();
   }
 
   showCurrentQuestion() {
+    console.log(this.questions.length)
     if (this.currentIndex < this.questions.length) {
       const question = this.questions[this.currentIndex];
       this.view.renderQuestion(
@@ -48,9 +49,9 @@ export class QuizPresenter {
   }
 
   // Validierung Frage
-  validateAnswer(question, selectedIndex) {
+  async validateAnswer(question, selectedIndex) {
     if (question.kategorie === "Server") {
-      const correct = this.model.validateQuestion(question, selectedIndex);
+      const correct = await this.model.validateQuestion(question, selectedIndex);
       if (correct) this.score++;
       this.view.showFeedback(
         correct,

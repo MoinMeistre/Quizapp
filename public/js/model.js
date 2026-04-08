@@ -11,7 +11,7 @@ export class QuizModel {
   }
 
   async frageHolen(page) {
-    const url = `https://vogtserver.de:8888/api//quizzes?page=${page}`;
+    const url = `https://vogtserver.de:8888/api/quizzes?page=${page}`;
     const auth = btoa("test@gmail.com:secret");
     console.log("Hole Frage von:", url);
     try {
@@ -24,10 +24,9 @@ export class QuizModel {
       }
 
       const daten = await response.json();
-      if(daten){
+      if (daten) {
         return daten;
       }
-     
     } catch (error) {
       console.error("Fehler:", error);
     }
@@ -55,9 +54,10 @@ export class QuizModel {
   async getQuestionsByCategory(category, amount) {
 
     if (category === "Server") {
-      const page = Math.floor(Math.random() * 9) + 1; 
+      const page = Math.floor(Math.random() * 3) + 1;
       const questions = await this.frageHolen(page);
-      const formattedQuestions = questions.map((q) => ({
+      console.log(questions);
+      const formattedQuestions = questions.content.map((q) => ({
         id: q.id,
         frage: q.text,
         optionen: q.options,
@@ -67,14 +67,14 @@ export class QuizModel {
       }));
       return formattedQuestions.sort(() => 0.5 - Math.random()).slice(0, amount);
     }
-      const filtered = this.questions.filter((q) => q.kategorie === category);
-      console.log(
-        `Gefundene Fragen für Kategorie "${category}":`,
-        filtered.length,
-      );
-      // Zufällige Sortierung und Auswahl der Anzahl
-      return filtered.sort(() => 0.5 - Math.random()).slice(0, amount);
-    
+    const filtered = this.questions.filter((q) => q.kategorie === category);
+    console.log(
+      `Gefundene Fragen für Kategorie "${category}":`,
+      filtered.length,
+    );
+    // Zufällige Sortierung und Auswahl der Anzahl
+    return filtered.sort(() => 0.5 - Math.random()).slice(0, amount);
+
   }
 
   getAllCategories() {
