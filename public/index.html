@@ -12,21 +12,55 @@
 <body>
     <header>
         <h1>Quiz App</h1>
+        <!-- Zeigt eingeloggten User an (anfangs versteckt) -->
+        <div id="user-info" style="display: none;">
+            Eingeloggt als: <span id="username-display"></span>
+            <button id="logout-btn">Logout</button>
+        </div>
     </header>
-    <div class="container">
-        <main id="app-root" class="QuizApp">
-        </main>
 
-        <aside id="score-container" class="score">
-            <h1>Score</h1>
-        </aside>
+    <!-- LOGIN-BEREICH (wird nach Login ausgeblendet) -->
+    <div id="login-section">
+        <h2>Anmelden</h2>
+        <form id="login-form">
+            <input type="text" id="login-username" placeholder="Username" required>
+            <input type="password" id="login-password" placeholder="Passwort" required>
+            <button type="submit">Login</button>
+        </form>
+        <p>Noch kein Konto? <a href="#" id="show-register">Registrieren</a></p>
+        
+        <!-- Registrierungsformular (anfangs versteckt) -->
+        <div id="register-section" style="display: none;">
+            <h2>Registrieren</h2>
+            <form id="register-form">
+                <input type="text" id="register-username" placeholder="Username" required>
+                <input type="password" id="register-password" placeholder="Passwort" required>
+                <button type="submit">Registrieren</button>
+            </form>
+            <p>Schon ein Konto? <a href="#" id="show-login">Zum Login</a></p>
+        </div>
+        
+        <!-- Fehlermeldungen -->
+        <p id="auth-message" style="color: red;"></p>
     </div>
 
-    <!-- Button zum Frage holen -->
-    <button onclick="frageHolen()">Frage vom Server holen.</button>
-    <div id="quiz-area">
-        <h2 id="question-text">Hier erscheint die Frage...</h2>
-        <div id="awnser-buttons"></div>
+    <!-- QUIZ-BEREICH (wird nach Login eingeblendet) -->
+    <div id="quiz-section" style="display: none;">
+        <div class="container">
+            <main id="app-root" class="QuizApp">
+            </main>
+
+            <aside id="score-container" class="score">
+                <h1>Score</h1>
+            </aside>
+        </div>
+
+        <!-- Button zum Frage holen -->
+        <button onclick="frageHolen()">Frage vom Server holen.</button>
+        <div id="quiz-area">
+            <h2 id="question-text">Hier erscheint die Frage...</h2>
+            <div id="awnser-buttons"></div>
+        </div>
     </div>
 </body>
 
