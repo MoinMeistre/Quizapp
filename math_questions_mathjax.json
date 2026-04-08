@@ -1,0 +1,227 @@
+[
+  {
+    "id": 37,
+    "kategorie": "Mathematik",
+    "schwierigkeit": "Einfach",
+    "frage": "Wie lautet die Formel für den Flächeninhalt $A$ eines Quadrats mit der Seitenlänge $a$?",
+    "optionen": ["$A = 2 \\cdot a$", "$A = a^2$", "$A = 4 \\cdot a$", "$A = \\sqrt{a}$"],
+    "korrekte_antwort_index": 1,
+    "erklaerung": "Die Fläche eines Quadrats berechnet sich durch $A = a \\cdot a = a^2$."
+  },
+  {
+    "id": 38,
+    "kategorie": "Mathematik",
+    "schwierigkeit": "Mittel",
+    "frage": "Welcher berühmte Satz beschreibt das Verhältnis der Seiten im rechtwinkligen Dreieck mit Katheten $a$, $b$ und Hypotenuse $c$?",
+    "optionen": ["Satz des Thales", "Satz des Pythagoras", "Binomische Formel", "Sinussatz"],
+    "korrekte_antwort_index": 1,
+    "erklaerung": "Der Satz des Pythagoras lautet: $a^2 + b^2 = c^2$."
+  },
+  {
+    "id": 39,
+    "kategorie": "Mathematik",
+    "schwierigkeit": "Schwer",
+    "frage": "Wie lautet die Lösung der quadratischen Gleichung $x^2 - 4 = 0$?",
+    "optionen": ["$x = 4$", "$x = 2$", "$x = \\pm 2$", "$x = 0$"],
+    "korrekte_antwort_index": 2,
+    "erklaerung": "Umformen ergibt $x^2 = 4$, also $x = \\pm\\sqrt{4} = \\pm 2$, da sowohl $2^2 = 4$ als auch $(-2)^2 = 4$."
+  },
+  {
+    "id": 40,
+    "kategorie": "Mathematik",
+    "schwierigkeit": "Einfach",
+    "frage": "Was ist der ungefähre Wert der Kreiszahl $\\pi$?",
+    "optionen": ["$3{,}12$", "$3{,}14$", "$3{,}16$", "$3{,}18$"],
+    "korrekte_antwort_index": 1,
+    "erklaerung": "$\\pi$ ist das Verhältnis von Umfang zu Durchmesser eines Kreises: $\\pi \\approx 3{,}14159\\ldots$"
+  },
+  {
+    "id": 41,
+    "kategorie": "Mathematik",
+    "schwierigkeit": "Mittel",
+    "frage": "Wie lautet die erste Ableitung der Funktion $f(x) = x^n$?",
+    "optionen": ["$f'(x) = n \\cdot x$", "$f'(x) = n \\cdot x^{n-1}$", "$f'(x) = x^{n+1}$", "$f'(x) = n^x$"],
+    "korrekte_antwort_index": 1,
+    "erklaerung": "Dies ist die allgemeine Potenzregel: $f'(x) = n \\cdot x^{n-1}$ — Exponent nach vorne multiplizieren und oben um eins verringern."
+  },
+  {
+    "id": 42,
+    "kategorie": "Mathematik",
+    "schwierigkeit": "Schwer",
+    "frage": "Was ergibt die Summe der Innenwinkel $\\alpha + \\beta + \\gamma$ in einem ebenen Dreieck?",
+    "optionen": ["$90°$", "$180°$", "$270°$", "$360°$"],
+    "korrekte_antwort_index": 1,
+    "erklaerung": "Für jedes ebene Dreieck gilt: $\\alpha + \\beta + \\gamma = 180°$."
+  },
+  {
+    "id": 43,
+    "kategorie": "Mathematik",
+    "schwierigkeit": "Einfach",
+    "frage": "Was ist das Ergebnis von $5!$ (5 Fakultät)?",
+    "optionen": ["$25$", "$60$", "$120$", "$150$"],
+    "korrekte_antwort_index": 2,
+    "erklaerung": "$5! = 5 \\cdot 4 \\cdot 3 \\cdot 2 \\cdot 1 = 120$."
+  },
+  {
+    "id": 44,
+    "kategorie": "Mathematik",
+    "schwierigkeit": "Mittel",
+    "frage": "Wie nennt man eine natürliche Zahl $p > 1$, die nur durch $1$ und $p$ selbst teilbar ist?",
+    "optionen": ["Gerade Zahl", "Primzahl", "Rationale Zahl", "Komplexe Zahl"],
+    "korrekte_antwort_index": 1,
+    "erklaerung": "Primzahlen haben genau zwei Teiler. Die kleinste Primzahl ist $2$."
+  },
+  {
+    "id": 45,
+    "kategorie": "Mathematik",
+    "schwierigkeit": "Schwer",
+    "frage": "Welche mathematische Konstante $e$ ist die Basis des natürlichen Logarithmus $\\ln(x)$?",
+    "optionen": ["$\\pi$", "Die Eulersche Zahl $e$", "Die Goldene Zahl $\\varphi$", "$\\sqrt{2}$"],
+    "korrekte_antwort_index": 1,
+    "erklaerung": "Die Eulersche Zahl $e \\approx 2{,}718$ ist definiert als $\\lim_{n \\to \\infty}\\left(1 + \\frac{1}{n}\\right)^n$ und ist die Basis des $\\ln(x)$."
+  },
+  {
+    "id": 46,
+    "kategorie": "Mathematik",
+    "schwierigkeit": "Einfach",
+    "frage": "Was ist $\\sqrt{144}$?",
+    "optionen": ["$10$", "$11$", "$12$", "$14$"],
+    "korrekte_antwort_index": 2,
+    "erklaerung": "$\\sqrt{144} = 12$, denn $12^2 = 144$."
+  },
+  {
+    "id": 47,
+    "kategorie": "Mathematik",
+    "schwierigkeit": "Mittel",
+    "frage": "Wie lautet die Lösung der Gleichung $2x + 10 = 20$?",
+    "optionen": ["$x = 2$", "$x = 5$", "$x = 10$", "$x = 15$"],
+    "korrekte_antwort_index": 1,
+    "erklaerung": "$2x + 10 = 20 \\Rightarrow 2x = 10 \\Rightarrow x = 5$."
+  },
+  {
+    "id": 48,
+    "kategorie": "Mathematik",
+    "schwierigkeit": "Schwer",
+    "frage": "Was ist der Median der Zahlenreihe $\\{1, 3, 3, 6, 7, 8, 9\\}$?",
+    "optionen": ["$3$", "$5$", "$6$", "$7$"],
+    "korrekte_antwort_index": 2,
+    "erklaerung": "Der Median ist der mittlere Wert einer sortierten Liste. Bei $7$ Werten ist dies der $4.$-Wert: $6$."
+  },
+  {
+    "id": 49,
+    "kategorie": "Mathematik",
+    "schwierigkeit": "Einfach",
+    "frage": "Wie viele Millimeter sind ein Dezimeter? ($1\\,\\text{dm} = {?}\\,\\text{mm}$)",
+    "optionen": ["$10\\,\\text{mm}$", "$100\\,\\text{mm}$", "$1000\\,\\text{mm}$", "$0{,}1\\,\\text{mm}$"],
+    "korrekte_antwort_index": 1,
+    "erklaerung": "$1\\,\\text{dm} = 10\\,\\text{cm} = 100\\,\\text{mm}$."
+  },
+  {
+    "id": 51,
+    "kategorie": "Mathematik",
+    "schwierigkeit": "Einfach",
+    "frage": "Was ist $15\\%$ von $200$?",
+    "optionen": ["$20$", "$25$", "$30$", "$35$"],
+    "korrekte_antwort_index": 2,
+    "erklaerung": "$15\\% \\cdot 200 = \\frac{15}{100} \\cdot 200 = 30$."
+  },
+  {
+    "id": 52,
+    "kategorie": "Mathematik",
+    "schwierigkeit": "Mittel",
+    "frage": "Wie nennt man ein reguläres Polygon mit $8$ Seiten?",
+    "optionen": ["Hexagon", "Heptagon", "Oktagon", "Dekagon"],
+    "korrekte_antwort_index": 2,
+    "erklaerung": "Ein Oktagon (Achteck) hat $8$ Seiten. Die Innenwinkelsumme beträgt $(8-2) \\cdot 180° = 1080°$."
+  },
+  {
+    "id": 53,
+    "kategorie": "Mathematik",
+    "schwierigkeit": "Schwer",
+    "frage": "Wie lautet die Summe $\\sum_{k=1}^{100} k$ der ersten $100$ natürlichen Zahlen (Gaußsche Summenformel)?",
+    "optionen": ["$5000$", "$5050$", "$5100$", "$5500$"],
+    "korrekte_antwort_index": 1,
+    "erklaerung": "Die Gaußsche Summenformel lautet $\\sum_{k=1}^{n} k = \\frac{n(n+1)}{2}$. Für $n=100$: $\\frac{100 \\cdot 101}{2} = 5050$."
+  },
+  {
+    "id": 54,
+    "kategorie": "Mathematik",
+    "schwierigkeit": "Mittel",
+    "frage": "Was ist $\\sqrt[3]{27}$ (die dritte Wurzel aus $27$)?",
+    "optionen": ["$3$", "$9$", "$6$", "$4$"],
+    "korrekte_antwort_index": 0,
+    "erklaerung": "$\\sqrt[3]{27} = 3$, denn $3^3 = 3 \\cdot 3 \\cdot 3 = 27$."
+  },
+  {
+    "id": 55,
+    "kategorie": "Mathematik",
+    "schwierigkeit": "Einfach",
+    "frage": "Welches Ergebnis liefert die Rechnung $3 + 3 \\cdot 3$?",
+    "optionen": ["$18$", "$9$", "$12$", "$15$"],
+    "korrekte_antwort_index": 2,
+    "erklaerung": "Punkt- vor Strichrechnung: $3 + 3 \\cdot 3 = 3 + 9 = 12$."
+  },
+  {
+    "id": 56,
+    "kategorie": "Mathematik",
+    "schwierigkeit": "Mittel",
+    "frage": "Wie groß ist der Umfang $U$ eines Kreises mit dem Durchmesser $d$?",
+    "optionen": ["$U = \\pi \\cdot d$", "$U = \\pi \\cdot r^2$", "$U = 2 \\cdot d$", "$U = \\pi^2 \\cdot d$"],
+    "korrekte_antwort_index": 0,
+    "erklaerung": "Der Umfang berechnet sich als $U = \\pi \\cdot d = 2\\pi r$."
+  },
+  {
+    "id": 57,
+    "kategorie": "Mathematik",
+    "schwierigkeit": "Schwer",
+    "frage": "Welches Zahlensystem basiert auf der Basis $2$ und verwendet nur die Ziffern $\\{0, 1\\}$?",
+    "optionen": ["Dezimalsystem (Basis $10$)", "Hexadezimalsystem (Basis $16$)", "Binärsystem (Basis $2$)", "Oktalsystem (Basis $8$)"],
+    "korrekte_antwort_index": 2,
+    "erklaerung": "Im Binärsystem gilt z.B. $1011_2 = 1 \\cdot 2^3 + 0 \\cdot 2^2 + 1 \\cdot 2^1 + 1 \\cdot 2^0 = 11_{10}$."
+  },
+  {
+    "id": 58,
+    "kategorie": "Mathematik",
+    "schwierigkeit": "Mittel",
+    "frage": "Was ist die Steigung $m$ der Geraden $y = 4x - 2$?",
+    "optionen": ["$m = -2$", "$m = x$", "$m = 4$", "$m = 2$"],
+    "korrekte_antwort_index": 2,
+    "erklaerung": "In der Geradengleichung $y = mx + b$ ist $m$ der Koeffizient vor $x$. Hier gilt $m = 4$, $b = -2$."
+  },
+  {
+    "id": 59,
+    "kategorie": "Mathematik",
+    "schwierigkeit": "Einfach",
+    "frage": "Wie viele Flächen hat ein Würfel?",
+    "optionen": ["$4$", "$6$", "$8$", "$12$"],
+    "korrekte_antwort_index": 1,
+    "erklaerung": "Ein Würfel (Hexaeder) hat $6$ quadratische Begrenzungsflächen."
+  },
+  {
+    "id": 91,
+    "kategorie": "Mathematik",
+    "schwierigkeit": "Einfach",
+    "frage": "Was ist die Hälfte von $\\dfrac{1}{2}$?",
+    "optionen": ["$\\dfrac{1}{4}$", "$1$", "$\\dfrac{1}{8}$", "$0{,}5$"],
+    "korrekte_antwort_index": 0,
+    "erklaerung": "$\\frac{1}{2} \\div 2 = \\frac{1}{2} \\cdot \\frac{1}{2} = \\frac{1}{4}$."
+  },
+  {
+    "id": 95,
+    "kategorie": "Mathematik",
+    "schwierigkeit": "Schwer",
+    "frage": "Wie viele Primzahlen $p$ gibt es mit $1 < p \\leq 10$?",
+    "optionen": ["$3$", "$4$", "$5$", "$6$"],
+    "korrekte_antwort_index": 1,
+    "erklaerung": "Die Primzahlen sind $2, 3, 5, 7$ — also genau $4$ Stück."
+  },
+  {
+    "id": 100,
+    "kategorie": "Mathematik",
+    "schwierigkeit": "Einfach",
+    "frage": "Was ergibt $7 \\times 8$?",
+    "optionen": ["$54$", "$56$", "$62$", "$64$"],
+    "korrekte_antwort_index": 1,
+    "erklaerung": "$7 \\times 8 = 56$."
+  }
+]
