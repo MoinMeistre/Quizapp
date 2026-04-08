@@ -29,9 +29,9 @@ export class QuizView {
   }
 
 
-  renderQuestion(question, index, onAnswerSelected, amount) {
+  renderQuestion(question, index, score, onAnswerSelected, amount) {
     this.app.innerHTML = "";
-    this.showProgress(index, amount);
+    this.showProgress(score, index - score, amount);
     const qDiv = document.createElement("div");
     qDiv.className = "question-container";
 
@@ -63,19 +63,32 @@ export class QuizView {
     this.app.appendChild(backBtn);
   }
 
-  showProgress(current, total) {
-    console.log("Aktueller Fortschritt:", current, "von", total);
+  showProgress(correct, wrong, total) {
     let progressBar = this.app.querySelector(".progress-bar");
     if (!progressBar) {
       progressBar = document.createElement("div");
       progressBar.className = "progress-bar";
+      progressBar.style.position = "relative";
       this.app.appendChild(progressBar);
     }
-    let progress = document.createElement("div");
-    progress.className = "progress-fill";
-    progressBar.appendChild(progress);
-    const percentage = ((current) / total) * 100;
-    progress.style.width = percentage + "%";
+    
+    progressBar.innerHTML = "";
+
+    let correctProgress = document.createElement("div");
+    correctProgress.className = "progress-fill correct";
+    correctProgress.style.position = "absolute";
+    correctProgress.style.left = "0";
+    correctProgress.style.backgroundColor = "var(--success-color, green)";
+    correctProgress.style.width = ((correct / total) * 100) + "%";
+    progressBar.appendChild(correctProgress);
+
+    let wrongProgress = document.createElement("div");
+    wrongProgress.className = "progress-fill incorrect";
+    wrongProgress.style.position = "absolute";
+    wrongProgress.style.right = "0";
+    wrongProgress.style.backgroundColor = "var(--danger-color, red)";
+    wrongProgress.style.width = ((wrong / total) * 100) + "%";
+    progressBar.appendChild(wrongProgress);
   }
 
   showFeedback(isCorrect, explanation, correctAnswer, nextQuestionCallback) {
@@ -111,6 +124,11 @@ export class QuizView {
   }
 
   showScore(score, total) {
-    this.app.innerHTML = `<h2>Quiz beendet!</h2><p>Du hast ${score} von ${total} Fragen richtig beantwortet.</p><button onclick="location.reload()">Neues Quiz</button>`;
+    const wrong = total - score;
+    const percentage = total > 0 ? Math.round((score / total) * 100) : 0;
+    this.app.innerHTML = `<h2>Quiz beendet!</h2>
+      <p>Du hast ${score} von ${total} Fragen richtig beantwortet (Falsch: ${wrong}).</p>
+      <h3 style="margin-top: 15px; margin-bottom: 20px; color: var(--primary-color);">Score: ${percentage}%</h3>
+      <button class="btn btn-primary" onclick="location.reload()">Neues Quiz</button>`;
   }
 }

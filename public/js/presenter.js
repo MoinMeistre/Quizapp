@@ -33,6 +33,7 @@ export class QuizPresenter {
       this.view.renderQuestion(
         question,
         this.currentIndex,
+        this.score,
         (question, selectedIndex) => {
           this.validateAnswer(question, selectedIndex);
         },
@@ -45,7 +46,7 @@ export class QuizPresenter {
 
   showScore() {
     this.view.showScore(this.score, this.questions.length);
-    this.view.showProgress(this.currentIndex, this.questions.length);
+    this.view.showProgress(this.score, this.currentIndex - this.score, this.questions.length);
   }
 
   // Validierung Frage
