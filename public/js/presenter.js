@@ -111,13 +111,22 @@ export class AuthPresenter {
   }
 
   // Initialisierung: Events binden + initialen Status anzeigen
-  init() {
+  async init() {
     // Event-Handler an View binden
     this.view.bindLoginSubmit((username, password) => this.handleLogin(username, password));
     this.view.bindRegisterSubmit((username, password) => this.handleRegister(username, password));
     this.view.bindShowRegister(() => this.view.showRegister());
     this.view.bindShowLogin(() => this.view.showLoginForm());
     this.view.bindLogout(() => this.handleLogout());
+
+    // Echter Offline-Check: Login überspringen wenn Server nicht erreichbar
+    const online = await this.model.isServerReachable();
+    if (!online) {
+      console.log('Server unreachable. Switching to guest mode.');
+      this.view.showQuiz('Gast (Offline)');
+      if (this.onLogin) this.onLogin();
+      return;
+    }
 
     // Initialen Status prüfen: Ist User schon eingeloggt?
     if (this.model.isLoggedIn()) {
@@ -165,9 +174,18 @@ export class AuthPresenter {
   }
 
   // Logout-Handler
-  handleLogout() {
+  async handleLogout() {
     this.model.logout();
-    this.view.showLogin();
+
+    // Wenn wir offline sind, direkt wieder zum Gast-Modus wechseln statt zum Login
+    const online = await this.model.isServerReachable();
+    if (!online) {
+      console.log('Server unreachable during logout. Switching to guest mode.');
+      this.view.showQuiz('Gast (Offline)');
+      if (this.onLogin) this.onLogin();
+    } else {
+      this.view.showLogin();
+    }
   }
 
   // Hilfsmethode: Gibt eingeloggten User zurück (für andere Module)

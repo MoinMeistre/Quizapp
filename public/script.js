@@ -4,18 +4,17 @@ import { QuizPresenter, AuthPresenter } from "./js/presenter.js";
 
 // Init Apps on DOMContentLoaded
 document.addEventListener("DOMContentLoaded", () => {
-  // Auth zuerst initialisieren
-  const authApp = new AuthPresenter(new AuthModel(), new AuthView());
-  authApp.init();
-
   // Quiz-App initialisieren (View wird erst sichtbar nach Login)
   const quizApp = new QuizPresenter(new QuizModel(), new QuizView());
   quizApp.init();
 
+  const authApp = new AuthPresenter(new AuthModel(), new AuthView());
   // Wenn Login erfolgreich, Score-Liste in der Quizview aktualisieren
   authApp.setOnLogin(() => {
     quizApp.loadScores();
   });
+
+  authApp.init();
 });
 
 // Register Service Worker
@@ -34,7 +33,7 @@ if ("serviceWorker" in navigator) {
 async function frageHolen() {
   const url = "https://vogtserver.de:8888/api/quizzes/1";
   const auth = btoa("test@gmail.com:secret");
-    console.log("Hole Frage von:", url);
+  console.log("Hole Frage von:", url);
   try {
     const response = await fetch(url, {
       headers: { Authorization: `Basic ${auth}` },
@@ -44,7 +43,7 @@ async function frageHolen() {
 
     document.getElementById("question-text").innerText = daten.text;
 
-  
+
     if (daten.options) {
       anzeigenImQuiz(daten);
     }

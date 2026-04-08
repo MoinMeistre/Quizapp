@@ -134,9 +134,20 @@ export class AuthModel {
     this.user = this.loadUserFromStorage();
   }
 
-  // Prüft ob User eingeloggt ist
+  // Prüft ob User eingeloggt ist (lokaler Status)
   isLoggedIn() {
     return this.user !== null;
+  }
+
+  // Echter Online-Check (versucht den Server zu erreichen)
+  async isServerReachable() {
+    try {
+      // Kleiner Request an die API, um Erreichbarkeit zu prüfen
+      const response = await fetch('../api/login.php', { method: 'HEAD' });
+      return true;
+    } catch (e) {
+      return false;
+    }
   }
 
   // Gibt aktuellen User zurück
