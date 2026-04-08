@@ -625,37 +625,152 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: 0 0 0 1px rgba(72, 72, 72, 0.4);
 }
 
-/* Feedback Styling */
-.feedback {
-    margin-top: 2rem;
-    padding: 1.5rem;
-    border-radius: var(--radius-md);
-    background-color: var(--surface-container);
+/* ========================================
+   QUESTION FEEDBACK OVERLAY
+   ======================================== */
+.feedback-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background-color: rgba(14, 14, 14, 0.4); /* surface/40 */
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
 }
 
-.feedback.correct {
-    border-left: 4px solid var(--success);
+.feedback-panel {
+    width: 100%;
+    max-width: 42rem; /* max-w-2xl */
+    border-radius: 2rem;
+    padding: 2.5rem;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: rgba(25, 25, 25, 0.4);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    box-shadow: 0 32px 64px -16px rgba(0,0,0,0.6), inset 0 1px 0 rgba(255,255,255,0.05);
 }
 
-.feedback.incorrect {
-    border-left: 4px solid var(--error-dim);
+@media (min-width: 768px) {
+    .feedback-panel {
+        padding: 4rem;
+    }
 }
 
-.feedback button {
-    margin-top: 1rem;
-    background-color: var(--surface-container-high);
+.feedback-glow-bg {
+    position: absolute;
+    top: -6rem;
+    right: -6rem;
+    width: 16rem;
+    height: 16rem;
+    background-color: rgba(198, 198, 199, 0.1); /* primary/10 */
+    border-radius: var(--radius-full);
+    filter: blur(80px);
+    pointer-events: none;
+}
+
+.feedback-glow-bg.incorrect {
+    background-color: rgba(238, 125, 119, 0.1); /* error/10 */
+}
+
+.feedback-icon-ring {
+    width: 6rem;
+    height: 6rem;
+    border-radius: var(--radius-full);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem auto;
+    box-shadow: 0 25px 50px -12px rgba(0,0,0,0.5);
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-container) 100%);
+}
+
+.feedback-icon-ring.incorrect {
+    background: linear-gradient(135deg, var(--error) 0%, var(--error-container) 100%);
+}
+
+.feedback-icon-ring .material-symbols-outlined {
+    color: var(--on-primary);
+    font-size: 3rem;
+    font-variation-settings: 'FILL' 1;
+}
+
+.feedback-heading {
+    font-size: 3rem;
+    font-family: var(--font-display);
+    font-weight: 800;
+    letter-spacing: -0.05em;
     color: var(--on-surface);
-    border: none;
-    padding: 0.75rem 1.5rem;
-    border-radius: var(--radius-md);
-    cursor: pointer;
-    font-size: 0.875rem;
-    font-weight: 500;
-    transition: var(--transition);
+    margin-bottom: 0.5rem;
 }
 
-.feedback button:hover {
-    background-color: var(--surface-container-highest);
+.feedback-subheading {
+    color: var(--primary);
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 2rem;
+}
+
+.feedback-subheading.incorrect {
+    color: var(--error);
+}
+
+.feedback-divider {
+    height: 1px;
+    width: 100%;
+    background: linear-gradient(to right, transparent, rgba(72, 72, 72, 0.3), transparent);
+}
+
+.feedback-explanation {
+    color: var(--on-surface-variant);
+    font-size: 1.125rem;
+    line-height: 1.6;
+    max-width: 28rem;
+    margin: 1rem auto;
+}
+
+.feedback-cta {
+    margin-top: 2rem;
+    width: 100%;
+    padding: 1.25rem 3rem;
+    border-radius: var(--radius-lg);
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-container) 100%);
+    color: var(--on-primary);
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 1.125rem;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1);
+}
+
+.feedback-cta:hover {
+    transform: scale(1.02);
+    box-shadow: 0 20px 25px -5px rgba(198, 198, 199, 0.2);
+}
+
+.feedback-cta:active {
+    transform: scale(0.98);
+}
+
+@media (min-width: 768px) {
+    .feedback-cta {
+        width: auto;
+    }
 }
 
 /* ========================================
@@ -743,5 +858,186 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: var(--radius-md);
 }
 
+/* ========================================
+   MOBILE LEADERBOARD (below category grid)
+   ======================================== */
+.mobile-leaderboard {
+    display: none; /* Hidden by default, visible only on mobile */
+}
+
 /* Utils */
 .hidden { display: none !important; }
+
+/* ========================================
+   RESPONSIVE — MAX 600px (Mobile)
+   ======================================== */
+@media (max-width: 600px) {
+
+    /* ── Layout ──────────────────────────── */
+    .dashboard-layout {
+        flex-direction: column;
+    }
+
+    /* Hide the fixed sidebar entirely */
+    .dashboard-sidebar {
+        display: none;
+    }
+
+    /* Full-width main, no left offset, tighter top padding */
+    .dashboard-main {
+        margin-left: 0;
+        padding: 5rem 1rem 2rem 1rem;
+    }
+
+    /* ── Top nav ─────────────────────────── */
+    .top-nav {
+        padding: 0 1rem;
+    }
+
+    .top-nav h1 {
+        font-size: 1rem;
+        left: 1rem;
+    }
+
+    /* ── Dashboard header ────────────────── */
+    .dashboard-header {
+        margin-bottom: 1.5rem;
+    }
+
+    .dashboard-header h1 {
+        font-size: 1.75rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .dashboard-header p {
+        font-size: 0.875rem;
+    }
+
+    /* ── Bento grid → horizontal scroll strip ── */
+    .bento-grid {
+        display: flex;               /* Row of cards */
+        flex-direction: row;
+        overflow-x: auto;
+        overflow-y: visible;
+        gap: 1rem;
+        padding-bottom: 1rem;        /* Room for scrollbar */
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        /* Hide scrollbar visually but keep it functional */
+        scrollbar-width: none;
+    }
+
+    .bento-grid::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* Every card is a fixed-width snap point */
+    .glass-card-item {
+        flex: 0 0 75vw;              /* ~75% of viewport width */
+        max-width: 16rem;
+        height: 220px;
+        scroll-snap-align: start;
+        /* Override any desktop col-span inline styles */
+        grid-column: unset !important;
+    }
+
+    .bento-content {
+        padding: 1.25rem;
+    }
+
+    .bento-icon {
+        font-size: 1.75rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .bento-title {
+        font-size: 1.125rem;
+    }
+
+    .bento-desc {
+        font-size: 0.75rem;
+    }
+
+    /* ── Mobile leaderboard ──────────────── */
+    .mobile-leaderboard {
+        display: block;
+        margin-top: 2rem;
+    }
+
+    .mobile-leaderboard .mini-leaderboard {
+        background-color: var(--surface-container-low);
+        border-radius: var(--radius-lg);
+        padding: 1.25rem;
+    }
+
+    /* ── Quiz question view ──────────────── */
+    .progress-bar {
+        margin-bottom: 1.5rem;
+    }
+
+    .question-container h3 {
+        font-size: 1.125rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .answer-buttons {
+        grid-template-columns: 1fr;  /* Single column on mobile */
+        gap: 0.625rem;
+    }
+
+    .answer-btn {
+        padding: 0.875rem 1rem;
+        font-size: 0.875rem;
+        min-height: 3.25rem;
+    }
+
+    .btn {
+        padding: 0.75rem 1.5rem;
+        font-size: 0.875rem;
+    }
+
+    /* ── Feedback overlay ────────────────── */
+    .feedback-panel {
+        border-radius: 1.25rem;
+        padding: 1.75rem 1.25rem;
+    }
+
+    .feedback-icon-ring {
+        width: 4.5rem;
+        height: 4.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .feedback-icon-ring .material-symbols-outlined {
+        font-size: 2.25rem;
+    }
+
+    .feedback-heading {
+        font-size: 2rem;
+    }
+
+    .feedback-subheading {
+        font-size: 0.75rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .feedback-explanation {
+        font-size: 0.9375rem;
+    }
+
+    .feedback-cta {
+        padding: 1rem 2rem;
+        font-size: 1rem;
+    }
+
+    /* ── Auth card ───────────────────────── */
+    .auth-card {
+        padding: 2rem 1.5rem;
+    }
+
+    .auth-card h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+}
+

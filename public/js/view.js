@@ -2,6 +2,7 @@ export class QuizView {
   constructor() {
     this.app = document.getElementById("app-root");
     this.scoreContainer = document.getElementById("score-container");
+    this.mobileScoreContainer = document.getElementById("mobile-score-container");
   }
 
   renderCategories(categories, onSelect) {
@@ -182,35 +183,68 @@ export class QuizView {
   }
 
   showFeedback(isCorrect, explanation, correctAnswer, nextQuestionCallback) {
-    // Container der Frage finden
-    const targetContainer = this.app.querySelector(".question-container");
-
-    // Falls Feedback da -> entfernen
-    const oldFeedback = targetContainer.querySelector(".feedback");
-    if (oldFeedback) {
-      oldFeedback.remove();
+    // Alte Overlay entfernen falls existent
+    const oldOverlay = document.querySelector(".feedback-overlay");
+    if (oldOverlay) {
+      oldOverlay.remove();
     }
 
-    // Neues Feedback erstellen
-    const feedbackDiv = document.createElement("div");
-    feedbackDiv.className = "feedback";
+    const overlay = document.createElement("div");
+    overlay.className = "feedback-overlay";
 
-    if (isCorrect) {
-      feedbackDiv.className += " correct";
-      if (explanation == undefined) explanation = "Gut gemacht!";
-      feedbackDiv.innerHTML = `<strong>✓ Richtig!</strong> ${explanation}`;
+    const isCorrectText = isCorrect ? 'Richtig!' : 'Leider falsch';
+    const isCorrectSub = isCorrect ? 'Sehr gut gemacht' : 'Nicht aufgeben';
+    const iconName = isCorrect ? 'check_circle' : 'cancel';
+    const incorrectClass = isCorrect ? '' : ' incorrect';
+    
+    let explanationHtml = '';
+    if (explanation) {
+        explanationHtml = explanation;
     } else {
-      feedbackDiv.className += " incorrect";
-      if (explanation == undefined) explanation = "Leider falsch.";
-      if (correctAnswer == undefined) correctAnswer = "Unbekannt";
-      feedbackDiv.innerHTML = `<strong>✗ Falsch!</strong> Richtig wäre: ${correctAnswer}<br>${explanation}`;
+        explanationHtml = isCorrect ? "Weiter so!" : "Vielleicht beim nächsten Mal.";
     }
 
-    const nextBtn = document.createElement("button");
-    nextBtn.innerText = "Nächste Frage";
-    nextBtn.onclick = nextQuestionCallback;
-    feedbackDiv.appendChild(nextBtn);
-    targetContainer.appendChild(feedbackDiv);
+    if (!isCorrect && correctAnswer) {
+        explanationHtml = `Die richtige Antwort wäre: <span style="color:var(--on-surface); font-weight:600;">${correctAnswer}</span>.<br><br>` + explanationHtml;
+    }
+
+    overlay.innerHTML = `
+        <div class="feedback-panel">
+            <div class="feedback-glow-bg${incorrectClass}"></div>
+            
+            <div style="margin-bottom: 2rem;">
+                <div class="feedback-icon-ring${incorrectClass}">
+                    <span class="material-symbols-outlined">${iconName}</span>
+                </div>
+                <h3 class="feedback-heading">${isCorrectText}</h3>
+                <p class="feedback-subheading${incorrectClass}">${isCorrectSub}</p>
+            </div>
+            
+            <div style="width: 100%; margin-bottom: 2rem;">
+                <div class="feedback-divider"></div>
+                <p class="feedback-explanation">
+                    ${explanationHtml}
+                </p>
+                <div class="feedback-divider"></div>
+            </div>
+            
+            <button class="feedback-cta" id="next-question-btn">
+                Nächste Frage
+                <span class="material-symbols-outlined" style="transition: transform 0.3s; margin-left: 0.5rem;" id="next-arrow">arrow_forward</span>
+            </button>
+        </div>
+    `;
+
+    document.body.appendChild(overlay);
+
+    const nextBtn = overlay.querySelector("#next-question-btn");
+    nextBtn.onmouseover = () => { overlay.querySelector("#next-arrow").style.transform = "translateX(4px)"; };
+    nextBtn.onmouseout = () => { overlay.querySelector("#next-arrow").style.transform = "translateX(0)"; };
+    nextBtn.onclick = () => {
+        overlay.remove();
+        nextQuestionCallback();
+    };
+
     this.typeset();
   }
 
@@ -228,35 +262,46 @@ export class QuizView {
   }
 
   renderScores(scores) {
-    if (!this.scoreContainer) return;
+    const buildList = () => {
+      const list = document.createElement('ul');
+      list.className = 'leaderboard-list';
 
-    this.scoreContainer.innerHTML = '<h3>Top Contenders</h3>';
-    const list = document.createElement('ul');
-    list.className = 'leaderboard-list';
-
-    if (scores && scores.length > 0) {
-      scores.forEach((s, idx) => {
+      if (scores && scores.length > 0) {
+        scores.forEach((s, idx) => {
+          const item = document.createElement('li');
+          item.className = 'leaderboard-item';
+          item.innerHTML = `
+            <div class="lb-user-info">
+              <span class="lb-rank">${idx + 1}</span>
+              <span style="font-size:0.875rem; font-weight:500;">${s.username}</span>
+            </div>
+            <span class="lb-score">${s.score} pts</span>
+          `;
+          list.appendChild(item);
+        });
+      } else {
         const item = document.createElement('li');
         item.className = 'leaderboard-item';
-        
-        // Let's assume username is the logged in user here (simple check for "You" stylings could be added if we knew the current user string)
-        item.innerHTML = `
-          <div class="lb-user-info">
-            <span class="lb-rank">${idx + 1}</span>
-            <span style="font-size:0.875rem; font-weight:500;">${s.username}</span>
-          </div>
-          <span class="lb-score">${s.score} pts</span>
-        `;
+        item.innerHTML = `<span style="font-size:0.875rem; color:var(--on-surface-variant);">Keine Scores vorhanden</span>`;
         list.appendChild(item);
-      });
-    } else {
-      const item = document.createElement('li');
-      item.className = 'leaderboard-item';
-      item.innerHTML = `<span style="font-size:0.875rem; color:var(--on-surface-variant);">Keine Scores vorhanden</span>`;
-      list.appendChild(item);
+      }
+      return list;
+    };
+
+    // Desktop sidebar
+    if (this.scoreContainer) {
+      this.scoreContainer.innerHTML = '<h3>Top Contenders</h3>';
+      this.scoreContainer.appendChild(buildList());
     }
 
-    this.scoreContainer.appendChild(list);
+    // Mobile leaderboard (below category grid)
+    if (this.mobileScoreContainer) {
+      const inner = this.mobileScoreContainer.querySelector('.mini-leaderboard');
+      if (inner) {
+        inner.innerHTML = '<h3>Top Contenders</h3>';
+        inner.appendChild(buildList());
+      }
+    }
   }
 }
 
