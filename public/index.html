@@ -19,12 +19,12 @@
     </script>
     <script type="text/javascript" id="MathJax-script" async
         src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-    </script>
+        </script>
 </head>
 
 <body>
     <header>
-        <h1>Quiz App</h1>
+        <h1 onclick="location.reload()" style="cursor: pointer;">Quiz App</h1>
         <!-- Zeigt eingeloggten User an (anfangs versteckt) -->
         <div id="user-info" style="display: none;">
             Eingeloggt als: <span id="username-display"></span>
@@ -41,7 +41,7 @@
             <button type="submit">Login</button>
         </form>
         <p>Noch kein Konto? <a href="#" id="show-register">Registrieren</a></p>
-        
+
         <!-- Registrierungsformular (anfangs versteckt) -->
         <div id="register-section" style="display: none;">
             <h2>Registrieren</h2>
@@ -52,7 +52,7 @@
             </form>
             <p>Schon ein Konto? <a href="#" id="show-login">Zum Login</a></p>
         </div>
-        
+
         <!-- Fehlermeldungen -->
         <p id="auth-message" style="color: var(--danger-color);"></p>
     </div>
