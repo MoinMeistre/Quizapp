@@ -35,8 +35,8 @@ export class QuizPresenter {
         (question, selectedIndex) => {
           this.validateAnswer(question, selectedIndex);
         },
-        this.questions.length
-      );  
+        this.questions.length,
+      );
     } else {
       this.showScore();
     }
@@ -49,19 +49,33 @@ export class QuizPresenter {
 
   // Validierung Frage
   validateAnswer(question, selectedIndex) {
-    const isCorrect = selectedIndex === question.korrekte_antwort_index;
-    if (isCorrect) this.score++;
-    const correctAnswer = question.optionen[question.korrekte_antwort_index];
+    if (question.kategorie === "Server") {
+      const correct = this.model.validateQuestion(question, selectedIndex);
+      if (correct) this.score++;
+      this.view.showFeedback(
+        correct,
+        undefined,
+        undefined,
+        () => {
+          this.currentIndex++;
+          this.showCurrentQuestion();
+        },
+      );
+    } else {
+      const isCorrect = selectedIndex === question.korrekte_antwort_index;
+      if (isCorrect) this.score++;
+      const correctAnswer = question.optionen[question.korrekte_antwort_index];
 
-    // View informieren, um Feedback anzuzeigen
-    this.view.showFeedback(
-      isCorrect,
-      question.erklaerung,
-      correctAnswer,
-      () => {
-        this.currentIndex++;
-        this.showCurrentQuestion();
-      },
-    );
+      // View informieren, um Feedback anzuzeigen
+      this.view.showFeedback(
+        isCorrect,
+        question.erklaerung,
+        correctAnswer,
+        () => {
+          this.currentIndex++;
+          this.showCurrentQuestion();
+        },
+      );
+    }
   }
 }

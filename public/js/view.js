@@ -24,7 +24,8 @@ export class QuizView {
     });
   }
 
-  renderQuestion(question, index, onAnswerSelected,amount) {
+
+  renderQuestion(question, index, onAnswerSelected, amount) {
     this.app.innerHTML = "";
     this.showProgress(index, amount);
     const qDiv = document.createElement("div");
@@ -89,9 +90,12 @@ export class QuizView {
 
     if (isCorrect) {
       feedbackDiv.className += " correct";
+      if (explanation == undefined) explanation = "Gut gemacht!";
       feedbackDiv.innerHTML = `<strong>✓ Richtig!</strong> ${explanation}`;
     } else {
       feedbackDiv.className += " incorrect";
+      if (explanation == undefined) explanation = "Leider falsch.";
+      if (correctAnswer == undefined) correctAnswer = "Unbekannt";
       feedbackDiv.innerHTML = `<strong>✗ Falsch!</strong> Richtig wäre: ${correctAnswer}<br>${explanation}`;
     }
 
