@@ -7,44 +7,44 @@ export class QuizView {
 
   renderCategories(categories, onSelect) {
     const categoryInfo = {
-        'Server': {
-            icon: 'terminal',
-            img: 'images/server.jpg',
-            desc: 'Infrastructure, deployment, and backend systems.',
-            tag: 'Cutting Edge',
-            isLarge: true
-        },
-        'Tech': {
-            icon: 'memory',
-            img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuC5c1MwKil7UsdYfmh9nr02QIHuV5EZX0ypZh2oKq7n3IjSm0wQYpnoZEIay7w6bP4_K5BDhjoPuB3Ha3rgFBIgWET8TQB-p3J_SQAaND4TeGLsE5q5zovyq2P1YBaaNQuSMZQgp-CKYLDt61HWCKZiHPVnfWwmMkTKaAKZkcuxmCseV9Z-DrLHY7DDD4bCui95xqHCLDUepa6T0irdSm9d7_18sszs7N1QSMpGI8j6_Ng9x1SYuzR4L7nIbJW3pBS2IrEfIh3xVZE',
-            desc: 'AI, Silicon Valley, and the future of computation.',
-            tag: 'Cutting Edge',
-            isLarge: true
-        },
-        'Science': {
-            icon: 'science',
-            img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuD3S5V6lA3CfBj6Ls4J6d8jX8N5gkLbvhyTwBICOFHJ0QQCPBHKFlS_cepqSGj9UZ8WG1W2V-VaZF-RM46GnuicVQzxlbsaU-alPHZK3rWGtyQhmmnKMPjAm37oZBgaQp-DVkSjFY_kb1mlt3H0OzcXOHSVMwgrhwVqAPvfyhOnMm75jdf29HvXwpGnHojDAKRix0_M8y3AtN9M1JEy_f0uaucbK79_MvGTOM76em0f30ARfw5b65YufqHHLXVL0LpkHY4yCLjDmyk',
-            desc: 'Quantum physics to biology.',
-            tag: '85% Global Avg'
-        },
-        'History': {
-            icon: 'history_edu',
-            img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuATa1uTXOGLUxVAZY4wYwLrO5OMtSB79P-BuabD9GAv0R81ZMLMabb-2Ff6c9EYzLQZ4Si7I9Ctfw9h7Jlms_GFFBtlYWxXrbzm4rh3UnVxyTim-ulL-pi_v1uTOi9aRDB_S1yQIuSibcskBxPt_hiILCt-anwrr5G5i2Y8SLnAh-tK7i7HufzsDFPdAh5D4XQu0ETLi9cnXrVzTBjTMdj7HzXtXo0vMsVnkPcTSuDIGMCJBkrisuyaoAp67AuLBJALV_EcHWDTbGw',
-            desc: 'Chronicles of the human era.',
-            tag: '15 Quizzes'
-        },
-        'Art': {
-            icon: 'palette',
-            img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuApo_JTtqWtJ6dEs6iTNzHuwJ6i9r-C2TKOpXn2igTL8kt6FmigwTFc_BPdTuTrDevF37ZauYo8fITg8gwj4aDuT6QfeRDqGSLc8kJQp_nFgvHAioocCoPxDU_NZphotVWnDA-EWO2U0Noh9yyHmQs-NqugUf-e8tHlKCzXW9trVQzaqRrOKBdMCfYielZb9HRBfhFlerBLpuVTY9UQ77RXJqS7yqmF2UgKpuldwBn9LvLtUYk3qhxk2ThkKQEcOQH5S2l8LpPn9iY',
-            desc: 'Design, theory, and visionaries.',
-            tag: '284 Users Active'
-        },
-        'Nature': {
-            icon: 'forest',
-            img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuD_Q8OnLSPRvuoIOJi7mgTQfFotfnujdR00GYNTd4v8Z_f_1lHj4CN2xf--ihuPcfNhRWYNF6FTrs1UzimMZmqhhA3qqozM6HWkYk_zxo4C13RPIYFRoCRKLeHqJ5HmFNQvgDx6UE6fYCFTJbG6iEwKG02Fils5EyaGIqG8Z5D8fqpsuhnPkZxAUG3Ner6UA-JX-LcUtYuGRTAY1UQHBIHnykYlkH6EC-CFpvUaAr7Aw8wigpL4gTG-yWlLJcoKz-c7iBqyrSulec8',
-            desc: 'Wildlife and environmental systems.',
-            tag: 'Unlocked Level 4'
-        }
+      'Server': {
+        icon: 'terminal',
+        img: 'images/server.jpg',
+        desc: 'Infrastructure, deployment, and backend systems.',
+        tag: 'Cutting Edge',
+        isLarge: true
+      },
+      'Tech': {
+        icon: 'memory',
+        img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuC5c1MwKil7UsdYfmh9nr02QIHuV5EZX0ypZh2oKq7n3IjSm0wQYpnoZEIay7w6bP4_K5BDhjoPuB3Ha3rgFBIgWET8TQB-p3J_SQAaND4TeGLsE5q5zovyq2P1YBaaNQuSMZQgp-CKYLDt61HWCKZiHPVnfWwmMkTKaAKZkcuxmCseV9Z-DrLHY7DDD4bCui95xqHCLDUepa6T0irdSm9d7_18sszs7N1QSMpGI8j6_Ng9x1SYuzR4L7nIbJW3pBS2IrEfIh3xVZE',
+        desc: 'AI, Silicon Valley, and the future of computation.',
+        tag: 'Cutting Edge',
+        isLarge: true
+      },
+      'Science': {
+        icon: 'science',
+        img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuD3S5V6lA3CfBj6Ls4J6d8jX8N5gkLbvhyTwBICOFHJ0QQCPBHKFlS_cepqSGj9UZ8WG1W2V-VaZF-RM46GnuicVQzxlbsaU-alPHZK3rWGtyQhmmnKMPjAm37oZBgaQp-DVkSjFY_kb1mlt3H0OzcXOHSVMwgrhwVqAPvfyhOnMm75jdf29HvXwpGnHojDAKRix0_M8y3AtN9M1JEy_f0uaucbK79_MvGTOM76em0f30ARfw5b65YufqHHLXVL0LpkHY4yCLjDmyk',
+        desc: 'Quantum physics to biology.',
+        tag: '85% Global Avg'
+      },
+      'History': {
+        icon: 'history_edu',
+        img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuATa1uTXOGLUxVAZY4wYwLrO5OMtSB79P-BuabD9GAv0R81ZMLMabb-2Ff6c9EYzLQZ4Si7I9Ctfw9h7Jlms_GFFBtlYWxXrbzm4rh3UnVxyTim-ulL-pi_v1uTOi9aRDB_S1yQIuSibcskBxPt_hiILCt-anwrr5G5i2Y8SLnAh-tK7i7HufzsDFPdAh5D4XQu0ETLi9cnXrVzTBjTMdj7HzXtXo0vMsVnkPcTSuDIGMCJBkrisuyaoAp67AuLBJALV_EcHWDTbGw',
+        desc: 'Chronicles of the human era.',
+        tag: '15 Quizzes'
+      },
+      'Art': {
+        icon: 'palette',
+        img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuApo_JTtqWtJ6dEs6iTNzHuwJ6i9r-C2TKOpXn2igTL8kt6FmigwTFc_BPdTuTrDevF37ZauYo8fITg8gwj4aDuT6QfeRDqGSLc8kJQp_nFgvHAioocCoPxDU_NZphotVWnDA-EWO2U0Noh9yyHmQs-NqugUf-e8tHlKCzXW9trVQzaqRrOKBdMCfYielZb9HRBfhFlerBLpuVTY9UQ77RXJqS7yqmF2UgKpuldwBn9LvLtUYk3qhxk2ThkKQEcOQH5S2l8LpPn9iY',
+        desc: 'Design, theory, and visionaries.',
+        tag: '284 Users Active'
+      },
+      'Nature': {
+        icon: 'forest',
+        img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuD_Q8OnLSPRvuoIOJi7mgTQfFotfnujdR00GYNTd4v8Z_f_1lHj4CN2xf--ihuPcfNhRWYNF6FTrs1UzimMZmqhhA3qqozM6HWkYk_zxo4C13RPIYFRoCRKLeHqJ5HmFNQvgDx6UE6fYCFTJbG6iEwKG02Fils5EyaGIqG8Z5D8fqpsuhnPkZxAUG3Ner6UA-JX-LcUtYuGRTAY1UQHBIHnykYlkH6EC-CFpvUaAr7Aw8wigpL4gTG-yWlLJcoKz-c7iBqyrSulec8',
+        desc: 'Wildlife and environmental systems.',
+        tag: 'Unlocked Level 4'
+      }
     };
 
     let headerHtml = `
@@ -60,21 +60,21 @@ export class QuizView {
 
     // Feste Server Karte
     if (!categories.includes('Server')) {
-       categories.unshift('Server'); 
+      categories.unshift('Server');
     }
 
     categories.forEach((cat, idx) => {
-        const info = categoryInfo[cat] || {
-            icon: 'quiz',
-            img: `images/${cat.toLowerCase()}.jpg`,
-            desc: 'Test your knowledge.',
-            tag: 'Available',
-            isLarge: idx === 0 
-        };
+      const info = categoryInfo[cat] || {
+        icon: 'quiz',
+        img: `images/${cat.toLowerCase()}.jpg`,
+        desc: 'Test your knowledge.',
+        tag: 'Available',
+        isLarge: idx === 0
+      };
 
-        const isLargeClass = info.isLarge ? 'col-span-8 is-large' : 'col-span-4';
-        
-        const cardHtml = `
+      const isLargeClass = info.isLarge ? 'col-span-8 is-large' : 'col-span-4';
+
+      const cardHtml = `
             <div class="bento-bg ${info.isLarge ? 'is-large' : ''}">
                 <img src="${info.img}" alt="${cat}" onerror="this.src=''; this.style.backgroundColor='#1f1f1f'">
             </div>
@@ -99,12 +99,12 @@ export class QuizView {
             </div>
         `;
 
-        const container = document.createElement("div");
-        container.className = `glass-card-item ${isLargeClass}`;
-        container.style.gridColumnEnd = info.isLarge ? 'span 8' : 'span 4'; 
-        container.innerHTML = cardHtml;
-        container.onclick = () => onSelect(cat);
-        cardContainer.appendChild(container);
+      const container = document.createElement("div");
+      container.className = `glass-card-item ${isLargeClass}`;
+      container.style.gridColumnEnd = info.isLarge ? 'span 8' : 'span 4';
+      container.innerHTML = cardHtml;
+      container.onclick = () => onSelect(cat);
+      cardContainer.appendChild(container);
     });
   }
 
@@ -127,7 +127,7 @@ export class QuizView {
       button.innerHTML = opt;
       button.className = "answer-btn";
       button.onclick = () => {
-      //Buttons sperren
+        //Buttons sperren
         buttonContainer.querySelectorAll("button").forEach(b => b.disabled = true);
         onAnswerSelected(question, optIndex);
       };
@@ -196,16 +196,16 @@ export class QuizView {
     const isCorrectSub = isCorrect ? 'Sehr gut gemacht' : 'Nicht aufgeben';
     const iconName = isCorrect ? 'check_circle' : 'cancel';
     const incorrectClass = isCorrect ? '' : ' incorrect';
-    
+
     let explanationHtml = '';
     if (explanation) {
-        explanationHtml = explanation;
+      explanationHtml = explanation;
     } else {
-        explanationHtml = isCorrect ? "Weiter so!" : "Vielleicht beim nächsten Mal.";
+      explanationHtml = isCorrect ? "Weiter so!" : "Vielleicht beim nächsten Mal.";
     }
 
     if (!isCorrect && correctAnswer) {
-        explanationHtml = `Die richtige Antwort wäre: <span style="color:var(--on-surface); font-weight:600;">${correctAnswer}</span>.<br><br>` + explanationHtml;
+      explanationHtml = `Die richtige Antwort wäre: <span style="color:var(--on-surface); font-weight:600;">${correctAnswer}</span>.<br><br>` + explanationHtml;
     }
 
     overlay.innerHTML = `
@@ -241,8 +241,8 @@ export class QuizView {
     nextBtn.onmouseover = () => { overlay.querySelector("#next-arrow").style.transform = "translateX(4px)"; };
     nextBtn.onmouseout = () => { overlay.querySelector("#next-arrow").style.transform = "translateX(0)"; };
     nextBtn.onclick = () => {
-        overlay.remove();
-        nextQuestionCallback();
+      overlay.remove();
+      nextQuestionCallback();
     };
 
     this.typeset();
@@ -251,7 +251,7 @@ export class QuizView {
   showScore(score, total) {
     const wrong = total - score;
     const percentage = total > 0 ? Math.round((score / total) * 100) : 0;
-    
+
     this.app.innerHTML = `
       <div class="feedback" style="border-left: none; background: var(--surface-container); text-align:center;">
         <h2 style="font-size:2rem; margin-bottom:1rem;">Quiz beendet!</h2>
@@ -337,18 +337,18 @@ export class AuthView {
     this.loginSection.style.display = 'none';
     this.quizSection.style.display = 'flex'; // Changed to flex for dashboard layout
     this.userInfo.style.display = 'block';
-    
+
     // Update both displays
     this.usernameDisplay.textContent = username;
     const sidebarUser = document.getElementById('sidebar-username');
     if (sidebarUser) sidebarUser.textContent = username;
-    
+
     this.clearMessage();
   }
 
   // Zeigt den Login-Bereich (User ist ausgeloggt)
   showLogin() {
-    this.loginSection.style.display = 'block';
+    this.loginSection.style.display = 'flex';
     this.quizSection.style.display = 'none';
     this.userInfo.style.display = 'none';
     this.registerSection.style.display = 'none';
