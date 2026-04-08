@@ -48,6 +48,8 @@ export class QuizView {
       button.textContent = opt;
       button.className = "answer-btn";
       button.onclick = () => {
+      //Buttons sperren
+        buttonContainer.querySelectorAll("button").forEach(b => b.disabled = true);
         onAnswerSelected(question, optIndex);
       };
       buttonContainer.appendChild(button);

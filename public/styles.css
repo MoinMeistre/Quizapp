@@ -142,9 +142,16 @@ aside h1 {
 
 .progress-fill {
     height: 100%;
-    background: linear-gradient(90deg, var(--color-primary), var(--color-primary-hover));
     border-radius: 3px;
     transition: width 0.3s ease;
+}
+
+.progress-fill.correct {
+    background: var(--success-color);
+}
+
+.progress-fill.incorrect {
+    background: var(--danger-color);
 }
 
 .question {
@@ -154,6 +161,115 @@ aside h1 {
     color: var(--color-text-heading);
     line-height: 1.4;
     text-align: center;
+}
+
+/* ========================================
+   QUIZ ANSWER BUTTONS - 2x2 Grid
+   ======================================== */
+.question-container {
+    margin-bottom: 20px;
+}
+
+.question-container h3 {
+    font-family: var(--font-serif);
+    font-size: 1.5rem;
+    color: var(--color-text-heading);
+    text-align: center;
+    margin-bottom: 30px;
+    line-height: 1.4;
+}
+
+.answer-buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.answer-btn {
+    padding: 20px 24px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+    background: var(--color-card-bg);
+    color: var(--color-text-body);
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: var(--transition);
+    text-align: center;
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.answer-btn:hover:not(:disabled) {
+    border-color: var(--color-primary);
+    background: rgba(194, 101, 42, 0.06);
+    transform: scale(1.02);
+    box-shadow: var(--shadow-subtle);
+}
+
+.answer-btn:disabled {
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+.answer-btn.selected,
+.answer-btn:focus {
+    border-color: var(--color-primary);
+    background: var(--color-primary);
+    color: white;
+}
+
+.answer-btn.correct {
+    background: var(--success-color);
+    border-color: var(--success-color);
+    color: white;
+}
+
+.answer-btn.incorrect {
+    background: var(--danger-color);
+    border-color: var(--danger-color);
+    color: white;
+}
+
+/* Back Button - am Ende der Box */
+main > button:last-of-type,
+.question-container ~ button {
+    display: block;
+    margin: 30px auto 0 auto;
+    padding: 12px 28px;
+    background: transparent;
+    color: var(--color-text-heading);
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+    font-family: var(--font-sans);
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+main > button:last-of-type:hover,
+.question-container ~ button:hover {
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+    background: rgba(194, 101, 42, 0.04);
+}
+
+/* Responsive: Stack buttons on small screens */
+@media (max-width: 500px) {
+    .answer-buttons {
+        grid-template-columns: 1fr;
+    }
+    
+    .answer-btn {
+        min-height: 60px;
+        padding: 16px 20px;
+    }
 }
 
 .options {
@@ -525,11 +641,12 @@ footer {
    FEEDBACK MESSAGES - Sahara Style
    ======================================== */
 .feedback {
-    margin-top: 12px;
-    padding: 14px 18px;
+    margin-top: 20px;
+    padding: 20px;
     border-radius: var(--border-radius);
     font-family: var(--font-sans);
-    font-size: 0.9rem;
+    font-size: 0.95rem;
+    text-align: center;
 }
 
 .feedback.correct {
@@ -542,6 +659,29 @@ footer {
     background-color: rgba(184, 74, 60, 0.1);
     color: var(--danger-color);
     border: 1px solid rgba(184, 74, 60, 0.3);
+}
+
+.feedback button {
+    display: block;
+    margin: 16px auto 0 auto;
+    padding: 12px 28px;
+    background: var(--color-primary);
+    color: white;
+    border: none;
+    border-radius: var(--border-radius);
+    font-family: var(--font-sans);
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.feedback button:hover {
+    background: var(--color-primary-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(194, 101, 42, 0.3);
 }
 
 /* ========================================

@@ -118,7 +118,7 @@ export class QuizModel {
   }
 
   getAllCategories() {
-    return [...new Set(this.questions.map((q) => q.kategorie))];
+    return [...new Set(this.questions.map((q) => q.kategorie).filter(Boolean))];
   }
 }
 

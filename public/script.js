@@ -74,6 +74,8 @@ function anzeigenImQuiz(daten) {
     btn.className = "quiz-btn"; // Optional für CSS
 
     btn.onclick = () => {
+      // Alle Buttons deaktivieren nach dem ersten Klick
+      container.querySelectorAll("button").forEach(b => b.disabled = true);
       alert("Du hast gewählt: " + antwort);
     };
 
