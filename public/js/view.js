@@ -15,7 +15,7 @@ export class QuizView {
       const container = document.createElement("div");
       container.className = "card";
       const img = document.createElement("img");
-      img.src = `../images/${cat.toLowerCase()}.jpg`;
+      img.src = `images/${cat.toLowerCase()}.jpg`;
       img.alt = cat;
 
       const p = document.createElement("p");

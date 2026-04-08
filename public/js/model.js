@@ -54,7 +54,7 @@ export class QuizModel {
   async getQuestionsByCategory(category, amount) {
 
     if (category === "Server") {
-      const page = Math.floor(Math.random() * 3) + 1;
+      const page = Math.floor(Math.random() * 2) + 1;
       const questions = await this.frageHolen(page);
       console.log(questions);
       const formattedQuestions = questions.content.map((q) => ({
