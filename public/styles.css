@@ -622,10 +622,9 @@ footer {
     }
 
     .card-container {
-        overflow: auto;
+        overflow: auto !important;
         flex-direction: column;
-        height: auto;
-        min-height: 400px;
+        height: 400px;
         padding: 20px;
         justify-content: flex-start;
         gap: 16px;
